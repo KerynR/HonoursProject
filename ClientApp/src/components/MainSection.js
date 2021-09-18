@@ -5,15 +5,15 @@ import './MainSection.css';
 function MainSection() {
   return (
     <div className='main-container'>
-      //<img src='/images/home.png' />
-      <h1>XYZ Recruitment Company</h1>
-      <h2>Bridging the gap</h2>
+      <img src='/images/home.png' />
+        <div className='centerHeading'>
+          <h1>XYZ Recruitment Company</h1>
+          <div className="centerRest">
+            <h2>Bridging the gap</h2>
 
-      <p>Welcome to XYZ! We specialise in bridging the gap between graduates and the workplace. </p>
-      <div className='main-btns'>
-        
-
-      </div>
+            <p>Welcome to XYZ! We specialise in bridging the gap between graduates and the workplace. </p>
+          </div>
+        </div>
     </div>
   );
 }
