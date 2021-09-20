@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
+import EditProfile from './components/pages/EditProfile';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/Login' component={Login}/>
         <Route exact path='/Signup' component={Signup}/>
+        <Route exact path='/EditProfile' component={EditProfile}/>
       </Switch>
       </Router>
       </>
