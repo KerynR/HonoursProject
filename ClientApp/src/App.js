@@ -6,6 +6,7 @@ import reactDOM from "react-dom";
 import Home from './components/pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Login from './components/pages/Login';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/Login' component={Login}/>
       </Switch>
       </Router>
       </>
