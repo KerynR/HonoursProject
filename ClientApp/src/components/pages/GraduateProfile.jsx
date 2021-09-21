@@ -1,8 +1,10 @@
 import React from 'react';
 import './GraduateProfile.css';
+import Footer from '../Footer';
 
 function GraduateProfile() {
   return (
+    <>
     <div>
       <h1>Graduate Profile</h1>
       
@@ -38,6 +40,8 @@ function GraduateProfile() {
       </ul>
 
     </div>
+    <Footer/>
+    </>
   );
 }
 

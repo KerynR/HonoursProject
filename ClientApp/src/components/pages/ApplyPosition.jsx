@@ -1,9 +1,11 @@
 import React from 'react';
 import './ApplyPosition.css';
+import Footer from '../Footer';
 
 
 function ApplyPosition() {
   return (
+    <>
     <div form-wrapper>
     <div className="form-container">
       <div class="title_container">
@@ -121,6 +123,8 @@ function ApplyPosition() {
       </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

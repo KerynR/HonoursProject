@@ -1,9 +1,11 @@
 import React from 'react';
 import './EditProfile.css';
+import Footer from '../Footer';
 
 
 function EditProfile() {
   return (
+    <>
     <div form-wrapper>
     <div className="form-container">
       <div class="title_container">
@@ -63,6 +65,8 @@ function EditProfile() {
       </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

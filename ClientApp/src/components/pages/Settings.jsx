@@ -1,8 +1,10 @@
 import React from 'react';
 import './Settings.css';
+import Footer from '../Footer';
 
 function Settings(){
     return(
+        <>
     <div>
         <body>
         <h1>Settings</h1>
@@ -28,6 +30,8 @@ function Settings(){
             </div>
         </body>
     </div>
+        <Footer/>
+    </>
 
     );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ViewSubmissions.css';
-
+import Footer from '../Footer';
 
 
 function ViewSubmissions() {
@@ -33,6 +33,7 @@ window.onclick = function(event) {
 
   
   return (
+    <>
     <div>
       <h1>View Application Submissions</h1>
 
@@ -47,8 +48,8 @@ window.onclick = function(event) {
         </div> 
     </div>
 
-    
-    
+    <Footer/>
+    </>
   );
 
   

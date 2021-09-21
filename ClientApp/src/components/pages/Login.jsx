@@ -1,8 +1,10 @@
 import React from 'react';
 import './Login.css';
+import Footer from '../Footer';
 
 function Login() {
   return (
+    <>
       <body>
           
       
@@ -50,6 +52,8 @@ function Login() {
       </div>
     </div>  
     </body>
+    <Footer/>
+    </>
   );
 }
 
