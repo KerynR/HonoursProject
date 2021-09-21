@@ -1,0 +1,16 @@
+p{
+    color: #000;
+}
+
+.inline-buttons{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1076px) {
+
+    .inline-buttons {
+        width: 100%;
+        margin: 20px;
+    }
+    
+}

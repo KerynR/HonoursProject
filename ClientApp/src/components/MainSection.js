@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
 import './MainSection.css';
-
+/**<img src='/images/home.png' /> */
 function MainSection() {
   return (
     <div className='main-container'>
-      <img src='/images/home.png' />
+      
         <div className='centerHeading'>
           <h1>XYZ Recruitment Company</h1>
           <div className="centerRest">

@@ -1,13 +1,13 @@
 import React from 'react';
-import './CreatePosition.css';
+import './ApplyPosition.css';
 
 
-function CreatePosition() {
+function ApplyPosition() {
   return (
     <div form-wrapper>
     <div className="form-container">
       <div class="title_container">
-        <h1>Create New Position</h1>
+        <h1>Position Details</h1>
         <form action="action_page.php">
 
         <div className="row">
@@ -15,7 +15,7 @@ function CreatePosition() {
             <label>Employer:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -24,7 +24,7 @@ function CreatePosition() {
             <label>Reference Code:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -33,7 +33,7 @@ function CreatePosition() {
             <label>Location:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -42,7 +42,7 @@ function CreatePosition() {
             <label>Salary:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -51,7 +51,7 @@ function CreatePosition() {
             <label>Job Type:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -60,7 +60,7 @@ function CreatePosition() {
             <label>Start Date:</label>
           </div>
           <div className="col-75">
-            <input type="date" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -69,7 +69,7 @@ function CreatePosition() {
             <label>Sector:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <label>______________________________</label>
           </div>
         </div> 
 
@@ -78,30 +78,42 @@ function CreatePosition() {
             <label>Duties and Responsibilities:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+            <ul>
+                <li>_____________</li>
+                <li>_____________</li>
+                <li>_____________</li>
+            </ul>
           </div>
         </div> 
 
         <div className="row">
           <div class="col-25">    
-            <label>Skills and Competencies:</label>
+            <label>Skills and Competencies</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+            <ul>
+                <li>_____________</li>
+                <li>_____________</li>
+                <li>_____________</li>
+            </ul>
           </div>
-        </div>
+        </div> 
                      
         <div className="row">
           <div class="col-25">    
             <label>Minimum Requirements:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+          <ul>
+                <li>_____________</li>
+                <li>_____________</li>
+                <li>_____________</li>
+            </ul>
           </div>
         </div> 
 
         
-        <input className="btnPostPos" type="submit" value="Post Position" />
+        <input className="btnApply" type="submit" value="Apply" />
         <input className="btnCancel" type="submit" value="Cancel" />
 
         </form>
@@ -112,4 +124,4 @@ function CreatePosition() {
   );
 }
 
-export default CreatePosition;
+export default ApplyPosition;

@@ -10,6 +10,10 @@ import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import EditProfile from './components/pages/EditProfile';
 import CreatePosition from './components/pages/CreatePosition';
+import ViewSubmissions from './components/pages/ViewSubmissions';
+import GraduateProfile from './components/pages/GraduateProfile';
+import Settings from './components/pages/Settings';
+import ApplyPosition from './components/pages/ApplyPosition';
 
 function App() {
     return (
@@ -22,6 +26,10 @@ function App() {
         <Route exact path='/Signup' component={Signup}/>
         <Route exact path='/EditProfile' component={EditProfile}/>
         <Route exact path='/CreatePosition' component={CreatePosition}/>
+        <Route exact path='/ViewSubmissions' component={ViewSubmissions}/>
+        <Route exact path='/GraduateProfile' component={GraduateProfile}/>
+        <Route exact path ='/Settings' component={Settings}/>
+        <Route exact path ='/ApplyPosition' component={ApplyPosition}/>
       </Switch>
       </Router>
       </>
