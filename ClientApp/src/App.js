@@ -14,6 +14,7 @@ import ViewSubmissions from './components/pages/ViewSubmissions';
 import GraduateProfile from './components/pages/GraduateProfile';
 import Settings from './components/pages/Settings';
 import ApplyPosition from './components/pages/ApplyPosition';
+import testing from './components/pages/testing';
 
 function App() {
     return (
@@ -30,6 +31,8 @@ function App() {
         <Route exact path='/GraduateProfile' component={GraduateProfile}/>
         <Route exact path ='/Settings' component={Settings}/>
         <Route exact path ='/ApplyPosition' component={ApplyPosition}/>
+        <Route exact path ='/testing' component={testing}/>
+      
       </Switch>
       </Router>
       </>
