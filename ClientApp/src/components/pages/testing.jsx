@@ -56,7 +56,7 @@ function testing() {
         </div>
         <div class="hr"></div>
         <div class="foot-lnk">
-          <label for="tab-1">Already Member</label>
+          <label for="tab-1">Already a member? Sign In</label>
         </div>
       </div>
     </div>
