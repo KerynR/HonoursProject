@@ -45,7 +45,7 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>Tips & Advice</h2>
             <Link to='/'>How to create a CV</Link>
-            <Link to='/'>Referenve Letters</Link>
+            <Link to='/'>Reference Letters</Link>
             <Link to='/'>Applying for a job</Link>
             <Link to='/'>Workplace tips</Link>
           </div>

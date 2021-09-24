@@ -2,7 +2,7 @@ import React from 'react';
 import './CreatePosition.css';
 import Footer from '../Footer';
 
-
+/* THIS WILL BE THE JOB VACANCY PAGE - WHERE THE EMPLOYER POSTS AN AVAILABLE POSITION */
 function CreatePosition() {
   return (
     <>
@@ -23,7 +23,16 @@ function CreatePosition() {
 
         <div className="row">
           <div class="col-25">    
-            <label>Reference Code:</label>
+            <label>Job Title:</label>
+          </div>
+          <div className="col-75">
+            <input type="text" placeholder="..."  />
+          </div>
+        </div> 
+
+        <div className="row">
+          <div class="col-25">    
+            <label>Job Description:</label>
           </div>
           <div className="col-75">
             <input type="text" placeholder="..."  />
@@ -41,25 +50,7 @@ function CreatePosition() {
 
         <div className="row">
           <div class="col-25">    
-            <label>Salary:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div class="col-25">    
-            <label>Job Type:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div class="col-25">    
-            <label>Start Date:</label>
+            <label>Application Opening Date:</label>
           </div>
           <div className="col-75">
             <input type="date" placeholder="..."  />
@@ -68,7 +59,25 @@ function CreatePosition() {
 
         <div className="row">
           <div class="col-25">    
-            <label>Sector:</label>
+            <label>Application Closing Date:</label>
+          </div>
+          <div className="col-75">
+            <input type="date" placeholder="..."  />
+          </div>
+        </div>
+
+        <div className="row">
+          <div class="col-25">    
+            <label>Job Starting Date:</label>
+          </div>
+          <div className="col-75">
+            <input type="date" placeholder="..."  />
+          </div>
+        </div>
+
+        <div className="row">
+          <div class="col-25">    
+            <label>Responsibilities:</label>
           </div>
           <div className="col-75">
             <input type="text" placeholder="..."  />
@@ -77,32 +86,13 @@ function CreatePosition() {
 
         <div className="row">
           <div class="col-25">    
-            <label>Duties and Responsibilities:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div class="col-25">    
-            <label>Skills and Competencies:</label>
+            <label>Skill Requirements:</label>
           </div>
           <div className="col-75">
             <input type="text" placeholder="..."  />
           </div>
         </div>
-                     
-        <div className="row">
-          <div class="col-25">    
-            <label>Minimum Requirements:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div> 
 
-        
         <input className="btnPostPos" type="submit" value="Post Position" />
         <input className="btnCancel" type="submit" value="Cancel" />
 
