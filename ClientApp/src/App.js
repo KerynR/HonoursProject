@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import reactDOM from "react-dom";
+
+
 
 import Home from './components/pages/Home';
 import Navbar from './components/Navbar';
@@ -17,7 +19,8 @@ import ApplyPosition from './components/pages/ApplyPosition';
 import testing from './components/pages/testing';
 
 function App() {
-    return (
+
+  return (
       <>
       <Router>
       <Navbar />
@@ -35,6 +38,8 @@ function App() {
       
       </Switch>
       </Router>
+
+      
       </>
     );
 }

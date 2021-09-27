@@ -1,9 +1,22 @@
 import React from 'react';
 import './testing.css';
 
+//GOOGLE LOGIN
+import {GoogleLogin } from 'react-google-login';
 
+//my clientId from google
+const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
 
 function testing() {
+
+  const onSuccess = ( res ) => {
+    console.log('[Login Success] currentUser:', res.profileObj);
+  };
+
+  const onFailure = ( res ) => {
+    console.log('[Login Failed] currentUser:', res);
+  };
+
   return (
         
 
@@ -11,6 +24,7 @@ function testing() {
   <div class="login-html">
     <input id="tab-1" type="radio" name="tab" class="sign-in" checked/><label for="tab-1" class="tab">Sign In</label>
     <input id="tab-2" type="radio" name="tab" class="sign-up"/><label for="tab-2" class="tab">Sign Up</label>
+    {/* LOGIN PAGE */}
     <div class="login-form">
       <div class="sign-in-htm">
         <div class="group">
@@ -28,11 +42,29 @@ function testing() {
         <div class="group">
           <input type="submit" class="button" value="Sign In"/>
         </div>
+        <div>
+          <label>OR</label>
+        <div>
+          <GoogleLogin className="btnGoogle"
+            clientId={clientId}
+            buttonText="Sign In using Google"
+            onSuccess={onSuccess}
+            onFailure={onFailure}
+            cookiePolicy={'single_host_origin'}
+            style={{ marginTop: '100px' }}
+            isSignedIn={true}
+            />
+        </div>
+        </div>
         <div class="hr"></div>
         <div class="foot-lnk">
           <a href="#forgot">Forgot Password?</a>
         </div>
+
+        
+
       </div>
+      {/* REGISTER PAGE */}
       <div class="sign-up-htm">
         <div class="group">
           <label for="user" class="label">Username</label>
@@ -53,6 +85,20 @@ function testing() {
         
         <div class="group">
           <input type="submit" class="button" value="Sign Up"/>
+        </div>
+        <div>
+          <label>OR</label>
+          <div>
+          <GoogleLogin className="btnGoogle"
+            clientId={clientId}
+            buttonText="Sign Up using Google"
+            onSuccess={onSuccess}
+            onFailure={onFailure}
+            cookiePolicy={'single_host_origin'}
+            style={{ marginTop: '100px' }}
+            isSignedIn={true}
+            />
+        </div>
         </div>
         <div class="hr"></div>
         <div class="foot-lnk">
