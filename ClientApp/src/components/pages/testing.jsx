@@ -65,26 +65,40 @@ function testing() {
 
       </div>
       {/* REGISTER PAGE */}
-      <div class="sign-up-htm">
-        <div class="group">
+      <div className="sign-up-htm">
+        <div className="group">
           <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input"/>
+          <input id="user" type="text" className="input"/>
         </div>
-        <div class="group">
+        <div className="group">
           <label for="pass" class="label">Email Address</label>
-          <input id="pass" type="text" class="input"/>
+          <input id="pass" type="text" className="input"/>
         </div>
-        <div class="group">
+        <div className="group">
           <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password"/>
+          <input id="pass" type="password" className="input" data-type="password"/>
         </div>
-        <div class="group">
+        <div className="group">
           <label for="pass" class="label">Confirm Password</label>
-          <input id="pass" type="password" class="input" data-type="password"/>
+          <input id="pass" type="password" className="input" data-type="password"/>
         </div>
-        
-        <div class="group">
-          <input type="submit" class="button" value="Sign Up"/>
+        <div className="group">
+          
+        <label >Please select the option that applies to you:</label>
+         
+          <input id="cbGraduate" type="checkbox" className="cbGraduate" />
+          <label for="cbGraduate">Graduate</label><br />
+         
+          <input id="cbRecruiter" type="checkbox" className="cbRecruiter"/>
+          <label for="cbRecruiter">Recruiter</label><br />
+          
+          <input id="cbCompany" type="checkbox" className="cbCompany" />
+          <label for="cbCompany">Company</label>
+          
+         
+        </div>
+        <div className="group">
+          <input type="submit" className="button" value="Sign Up"/>
         </div>
         <div>
           <label>OR</label>
@@ -100,8 +114,8 @@ function testing() {
             />
         </div>
         </div>
-        <div class="hr"></div>
-        <div class="foot-lnk">
+        <div className="hr"></div>
+        <div className="foot-lnk">
           <label for="tab-1">Already a member? Sign In</label>
         </div>
       </div>

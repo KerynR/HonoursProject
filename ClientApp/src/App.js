@@ -17,6 +17,7 @@ import GraduateProfile from './components/pages/GraduateProfile';
 import Settings from './components/pages/Settings';
 import ApplyPosition from './components/pages/ApplyPosition';
 import testing from './components/pages/testing';
+import CompanyProfile from './components/pages/CompanyProfile';
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
         <Route exact path ='/Settings' component={Settings}/>
         <Route exact path ='/ApplyPosition' component={ApplyPosition}/>
         <Route exact path ='/testing' component={testing}/>
-      
+        <Route exact path ='/CompanyProfile' component={CompanyProfile}/>
       </Switch>
       </Router>
 

@@ -13,7 +13,7 @@ body{
     width:100%;
     margin:auto;
     max-width:525px;
-    min-height:800px;
+    min-height:1250px;
     position:relative;
     background:url(https://images.pexels.com/photos/6177590/pexels-photo-6177590.jpeg?cs=srgb&dl=pexels-cup-of-couple-6177590.jpg&fm=jpg) no-repeat center;
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -148,3 +148,9 @@ body{
   .foot-lnk{
     text-align:center;
   }
+
+
+  input[type="checkbox"]
+{
+    display: inline-block;
+}
