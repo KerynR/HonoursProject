@@ -19,21 +19,10 @@ import ApplyPosition from './components/pages/ApplyPosition';
 import testing from './components/pages/testing';
 import CompanyProfile from './components/pages/CompanyProfile';
 
-/*LIGHT/DARK THEME*/ 
-import {ThemeProvider} from "styled-components";
-import { GlobalStyles } from "./components/globalStyles";
-import { lightTheme, darkTheme } from "./components/Theme";
-
 function App() {
-
-  const [theme, setTheme] = useState('light');
-  const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-}
 
   return (
       <>
-      
       <Router>
       <Navbar />
       <Switch>
@@ -51,14 +40,6 @@ function App() {
       </Switch>
       </Router>
 
-      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <>
-      <GlobalStyles/>
-
-      <button onClick={themeToggler}>Switch Theme</button>
-
-      </>
-      </ThemeProvider>
       
       </>
     );
