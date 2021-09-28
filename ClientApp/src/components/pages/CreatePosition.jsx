@@ -14,7 +14,7 @@ function CreatePosition() {
 
         <div className="row">
           <div class="col-25">    
-            <label>Employer:</label>
+            <label>Vacancy Name:</label>
           </div>
           <div className="col-75">
             <input type="text" placeholder="..."  />
@@ -29,6 +29,14 @@ function CreatePosition() {
             <input type="text" placeholder="..."  />
           </div>
         </div> 
+        <div className="row">
+          <div class="col-25">    
+            <label>Start Date:</label>
+          </div>
+          <div className="col-75">
+            <input type="date" placeholder="..."  />
+          </div>
+        </div>
 
         <div className="row">
           <div class="col-25">    
@@ -50,15 +58,6 @@ function CreatePosition() {
 
         <div className="row">
           <div class="col-25">    
-            <label>Application Opening Date:</label>
-          </div>
-          <div className="col-75">
-            <input type="date" placeholder="..."  />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div class="col-25">    
             <label>Application Closing Date:</label>
           </div>
           <div className="col-75">
@@ -66,14 +65,7 @@ function CreatePosition() {
           </div>
         </div>
 
-        <div className="row">
-          <div class="col-25">    
-            <label>Job Starting Date:</label>
-          </div>
-          <div className="col-75">
-            <input type="date" placeholder="..."  />
-          </div>
-        </div>
+        
 
         <div className="row">
           <div class="col-25">    
