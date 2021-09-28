@@ -18,6 +18,7 @@ import Settings from './components/pages/Settings';
 import ApplyPosition from './components/pages/ApplyPosition';
 import testing from './components/pages/testing';
 import CompanyProfile from './components/pages/CompanyProfile';
+import Moocs from './components/pages/Moocs';
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";
@@ -48,6 +49,7 @@ function App() {
         <Route exact path ='/ApplyPosition' component={ApplyPosition}/>
         <Route exact path ='/testing' component={testing}/>
         <Route exact path ='/CompanyProfile' component={CompanyProfile}/>
+        <Route exact path ='/Moocs' component={Moocs}/>
       </Switch>
       </Router>
 
