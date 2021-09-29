@@ -8,21 +8,21 @@ function ApplyPosition() {
     <>
     <div form-wrapper>
     <div className="form-container">
-      <div class="title_container">
+      <div className="title_container">
         <h1>Position Details</h1>
         <form>
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Employer:</label>
           </div>
           <div className="col-75">
-          <input type="text" />
+          <input className="inputPosDetails" type="text" />
           </div>
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Reference Code:</label>
           </div>
           <div className="col-75">
@@ -31,7 +31,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Location:</label>
           </div>
           <div className="col-75">
@@ -40,7 +40,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Salary:</label>
           </div>
           <div className="col-75">
@@ -49,7 +49,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Job Type:</label>
           </div>
           <div className="col-75">
@@ -58,7 +58,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Start Date:</label>
           </div>
           <div className="col-75">
@@ -67,7 +67,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Sector:</label>
           </div>
           <div className="col-75">
@@ -76,7 +76,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Duties and Responsibilities:</label>
           </div>
           <div className="col-75">
@@ -85,7 +85,7 @@ function ApplyPosition() {
         </div> 
 
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Skills and Competencies</label>
           </div>
           <div className="col-75">
@@ -94,7 +94,7 @@ function ApplyPosition() {
         </div> 
                      
         <div className="row">
-          <div class="col-25">    
+          <div className="col-25">    
             <label>Minimum Requirements:</label>
           </div>
           <div className="col-75">

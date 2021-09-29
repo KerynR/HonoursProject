@@ -13,7 +13,15 @@ function CompanyProfile() {
 <table className="tblCompPos">
     <tr>
         <th>Position Name</th>
-        <th>Position Start Date</th>
+        <th>Start Date</th>
+    </tr>
+    <tr>
+        <td>Position Name</td>
+        <td>Position Start Date</td>
+    </tr>
+    <tr>
+        <td>Position Name</td>
+        <td>Position Start Date</td>
     </tr>
     <tr>
         <td>Position Name</td>
@@ -30,8 +38,11 @@ function CompanyProfile() {
 </table>
 </main>
 <aside>
-<h2>Ask us a question:</h2>
-<input type="text" />
+    <ul>
+        <h2>Ask us a question:</h2>
+        <input type="text" /><br /><br />
+        <button type="submit" className="btnAskQ">Send</button>
+    </ul>
 </aside>
 </div>
 

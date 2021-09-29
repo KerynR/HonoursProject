@@ -1,7 +1,7 @@
 .gridCompProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 500px 100px;
+    grid-template-rows: 150px 500px;
     grid-gap: 0.1em;
     }
    
@@ -62,4 +62,26 @@
       .tblCompPos th{
           color: #4B88A2;
           font-size: 25px;
+          height: 80px;
+          width: 550px;
+          text-align: center;
+      }
+
+      .tblCompPos td{
+          height: 70px;
+          width: 500px;
+      }
+
+      .btnAskQ{
+        font-size: 30px;
+        padding: 12px;
+        border-radius: 8px;
+        border: 2px solid #D3D4D9;
+        width: 100%;
+      }
+
+      .btnAskQ:hover{
+          background-color: #4B88A2;
+          color: #FFF9FB;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }

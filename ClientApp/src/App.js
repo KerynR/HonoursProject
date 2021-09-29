@@ -21,6 +21,7 @@ import CompanyProfile from './components/pages/CompanyProfile';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Vacancies from './components/pages/Vacancies';
+import Apply from './components/pages/Apply';
 
 
 /*LIGHT/DARK THEME*/ 
@@ -56,7 +57,7 @@ function App() {
         <Route exact path='/Contact' component={Contact}/>
         <Route exact path='/About' component={About}/>
         <Route exact path='/Vacancies' component={Vacancies}/>
-
+        <Route exact path='/Apply' component={Apply}/>
 
       </Switch>
       </Router>
