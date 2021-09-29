@@ -1,4 +1,4 @@
-.grid {
+.gridCompProf {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px 500px 100px;
@@ -10,13 +10,12 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .companyHeader,
-    footer {
+    .companyHeader {
     grid-column-start: 1;
     grid-column-end: 3;
     }
     
-    .grid > * {
+    .gridCompProf > * {
     background: #252627;
     color: #FFF9FB;
     display: flex;
@@ -53,4 +52,14 @@
         border-color: #4B88A2;
         border-width: 3px;
         line-height: 100px;
+      }
+
+      .tblCompPos{
+          font-size: 10px;
+          color: #FFF9FB;
+      }
+
+      .tblCompPos th{
+          color: #4B88A2;
+          font-size: 25px;
       }

@@ -23,6 +23,14 @@ function GraduateProfile() {
           <li>
           <button className="btnMoocs" variant="btn btn-success" onClick={() => history.push('/Moocs')}>View MOOCs</button>          
           </li>
+          <br />
+          <li>
+          <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Job Vacancies</button>          
+          </li>
+          <br />
+          <li>
+          <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/ViewSubmissions')}>View Submissions</button>          
+          </li>
         </ul>
         </main>
         <aside className="rightGradProf">

@@ -69,6 +69,7 @@
 
       .fa-user-circle:hover{
         color: #BB0A21;
+        cursor: pointer;
       }
 
       .btnMoocs{
@@ -84,4 +85,14 @@
 
       ul{
         list-style-type: none;
+      }
+
+      .btnViewVacancies{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+      }
+
+      .btnViewVacancies:hover{
+        background-color: #D3D4D9;
+        color: #252627;
       }

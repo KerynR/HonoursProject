@@ -6,26 +6,26 @@ import Footer from '../Footer';
 function CompanyProfile() {
   return (
     <>
-<div className="grid">
+<div className="gridCompProf">
 <header className="companyHeader">Company Profile</header>
 <main className="leftGrid"> 
 
-<table>
+<table className="tblCompPos">
     <tr>
         <th>Position Name</th>
         <th>Position Start Date</th>
     </tr>
     <tr>
-        <th>Position Name</th>
-        <th>Position Start Date</th>
+        <td>Position Name</td>
+        <td>Position Start Date</td>
     </tr>
     <tr>
-        <th>Position Name</th>
-        <th>Position Start Date</th>
+        <td>Position Name</td>
+        <td>Position Start Date</td>
     </tr>
     <tr>
-        <th>Position Name</th>
-        <th>Position Start Date</th>
+        <td>Position Name</td>
+        <td>Position Start Date</td>
     </tr>
 </table>
 </main>
@@ -34,6 +34,8 @@ function CompanyProfile() {
 <input type="text" />
 </aside>
 </div>
+
+<Footer/>
     </>
   );
 }

@@ -20,6 +20,7 @@ import Moocs from './components/pages/Moocs';
 import CompanyProfile from './components/pages/CompanyProfile';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
+import Vacancies from './components/pages/Vacancies';
 
 
 /*LIGHT/DARK THEME*/ 
@@ -54,6 +55,8 @@ function App() {
         <Route exact path ='/CompanyProfile' component={CompanyProfile}/>
         <Route exact path='/Contact' component={Contact}/>
         <Route exact path='/About' component={About}/>
+        <Route exact path='/Vacancies' component={Vacancies}/>
+
 
       </Switch>
       </Router>
