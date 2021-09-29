@@ -6,24 +6,16 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-  input[type=date], select, textarea{
+  input[type=text], select, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    
   }
-
-  input[type=checkbox], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    align-items: center;
-  }
+   
 
 /*
   .btnSignup {
@@ -41,6 +33,18 @@ h1{
     background-color: #252627;
     padding: 100px;
     
+  }
+
+  .title_container h1{
+    color: #fff9FB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+  }
+
+  .title_container label{
+    color: #fff9FB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
   }
 
   .col-25 {
@@ -68,7 +72,7 @@ h1{
     }
   }
 
-.btnApply{
+.btnSave{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
     height: 45px;
@@ -89,7 +93,7 @@ h1{
 
     
 }
-.btnApply:hover {
+.btnSave:hover {
   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -113,37 +117,46 @@ h1{
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
 }
-.btnCancel:hover {
-  background: #4B88A2;
+
+.btnCancel:hover{
+   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.btnUpdate{
+.btnDelete{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #EEEEEE;
-    height: 45px;
-    line-height: 35px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-    color: #334257;
-    font-size: 1.2em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    transition: all 0.30s ease-in-out;
+  background: #EEEEEE;
+  height: 45px;
+  line-height: 35px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: #334257;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
 }
 
-.btnUpdate:hover{
+.btnCancel:hover{
   background: #4B88A2;
-  color: #fff;
+color: #fff;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnDelete:hover{
+  background: #4B88A2;
+  color: #fff9FB;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+label{
+    color: #fff;
 }

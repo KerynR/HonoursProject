@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, Component} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import reactDOM from "react-dom";
-
-
 
 import Home from './components/pages/Home';
 import Navbar from './components/Navbar';
@@ -17,8 +15,12 @@ import GraduateProfile from './components/pages/GraduateProfile';
 import Settings from './components/pages/Settings';
 import ApplyPosition from './components/pages/ApplyPosition';
 import testing from './components/pages/testing';
-import CompanyProfile from './components/pages/CompanyProfile';
+import EditCompanyProfile from './components/pages/EditCompanyProfile';
 import Moocs from './components/pages/Moocs';
+import CompanyProfile from './components/pages/CompanyProfile';
+import Contact from './components/pages/Contact';
+import About from './components/pages/About';
+
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";
@@ -33,8 +35,7 @@ function App() {
 }
 
   return (
-      <>
-      
+      <>      
       <Router>
       <Navbar />
       <Switch>
@@ -48,8 +49,12 @@ function App() {
         <Route exact path ='/Settings' component={Settings}/>
         <Route exact path ='/ApplyPosition' component={ApplyPosition}/>
         <Route exact path ='/testing' component={testing}/>
-        <Route exact path ='/CompanyProfile' component={CompanyProfile}/>
+        <Route exact path ='/EditCompanyProfile' component={EditCompanyProfile}/>
         <Route exact path ='/Moocs' component={Moocs}/>
+        <Route exact path ='/CompanyProfile' component={CompanyProfile}/>
+        <Route exact path='/Contact' component={Contact}/>
+        <Route exact path='/About' component={About}/>
+
       </Switch>
       </Router>
 

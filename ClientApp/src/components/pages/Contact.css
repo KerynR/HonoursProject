@@ -1,27 +1,23 @@
-.gradProfHeader{
-    color: #000;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 200px 100px;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 150px 400px 400px;
     grid-gap: 1em;
     }
     
-    .gradProfHeader,
+    .AboutUsHeader,
     footer {
     grid-column-start: 1;
     grid-column-end: 3;
     }
     
     .grid > * {
-    background: #d3d4d9;
+    background: #252627;
     display: flex;
     align-items: center;
     justify-content: center;
     }
 
-    h3{
-        color: #000;
+    .AboutUsHeader{
+        font-size: 80px;
     }

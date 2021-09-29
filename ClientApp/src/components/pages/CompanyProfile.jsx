@@ -1,64 +1,40 @@
 import React from 'react';
 import './CompanyProfile.css';
-
+import MainSection from '../MainSection';
+import Footer from '../Footer';
 
 function CompanyProfile() {
   return (
     <>
-        <div form-wrapper>
-    <div className="form-container">
-      <div class="title_container">
-        <h1>Company Profile</h1>
-        <form >
+<div className="grid">
+<header className="companyHeader">Company Profile</header>
+<main className="leftGrid"> 
 
-        <div className="row">
-          <div class="col-25">    
-            <label>Company Name:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div class="col-25">    
-            <label>Sector:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div>
-                     
-        <div className="row">
-          <div class="col-25">          
-            <label>Vision:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div>
-
-        <div className="row">
-          <div class="col-25">          
-            <label>Mission:</label>
-          </div>
-          <div className="col-75">
-            <input type="text" placeholder="..."  />
-          </div>
-        </div>
-
-        <input className="btnSave" type="submit" value="Save" />
-        <input className="btnDelete" type="submit" value="Delete Profile" />
-        <input className="btnCancel" type="submit" value="Cancel" />
-
-        </form>
-        
-      </div>
-      </div>
-    </div>
-    
+<table>
+    <tr>
+        <th>Position Name</th>
+        <th>Position Start Date</th>
+    </tr>
+    <tr>
+        <th>Position Name</th>
+        <th>Position Start Date</th>
+    </tr>
+    <tr>
+        <th>Position Name</th>
+        <th>Position Start Date</th>
+    </tr>
+    <tr>
+        <th>Position Name</th>
+        <th>Position Start Date</th>
+    </tr>
+</table>
+</main>
+<aside>
+<h2>Ask us a question:</h2>
+<input type="text" />
+</aside>
+</div>
     </>
-    
   );
 }
 

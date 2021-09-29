@@ -10,14 +10,14 @@ function ApplyPosition() {
     <div className="form-container">
       <div class="title_container">
         <h1>Position Details</h1>
-        <form action="action_page.php">
+        <form>
 
         <div className="row">
           <div class="col-25">    
             <label>Employer:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -26,7 +26,7 @@ function ApplyPosition() {
             <label>Reference Code:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -35,7 +35,7 @@ function ApplyPosition() {
             <label>Location:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -44,7 +44,7 @@ function ApplyPosition() {
             <label>Salary:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -53,7 +53,7 @@ function ApplyPosition() {
             <label>Job Type:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -62,7 +62,7 @@ function ApplyPosition() {
             <label>Start Date:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -71,7 +71,7 @@ function ApplyPosition() {
             <label>Sector:</label>
           </div>
           <div className="col-75">
-          <label>______________________________</label>
+          <input type="text" />
           </div>
         </div> 
 
@@ -80,11 +80,7 @@ function ApplyPosition() {
             <label>Duties and Responsibilities:</label>
           </div>
           <div className="col-75">
-            <ul>
-                <li>_____________</li>
-                <li>_____________</li>
-                <li>_____________</li>
-            </ul>
+          <input type="text" />
           </div>
         </div> 
 
@@ -93,11 +89,7 @@ function ApplyPosition() {
             <label>Skills and Competencies</label>
           </div>
           <div className="col-75">
-            <ul>
-                <li>_____________</li>
-                <li>_____________</li>
-                <li>_____________</li>
-            </ul>
+          <input type="text" />
           </div>
         </div> 
                      
@@ -106,16 +98,13 @@ function ApplyPosition() {
             <label>Minimum Requirements:</label>
           </div>
           <div className="col-75">
-          <ul>
-                <li>_____________</li>
-                <li>_____________</li>
-                <li>_____________</li>
-            </ul>
+          <input type="text" />
           </div>
         </div> 
 
         
         <input className="btnApply" type="submit" value="Apply" />
+        <input className="btnUpdate" type="submit" value="Update" />
         <input className="btnCancel" type="submit" value="Cancel" />
 
         </form>

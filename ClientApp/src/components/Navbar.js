@@ -35,7 +35,6 @@ function Navbar() {
           <Link to="/" className='navbar-logo' onClick ={closeMobileMenu}>
             XYZ Recruitment
             <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-
           </Link>
             <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -52,17 +51,19 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                  <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                  <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>
                     Contact
                   </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/Signup' className='nav-links-mobile' onClick={closeMobileMenu}>
+                <Link to='/testing' className='nav-links' onClick={closeMobileMenu}>
                   Register
                 </Link>
               </li>
+              
             </ul>
-            {button && <Button buttonStyle='btn--outline'>REGISTER</Button>}
+            
+            
         </div>
       </nav>
     </>

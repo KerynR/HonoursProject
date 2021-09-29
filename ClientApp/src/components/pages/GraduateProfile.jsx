@@ -5,10 +5,9 @@ import Footer from '../Footer';
 function GraduateProfile() {
   return (
     <>
-    <div>
-      <h1>Graduate Profile</h1>
-      
-
+    <div className="gridGradProf">
+      <header className="gradProfHeader">Graduate Profile</header>
+      <main className="leftGradProf">
         <div className="row">
             <div class="col-25">
                 <label>Upload CV</label>
@@ -27,18 +26,20 @@ function GraduateProfile() {
             </div>
         </div>
 
-      <h3>Don't have a CV? Create one using: </h3>
+        <h3>Don't have a CV? Create one using: </h3>
       <a href="https://www.coolfreecv.com/builder-creator-cv"></a>
-        
-      <h3>Tips for creating a good CV:</h3>
-      <ul>
-          <li>tip number 1</li>
-          <li>tip number 2</li>
-          <li>tip number 3</li>
-          <li>tip number 4</li>
-          <li>tip number 5</li>
-      </ul>
+      </main>
 
+    <aside className="rightGradProf">
+      <h3>Top 5 Tips for Creating a CV:</h3>
+      <ul>
+          <li>Include two forms of contact, email and mobile</li>
+          <li>Don’t include acronyms or organisation related terminology</li>
+          <li>Explain any gaps in your CV, and be sure to highlight the skills that you have developed</li>
+          <li>Use the right ‘keywords’ to ensure your CV is picked up in word searches</li>
+          <li>Spelling and grammar check</li>
+      </ul>
+    </aside>
     </div>
     <Footer/>
     </>
