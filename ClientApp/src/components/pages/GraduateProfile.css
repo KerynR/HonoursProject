@@ -1,12 +1,15 @@
-.gradProfHeader{
-    color: #000;
-}
-
-.grid {
+.gridGradProf {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 200px 100px;
-    grid-gap: 1em;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 150px 500px 200px;
+    grid-gap: 0.1em;
+    }
+
+    .gradProfHeader{
+        font-size: 80px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: #FFF9FB;
     }
     
     .gradProfHeader,
@@ -15,13 +18,70 @@
     grid-column-end: 3;
     }
     
-    .grid > * {
-    background: #d3d4d9;
+    .gridGradProf > * {
+    background: #252627;
     display: flex;
     align-items: center;
     justify-content: center;
     }
 
-    h3{
-        color: #000;
+    .leftGradProf{
+        color: #FFF9FB;
     }
+
+    .leftGradProf button{
+        font-size: 30px;
+        padding: 30px 15px;
+        background-color: #4B88A2;
+        border-radius: 8px;
+        border: 2px solid #396a80;
+    }
+
+    .cvTipsh2{
+        color: #4B88A2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 45px;
+        font-style:oblique;
+        list-style-type: none;
+    }
+
+    .cvTips{
+        text-align: center;
+        color: #FFF9FB;        
+        font-size: 20px;
+        list-style-type: none;
+    }
+    
+
+    input[type=file], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #4B88A2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+
+      .fa-user-circle{
+          
+          padding: 10px 20px 10px;
+      }
+
+      .fa-user-circle:hover{
+        color: #BB0A21;
+      }
+
+      .btnMoocs{
+          background-color: #4B88A2;
+          color: #FFF9FB;
+
+      }
+
+      .btnMoocs:Hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      ul{
+        list-style-type: none;
+      }

@@ -1,23 +1,39 @@
-.grid {
+.gridContact {
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 150px 400px 400px;
     grid-gap: 1em;
     }
     
-    .AboutUsHeader,
+    .ContactUsHeader,
     footer {
     grid-column-start: 1;
     grid-column-end: 3;
     }
     
-    .grid > * {
+    .gridContact > * {
     background: #252627;
     display: flex;
     align-items: center;
     justify-content: center;
     }
 
-    .AboutUsHeader{
-        font-size: 80px;
+    .ContactUsHeader{
+        text-align: center;
+        font-size: 60px;
+        padding-bottom: 15px;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .fa-facebook-official{
+        color: #fff;
+    }
+
+    .contactLeft li{
+        color: #fff;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
     }

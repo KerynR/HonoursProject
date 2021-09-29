@@ -4,6 +4,17 @@ h1{
     padding-bottom: 15px;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  display: block;
 }
 
   input[type=date], select, textarea{
@@ -24,17 +35,6 @@ h1{
     resize: vertical;
     align-items: center;
   }
-
-/*
-  .btnSignup {
-    background-color: #EEEEEE;
-    color: #334257;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }*/
 
   .form-container {
     border-radius: 5px;

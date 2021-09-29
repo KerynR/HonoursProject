@@ -17,7 +17,7 @@ function Moocs() {
       </div>
       <br /><br />
       <div className="grid-item">
-        <table >
+        <table className="tblMoocs">
           <tr>
             <th>Company Name</th>
             <th>Cost</th>

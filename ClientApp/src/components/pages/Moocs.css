@@ -36,6 +36,14 @@ input[type=text] {
     float: inherit;
     width: 100px;
     height: 35px;
+    border-radius: 8px;
+    border: 2px solid #396a80;
+  }
+
+  .btnSearchMooc:hover{
+    background-color: #4B88A2;
+    color: #FFF9FB;
+    
   }
 
   @media screen and (max-width: 600px) {
@@ -52,10 +60,10 @@ input[type=text] {
     }
   }
 
-  table{
+  .tblMoocs{
     width: auto;
   }
-table, th, td{
+.tblMoocs, th, td{
   border: 1px solid black;
   padding-left: 10px;
   padding-right: 10px;
