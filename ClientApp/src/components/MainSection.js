@@ -24,13 +24,13 @@ function MainSection() {
             <h2>Bridging the gap</h2>
 
             <p>Welcome to XYZ! We specialise in bridging the gap between graduates and the workplace. </p>
-          
+          <br/>
           <ul>
             <li>
             <Link to='/testing' className='HomeBtns' onClick={closeMobileMenu}>
                   Login
             </Link>
-            </li>
+            </li><br/><br/>
             <li>
             <Link to='/testing' className='HomeBtns' onClick={closeMobileMenu}>
                   Register

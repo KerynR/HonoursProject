@@ -1,27 +1,44 @@
-
-
-.grid-container {
+.gridMoocs {
   display: grid;
-  grid-template-columns: auto;
-  background-color: #252627;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(211, 212, 217, 1);
-  border: 1px solid #252627;
-  padding: 5px;
-  font-size: 18px;
-}
-h1{
-  color: #000;
-  font-family: 'Noto Sans Display', sans-serif;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 400px;
+  grid-gap: 0.1em;
+  }
+  
+  .moocsHeader,
+  footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  }
+  
+  .gridMoocs > * {
+  background: #252627;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 
-}
-label{
-  font-size: 20px;
-  color: #000;
-  display: inline-block;
-}
+  .moocsHeader{
+      text-align: center;
+      font-size: 60px;
+      padding-bottom: 15px;
+      color: #fff;
+      font-family: 'Noto Sans Display', sans-serif;
+  }
+
+  .tblVacancies{
+      color: #fff;
+  }
+
+  tr{
+      font-size: 20px;
+  }
+
+  table tr td, th{
+      border-color: #4B88A2;
+      color: #FFF9FB;
+  }
+
 
 .moocSearch {
     padding: 6px;
