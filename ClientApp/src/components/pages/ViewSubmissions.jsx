@@ -17,11 +17,8 @@ function ViewSubmissions() {
         <aside>
         Sidebar
         </aside>
-        <footer>
-        Footer
-        </footer>
         </div>
-
+      <Footer/>
     </>
   );
 

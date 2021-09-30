@@ -12,7 +12,7 @@ function Moocs() {
     <div className="grid-container">
       <div className="grid-item">
         <label>Seach for MOOC by provider:</label>  
-        <input id="search" type="text" placeholder="Search by name or link"/>
+        <input className="moocSearch" id="search" type="text" placeholder="Search by name or link"/>
         <button for="search" className="btnSearchMooc">Search</button>
       </div>
       <br /><br />
@@ -60,6 +60,7 @@ function Moocs() {
           </tr>
         </table>
       </div>
+      <Footer/>
     </div>
     </>
   );

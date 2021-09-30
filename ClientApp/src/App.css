@@ -34,11 +34,28 @@
   font-size: 100px;
 }*/
 
-.sign-up {
+/*.sign-up {
   /*background-image: url('/images/prescription.png');*/
-  background-position: center;
+ /* background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: Black;
   font-size: 100px;
 }
+*/
+
+.HomeBtns{
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 20px 20px;
+  border-color: #fff;
+      
+}
+
+.HomeBtns:hover{
+  font-size: 35px;
+  cursor: pointer;
+}
+
+

@@ -17,7 +17,7 @@ function EditProfile() {
             <label>First Name:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+            <input type="text" placeholder="e.g. Harry"  />
           </div>
         </div> 
         <div className="row">
@@ -25,7 +25,7 @@ function EditProfile() {
             <label>Last Name:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+            <input type="text" placeholder="e.g. Potter"  />
           </div>
         </div> 
         <div className="row">
@@ -33,7 +33,7 @@ function EditProfile() {
             <label>Gender:</label>
           </div>
           <div className="col-75">
-            <input type="text" placeholder="..."  />
+            <input type="text" placeholder="e.g. Male"  />
           </div>
         </div>
         <div className="row">
@@ -41,7 +41,7 @@ function EditProfile() {
             <label>Cellphone:</label>
           </div>
           <div className="col-75">
-            <input type="tel" placeholder="cellphone number"  />
+            <input type="tel" placeholder="e.g. 093 463 4664"  />
           </div>
         </div>
         
@@ -50,7 +50,7 @@ function EditProfile() {
             <label>Email:</label>
           </div>
           <div className="col-75">
-            <input type="email" placeholder="email"  />
+            <input type="email" placeholder="e.g. harrypotter@gmail.com"  />
           </div>
         </div>
                   

@@ -154,3 +154,8 @@ body{
 {
     display: inline-block;
 }
+
+.listOptions ul, li{
+  font-size: 12px;
+  color: #fff ;
+}

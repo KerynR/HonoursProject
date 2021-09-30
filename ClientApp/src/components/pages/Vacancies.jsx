@@ -80,11 +80,8 @@ function Vacancies() {
             </tr>
         </table>
         </main>
-        
-        <footer>
-        Footer
-        </footer>
         </div>
+        <Footer/>
     </>
   );
 }

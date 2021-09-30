@@ -1,8 +1,8 @@
 .grid {
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 150px 400px 400px;
-    grid-gap: 1em;
+    grid-template-rows: 150px 400px;
+    grid-gap: 0.1em;
     }
     
     .AboutUsHeader,
@@ -20,6 +20,6 @@
 
     .AboutUsHeader{
         font-size: 80px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+        font-family: 'Noto Sans Display', sans-serif;
+        color: #FFF9FB;
     }

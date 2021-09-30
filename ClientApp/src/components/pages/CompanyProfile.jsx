@@ -7,7 +7,10 @@ function CompanyProfile() {
   return (
     <>
 <div className="gridCompProf">
-<header className="companyHeader">Company Profile</header>
+    
+<header className="companyHeader">
+<i class="fa fa-user-circle" aria-hidden="true"></i>
+    Company Profile</header>
 <main className="leftGrid"> 
 
 <table className="tblCompPos">
@@ -37,7 +40,7 @@ function CompanyProfile() {
     </tr>
 </table>
 </main>
-<aside>
+<aside className="RightCompProf">
     <ul>
         <h2>Ask us a question:</h2>
         <input type="text" /><br /><br />

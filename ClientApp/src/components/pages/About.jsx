@@ -16,10 +16,9 @@ function About() {
         <aside>
         Sidebar
         </aside>
-        <footer>
-        Footer
-        </footer>
+        
         </div>
+        <Footer/>
     </>
   );
 }

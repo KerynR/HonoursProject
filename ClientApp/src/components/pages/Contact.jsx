@@ -24,10 +24,8 @@ function Contact() {
           <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
         </ul>
         </aside>
-        <footer>
-        Footer
-        </footer>
         </div>
+        <Footer/>
     </>
   );
 }

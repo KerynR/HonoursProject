@@ -7,7 +7,7 @@
    
     .companyHeader{
         font-size: 80px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Noto Sans Display', sans-serif;
     }
 
     .companyHeader {
@@ -35,11 +35,7 @@
         border-width: 3px;
     }
 
-    h2{
-        text-align: center;
-        padding-top: 10px;
-    }
- 
+
     input[type=text], select, textarea{
         width: 100%;
         padding: 12px;
@@ -84,4 +80,11 @@
           background-color: #4B88A2;
           color: #FFF9FB;
           box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      .RightCompProf{
+        text-align: center;
+        padding-top: 5px;
+        color: #4B88A2;
+        font-family: 'Noto Sans Display', sans-serif;
       }

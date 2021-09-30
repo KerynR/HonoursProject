@@ -1,8 +1,8 @@
 .gridContact {
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 150px 400px 400px;
-    grid-gap: 1em;
+    grid-template-rows: 150px 400px;
+    grid-gap: 0.1em;
     }
     
     .ContactUsHeader,
@@ -23,7 +23,7 @@
         font-size: 60px;
         padding-bottom: 15px;
         color: #fff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Noto Sans Display', sans-serif;
 
     }
 

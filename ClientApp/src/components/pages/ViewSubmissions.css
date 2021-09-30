@@ -1,7 +1,7 @@
 .gridViewSub {
   display: grid;
   grid-template-columns: 75% 25%;
-  grid-template-rows: 150px 400px 400px;
+  grid-template-rows: 150px 400px;
   grid-gap: 0.1em;
   }
   
@@ -21,6 +21,6 @@
   .viewSubsHeader{
       font-size: 80px;
       color: #fff;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Noto Sans Display', sans-serif;
 
   }

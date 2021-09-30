@@ -1,13 +1,13 @@
 .gridGradProf {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 150px 500px 200px;
+    grid-template-rows: 150px 500px;
     grid-gap: 0.1em;
     }
 
     .gradProfHeader{
         font-size: 80px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Noto Sans Display', sans-serif;
         text-align: center;
         color: #FFF9FB;
     }
@@ -43,6 +43,8 @@
         font-size: 45px;
         font-style:oblique;
         list-style-type: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .cvTips{

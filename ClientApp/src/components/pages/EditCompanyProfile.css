@@ -3,8 +3,8 @@ h1{
     font-size: 60px;
     padding-bottom: 15px;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    font-family: 'Noto Sans Display', sans-serif;
+  }
 
   input[type=text], select, textarea{
     width: 100%;

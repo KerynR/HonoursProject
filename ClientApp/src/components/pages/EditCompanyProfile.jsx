@@ -1,5 +1,6 @@
 import React from 'react';
 import './EditCompanyProfile.css';
+import Footer from '../Footer';
 
 
 function EditCompanyProfile() {
@@ -56,7 +57,7 @@ function EditCompanyProfile() {
       </div>
       </div>
     </div>
-    
+    <Footer/>
     </>
     
   );

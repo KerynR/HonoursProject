@@ -45,10 +45,9 @@ function GraduateProfile() {
       </ul>
 
         </aside>
-        <footer>
-        Footer
-        </footer>
+        
       </div>
+      <Footer/>
     </>
   );
 }

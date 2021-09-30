@@ -85,16 +85,20 @@ function testing() {
         <div className="group">
           
         <label >Please select the option that applies to you:</label>
-         
-          <input id="cbGraduate" type="checkbox" className="cbGraduate" />
+         <ul>
+           <li className="listOptions">
+          {/*<input id="cbGraduate" type="checkbox" className="cbGraduate" />*/}
           <label for="cbGraduate">Graduate</label><br />
-         
-          <input id="cbRecruiter" type="checkbox" className="cbRecruiter"/>
+          </li>
+          <li>
+          {/*<input id="cbRecruiter" type="checkbox" className="cbRecruiter"/>*/}
           <label for="cbRecruiter">Recruiter</label><br />
-          
-          <input id="cbCompany" type="checkbox" className="cbCompany" />
+          </li>
+          <li>
+          {/*<input id="cbCompany" type="checkbox" className="cbCompany" />*/}
           <label for="cbCompany">Company</label>
-          
+          </li>
+          </ul>
          
         </div>
         <div className="group">
