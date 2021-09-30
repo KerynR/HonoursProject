@@ -12,11 +12,34 @@ function ViewSubmissions() {
         View Submissions
         </header>
         <main>
-        Blog Post
+          <table className="tblViewSub">
+          <tr>
+                <th>Position Name</th>                
+                <th>Start Date</th>
+            </tr>
+            <tr>
+                <td>Example 1</td>
+                <td>2021-09-30</td>                
+            </tr>
+            <tr>
+                <td>Example 1</td>
+                <td>2021-10-30</td>                
+            </tr>
+            <tr>
+                <td>Example 1</td>
+                <td>2021-10-12</td>                
+            </tr>
+            <tr>
+                <td>Example 1</td>
+                <td>2021-11-03</td>                
+            </tr>
+            <tr>
+                <td>Example 1</td>
+                <td>2021-11-21</td>                
+            </tr>
+          </table>
         </main>
-        <aside>
-        Sidebar
-        </aside>
+        
         </div>
       <Footer/>
     </>

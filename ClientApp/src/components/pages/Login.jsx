@@ -6,13 +6,11 @@ function Login() {
   return (
     <>
       <body>
-          
-      
     <div form-wrapper>
     <div className="form-container">
-      <div class="title_container">
-        <h1>Login</h1>
-        <form action="action_page.php">
+      <div className="title_container">
+        <h1 >Login</h1>
+        <form >
           
         <div className="row">
           <div class="col-25">    
@@ -41,11 +39,8 @@ function Login() {
         <br />
         <p>or</p>
         <br />
-        <p>Sign in with</p>
-
-            <a href="#"><i class="fa fa-google"></i></a>
-            <a href="#"><i class="fa fa-facebook-official"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        
+           
         </form>
         
       </div>

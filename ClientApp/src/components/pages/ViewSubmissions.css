@@ -1,6 +1,6 @@
 .gridViewSub {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 100%;
   grid-template-rows: 150px 400px;
   grid-gap: 0.1em;
   }

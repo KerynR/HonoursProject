@@ -1,5 +1,6 @@
 import React from 'react';
 import './testing.css';
+import Footer from '../Footer';
 
 //GOOGLE LOGIN
 import {GoogleLogin } from 'react-google-login';

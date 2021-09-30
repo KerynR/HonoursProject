@@ -86,10 +86,9 @@ h1{
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
-    transition: all 0.30s ease-in-out;
-
-    
+    transition: all 0.30s ease-in-out; 
 }
+
 .btnApply:hover {
   background: #4B88A2;
   color: #fff;
@@ -114,9 +113,8 @@ h1{
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
 }
+
 .btnCancel:hover {
   background: #4B88A2;
   color: #fff;
