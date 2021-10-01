@@ -22,5 +22,12 @@
       font-size: 80px;
       color: #fff;
       font-family: 'Noto Sans Display', sans-serif;
+  }
 
+  .tblViewSub{
+    text-align: center;
+  }
+
+  .tblViewSub th{
+    color: #4B88b4;
   }

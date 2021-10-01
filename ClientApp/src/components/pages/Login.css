@@ -1,9 +1,18 @@
-.title_container h1{
+.form-container h1{
     text-align: center;
     font-size: 60px;
     padding-bottom: 15px;
     color: #4B88A2;
     font-family: 'Noto Sans Display', sans-serif;
+  }
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
   }
 
   input[type=email], select, textarea{
@@ -111,7 +120,7 @@
     
 }
 .btnLogin:hover {
-  background: #1F2421;
+  background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

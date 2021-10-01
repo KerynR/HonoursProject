@@ -5,8 +5,7 @@
     grid-gap: 0.1em;
     }
     
-    .AboutUsHeader,
-    footer {
+    .AboutUsHeader{
     grid-column-start: 1;
     grid-column-end: 3;
     }
@@ -21,7 +20,7 @@
     .AboutUsHeader{
         font-size: 80px;
         font-family: 'Noto Sans Display', sans-serif;
-        color: #FFF9FB;
+        color: #4B88A2;
     }
 
     .mainAbout{

@@ -89,3 +89,18 @@
     width: 100%;
   }
 }
+
+
+.btnRegisterHome, .btnLoginHome{
+  padding: 16px 16px 16px;
+  width: 100px;
+  background-color: transparent;
+  color: #FFF9FB;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.btnRegisterHome:hover, .btnLoginHome:hover{
+  background-color: #4B88A2;
+  cursor: pointer;
+}

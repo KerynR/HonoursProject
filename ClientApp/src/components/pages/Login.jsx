@@ -1,8 +1,27 @@
 import React from 'react';
 import './Login.css';
 import Footer from '../Footer';
+import history from '../history';
+
+
+{/*//GOOGLE LOGIN
+import {GoogleLogin } from 'react-google-login';
+
+//my clientId from google
+const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
+
+function testing() {
+
+  const onSuccess = ( res ) => {
+    console.log('[Login Success] currentUser:', res.profileObj);
+  };
+
+  const onFailure = ( res ) => {
+    console.log('[Login Failed] currentUser:', res);
+  };*/}
 
 function Login() {
+  
   return (
     <>
       <body>
@@ -10,6 +29,7 @@ function Login() {
     <div className="form-container">
       <div className="title_container">
         <h1 >Login</h1>
+        <h3>Don't have an account? <a href="/Signup" >Register Here</a> </h3>
         <form >
           
         <div className="row">
@@ -17,7 +37,7 @@ function Login() {
             <label>Email:</label>
           </div>
           <div className="col-75">
-            <input type="email" placeholder="email"  />
+            <input type="email" placeholder="Enter your email"  />
           </div>
         </div>
                      
@@ -26,22 +46,26 @@ function Login() {
             <label>Password:</label>
           </div>
           <div className="col-75">
-            <input type="password" placeholder="enter password"  />
+            <input type="password" placeholder="Enter your password"  />
           </div>
         </div>
         <input className="btnLogin" type="submit" value="Login" />
+        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
         
-        <input type="checkbox" /><p >Remember Me</p>
+       
 
-        <a href="#">Forgot Password</a>
-        <br />
-        <p  className="">Don't have an account?</p><a href="#">Sign up here</a>
-        <br />
-        <p>or</p>
-        <br />
-        
-           
-        </form>
+        {/*<div>
+          <GoogleLogin className="btnGoogle"
+            clientId={clientId}
+            buttonText="Sign Up using Google"
+            onSuccess={onSuccess}
+            onFailure={onFailure}
+            cookiePolicy={'single_host_origin'}
+            style={{ marginTop: '100px' }}
+            isSignedIn={true}
+            />
+        </div>*/}
+    </form>
         
       </div>
       </div>

@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import './MainSection.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import history from './history';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
-
-/**<img src='/images/home.png' /> */
 function MainSection() {
 
   const [click, setClick] = useState(false);
@@ -27,14 +27,10 @@ function MainSection() {
           <br/>
           <ul>
             <li>
-            <Link to='/testing' className='HomeBtns' onClick={closeMobileMenu}>
-                  Login
-            </Link>
-            </li><br/><br/>
+            <button className="btnRegisterHome" variant="btn btn-success" onClick={() => history.push('/Signup')}>Register</button>
+            </li><br/>
             <li>
-            <Link to='/testing' className='HomeBtns' onClick={closeMobileMenu}>
-                  Register
-            </Link>
+            <button className="btnLoginHome" variant="btn btn-success" onClick={() => history.push('/Login')}>Login</button>
             </li>
           </ul>
           </div>

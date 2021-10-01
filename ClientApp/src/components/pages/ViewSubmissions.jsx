@@ -16,26 +16,32 @@ function ViewSubmissions() {
           <tr>
                 <th>Position Name</th>                
                 <th>Start Date</th>
+                <th>Click to view</th>
             </tr>
             <tr>
                 <td>Example 1</td>
-                <td>2021-09-30</td>                
+                <td>2021-09-30</td>  
+                <td>View</td>               
             </tr>
             <tr>
                 <td>Example 1</td>
-                <td>2021-10-30</td>                
+                <td>2021-10-30</td>
+                <td>View</td>               
             </tr>
             <tr>
                 <td>Example 1</td>
-                <td>2021-10-12</td>                
+                <td>2021-10-12</td>   
+                <td>View</td>             
             </tr>
             <tr>
                 <td>Example 1</td>
-                <td>2021-11-03</td>                
+                <td>2021-11-03</td> 
+                <td>View</td>               
             </tr>
             <tr>
                 <td>Example 1</td>
-                <td>2021-11-21</td>                
+                <td>2021-11-21</td>  
+                <td>View</td>              
             </tr>
           </table>
         </main>
