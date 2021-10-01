@@ -4,24 +4,23 @@ import Footer from '../Footer';
 import history from '../history';
 
 
-{/*//GOOGLE LOGIN
+//GOOGLE LOGIN
 import {GoogleLogin } from 'react-google-login';
 
 //my clientId from google
 const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
 
-function testing() {
 
+function Login() {
+  
   const onSuccess = ( res ) => {
     console.log('[Login Success] currentUser:', res.profileObj);
   };
 
   const onFailure = ( res ) => {
     console.log('[Login Failed] currentUser:', res);
-  };*/}
+  };
 
-function Login() {
-  
   return (
     <>
       <body>
@@ -50,11 +49,10 @@ function Login() {
           </div>
         </div>
         <input className="btnLogin" type="submit" value="Login" />
-        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
-        
+                
        
 
-        {/*<div>
+        <div>
           <GoogleLogin className="btnGoogle"
             clientId={clientId}
             buttonText="Sign Up using Google"
@@ -64,7 +62,10 @@ function Login() {
             style={{ marginTop: '100px' }}
             isSignedIn={true}
             />
-        </div>*/}
+        </div>
+
+        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
+
     </form>
         
       </div>

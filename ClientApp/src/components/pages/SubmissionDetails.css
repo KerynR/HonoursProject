@@ -1,0 +1,33 @@
+.gridSubDetails {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 400px;
+    grid-gap: 0.1em;
+    }
+    
+    .viewSubDetailsHeader,
+    footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    .gridSubDetails > * {
+    background: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+    .viewSubDetailsHeader{
+        font-size: 80px;
+        color: #4B88A1;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+  
+    .tblSubDetails{
+      text-align: center;
+    }
+  
+    .tblSubDetails th{
+      color: #4B88b4;
+    }

@@ -2,8 +2,23 @@ import React from 'react';
 import './Signup.css';
 import history from '../history';
 
+//GOOGLE LOGIN
+import {GoogleLogin } from 'react-google-login';
+
+//my clientId from google
+const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
+
 
 function Signup() {
+
+  const onSuccess = ( res ) => {
+    console.log('[Login Success] currentUser:', res.profileObj);
+  };
+
+  const onFailure = ( res ) => {
+    console.log('[Login Failed] currentUser:', res);
+  };
+
   return (
     <div form-wrapper>
     <div className="form-container">
@@ -66,6 +81,17 @@ function Signup() {
             </div>
           </div>          
            <input className="btnSignup" type="submit" value="Register" />
+            <div>
+              <GoogleLogin className="btnGoogle"
+                clientId={clientId}
+                buttonText="Sign In using Google"
+                onSuccess={onSuccess}
+                onFailure={onFailure}
+                cookiePolicy={'single_host_origin'}
+                style={{ marginTop: '100px' }}
+                isSignedIn={true}
+                />
+            </div>
            <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
           </form>
         </div>

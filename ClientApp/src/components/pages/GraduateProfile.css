@@ -1,7 +1,7 @@
 .gridGradProf {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 150px 500px;
+    grid-template-rows: 150px auto;
     grid-gap: 0.1em;
     }
 
@@ -27,6 +27,8 @@
 
     .leftGradProf{
         color: #FFF9FB;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .leftGradProf button{
@@ -77,6 +79,7 @@
       .btnMoocs{
           background-color: #4B88A2;
           color: #FFF9FB;
+          width: 100%;
 
       }
 
@@ -89,12 +92,46 @@
         list-style-type: none;
       }
 
-      .btnViewVacancies{
+      .btnViewCV{
         background-color: #4B88A2;
         color: #FFF9FB;
+        width: 100%;
       }
 
-      .btnViewVacancies:hover{
+      .btnViewCV:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnEditProfile{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnEditProfile:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnDeleteGradProf{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnDeleteGradProf:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnViewSubmissions{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+      
+      .btnViewSubmissions:hover{
         background-color: #D3D4D9;
         color: #252627;
       }

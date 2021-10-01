@@ -19,17 +19,28 @@ function GraduateProfile() {
         <main className="leftGradProf">
         <ul>
           <li>Upload CV:</li><br /><input type="file" placeholder="Upload"  />
-          <br /><br />          
+          <br /><br />  
+          
+          <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload"  />
+          <br /><br />
+          <li>
+          <button className="btnEditProfile" variant="btn btn-success" onClick={() => history.push('/EditProfile')}>Edit Profile</button>          
+          </li>
+          <br />        
           <li>
           <button className="btnMoocs" variant="btn btn-success" onClick={() => history.push('/Moocs')}>View MOOCs</button>          
           </li>
           <br />
           <li>
-          <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Job Vacancies</button>          
+          <button className="btnViewCV" variant="btn btn-success" onClick={() => history.push('/')}>View CV</button>          
           </li>
           <br />
           <li>
-          <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/ViewSubmissions')}>View Submissions</button>          
+          <button className="btnViewSubmissions" variant="btn btn-success" onClick={() => history.push('/ViewSubmissions')}>View Submissions</button>          
+          </li>
+          <br />
+          <li>
+          <button className="btnDeleteGradProf" variant="btn btn-success" onClick={() => history.push('/')}>Delete Profile</button>          
           </li>
         </ul>
         </main>

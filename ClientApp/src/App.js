@@ -22,7 +22,9 @@ import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Vacancies from './components/pages/Vacancies';
 import Apply from './components/pages/Apply';
-
+import VacancyInfo from './components/pages/VacancyInfo';
+import EditVacancy from './components/pages/EditVacancy';
+import SubmissionDetails from './components/pages/SubmissionDetails';
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";
@@ -58,6 +60,9 @@ function App() {
         <Route exact path='/About' component={About}/>
         <Route exact path='/Vacancies' component={Vacancies}/>
         <Route exact path='/Apply' component={Apply}/>
+        <Route exact path='/VacancyInfo' component={VacancyInfo}/>
+        <Route exact path='/EditVacancy' component={EditVacancy}/>
+        <Route exact path='/SubmissionDetails' component={SubmissionDetails}/>
 
       </Switch>
       </Router>

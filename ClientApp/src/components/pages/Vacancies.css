@@ -1,7 +1,7 @@
 .gridVacancies {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 400px;
+    grid-template-rows: 150px 800px;
     grid-gap: 0.1em;
     }
     
@@ -20,7 +20,7 @@
 
     .vacanciesHeader{
         text-align: center;
-        font-size: 60px;
+        font-size: 7em;
         padding-bottom: 15px;
         color: #fff;
         font-family: 'Noto Sans Display', sans-serif;
@@ -28,6 +28,7 @@
 
     .tblVacancies{
         color: #fff;
+        
     }
 
     tr{
@@ -36,4 +37,16 @@
 
     table tr td, th{
         border-color: #4B88A2;
+        font-size: 1em;
+    }
+
+    .vacanciesWrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        padding-top: 150px;
+    }
+
+    .searchTopGrid{
+        color: #fff;
     }

@@ -14,38 +14,65 @@ function ViewSubmissions() {
         <main>
           <table className="tblViewSub">
           <tr>
-                <th>Position Name</th>                
-                <th>Start Date</th>
-                <th>Click to view</th>
+                <th>First Name</th>                
+                <th>Last Name</th>
+                <th>Motivation</th>
+                <th>CV URL</th>
+                <th>View Graduate Profile</th>
+                <th>Approve Application</th>
+                <th>Reject Application</th>
+
             </tr>
             <tr>
-                <td>Example 1</td>
-                <td>2021-09-30</td>  
-                <td>View</td>               
+                <td></td>
+                <td></td>   
+                <td></td>
+                <td><a href=""></a></td>    
+                <td><button>View</button></td>
+                <td><button>Approve</button></td>   
+                <td><button>Reject</button></td>           
             </tr>
             <tr>
-                <td>Example 1</td>
-                <td>2021-10-30</td>
-                <td>View</td>               
+                <td></td>
+                <td></td>    
+                <td></td>
+                <td><a href=""></a></td> 
+                <td><button>View</button></td>
+                <td><button>Approve</button></td>   
+                <td><button>Reject</button></td>   
             </tr>
             <tr>
-                <td>Example 1</td>
-                <td>2021-10-12</td>   
-                <td>View</td>             
+                <td></td>
+                <td></td>  
+                <td></td>
+                <td><a href=""></a></td>   
+                <td><button>View</button></td>
+                <td><button>Approve</button></td>   
+                <td><button>Reject</button></td> 
             </tr>
             <tr>
-                <td>Example 1</td>
-                <td>2021-11-03</td> 
-                <td>View</td>               
+                <td></td>
+                <td></td>   
+                <td></td>
+                <td><a href=""></a></td>   
+                <td><button>View</button></td>
+                <td><button>Approve</button></td>   
+                <td><button>Reject</button></td>         
             </tr>
             <tr>
-                <td>Example 1</td>
-                <td>2021-11-21</td>  
-                <td>View</td>              
+                <td></td>
+                <td></td>  
+                <td></td>
+                <td><a href=""></a></td>   
+                <td><button>View</button></td>
+                <td><button>Approve</button></td>   
+                <td><button>Reject</button></td>            
             </tr>
           </table>
+
+
         </main>
-        
+        <button>ddd</button>
         </div>
       <Footer/>
     </>

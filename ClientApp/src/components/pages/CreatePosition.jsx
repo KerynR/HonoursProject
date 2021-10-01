@@ -1,6 +1,8 @@
 import React from 'react';
 import './CreatePosition.css';
 import Footer from '../Footer';
+import history from '../history';
+
 
 /* THIS WILL BE THE JOB VACANCY PAGE - WHERE THE EMPLOYER POSTS AN AVAILABLE POSITION */
 function CreatePosition() {
@@ -10,7 +12,7 @@ function CreatePosition() {
     <div className="form-container">
       <div class="title_container">
         <h1>Create New Position</h1>
-        <form action="action_page.php">
+        <form>
 
         <div className="row">
           <div class="col-25">    
@@ -86,7 +88,7 @@ function CreatePosition() {
         </div>
 
         <input className="btnPostPos" type="submit" value="Post Position" />
-        <input className="btnCancel" type="submit" value="Cancel" />
+        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/CompanyProfile')}>Cancel</button>
 
         </form>
         
