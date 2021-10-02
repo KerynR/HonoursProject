@@ -1,5 +1,5 @@
 import React from 'react';
-import './ViewSubmissions.css';
+import './SubmissionDetails.css';
 import Footer from '../Footer';
 
 

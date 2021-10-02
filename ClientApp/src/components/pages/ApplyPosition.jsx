@@ -23,15 +23,6 @@ function ApplyPosition() {
 
         <div className="row">
           <div className="col-25">    
-            <label>Reference Code:</label>
-          </div>
-          <div className="col-75">
-          <input type="text" />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div className="col-25">    
             <label>Location:</label>
           </div>
           <div className="col-75">

@@ -8,7 +8,6 @@ import {GoogleLogin } from 'react-google-login';
 //my clientId from google
 const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
 
-
 function Signup() {
 
   const onSuccess = ( res ) => {
@@ -19,6 +18,8 @@ function Signup() {
     console.log('[Login Failed] currentUser:', res);
   };
 
+  
+
   return (
     <div form-wrapper>
     <div className="form-container">
@@ -28,13 +29,13 @@ function Signup() {
         <br />
         <form>
          <h4>Select the account type that applies to you:</h4>
-         <div className="cbAccType">
-          <input id="cbAccount" type="checkbox" value="Graduate"/>
-          <label for="cbAccount">Graduate</label>
-          <input id="cbAccount" type="checkbox" value="Recruiter"/>
-          <label for="cbAccount">Recruiter</label>
-          <input id="cbAccount" type="checkbox" value="Company"/>
-          <label for="cbAccount">Company</label>
+         <div className="radioAccType">
+          <input name="radAccTypeChoice" id="radioGrad" type="radio" value="Graduate" />
+          <label for="radioGrad">Graduate</label>
+          <input name="radAccTypeChoice" id="radioRec" type="radio" value="Recruiter" />
+          <label for="radioRec">Recruiter</label>
+          <input name="radAccTypeChoice" id="radioComp" type="radio" value="Company" />
+          <label for="radioComp">Company</label>
         </div>
             <div className="row">
               <div class="col-25">

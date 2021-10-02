@@ -26,6 +26,7 @@ import VacancyInfo from './components/pages/VacancyInfo';
 import EditVacancy from './components/pages/EditVacancy';
 import SubmissionDetails from './components/pages/SubmissionDetails';
 import Recruiters from './components/pages/Recruiters';
+import RecruiterProfile from './components/pages/RecruiterProfile';
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";
@@ -65,6 +66,7 @@ function App() {
         <Route exact path='/EditVacancy' component={EditVacancy}/>
         <Route exact path='/SubmissionDetails' component={SubmissionDetails}/>
         <Route exact path='/Recruiters' component={Recruiters}/>
+        <Route exact path='/RecruiterProfile' component={RecruiterProfile}/>
 
       </Switch>
       </Router>

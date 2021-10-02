@@ -22,41 +22,42 @@ function Moocs() {
               <th>Link (Click to visit)</th>
             </tr>
             <tr>
-              <td>Coursera</td>
-              <td>Subscrition (Limited Free Courses)</td>
-              <td>https://www.coursera.org/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td>edX</td>
-              <td>Free (Certification Fee)</td>
-              <td>https://www.edx.org/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td>FutureLearn</td>
-              <td>Free (Certification Fee)</td>
-              <td>https://www.futurelearn.com/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td>iMooX</td>
-              <td>Free</td>
-              <td>https://imoox.at/mooc/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>            
             <tr>
-              <td>Khan Academy</td>
-              <td>Free</td>
-              <td>https://www.khanacademy.org/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td>LinkedIn Learning</td>
-              <td>Subscription (1 Month Free Trial)</td>
-              <td>https://www.linkedin.com/learning/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
-              <td>Udemy</td>
-              <td>Paid</td>
-              <td>http://udemy.com/</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
         </table>
+        {/*ADD CLICKABLE ICONS OF RECOMMENDED MOOCS*/}
         </main>
         </div>
         <Footer/>

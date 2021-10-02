@@ -1,0 +1,98 @@
+.gridRecruiterProf {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 150px 500px;
+    grid-gap: 0.1em;
+    }
+
+    .gradRecruiterHeader{
+        font-size: 80px;
+        font-family: 'Noto Sans Display', sans-serif;
+        text-align: center;
+        color: #FFF9FB;
+    }
+    
+    .gradRecruiterHeader,
+    footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    .gridRecruiterProf > * {
+    background: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftRecruiterProf{
+        color: #FFF9FB;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .leftRecruiterProf button{
+        font-size: 30px;
+        padding: 30px 15px;
+        background-color: #4B88A2;
+        border-radius: 8px;
+        border: 2px solid #396a80;
+    }
+
+      .fa-user-circle{
+          
+          padding: 10px 20px 10px;
+      }
+
+      .fa-user-circle:hover{
+        color: #BB0A21;
+        cursor: pointer;
+      }
+
+      
+
+      ul{
+        list-style-type: none;
+      }
+
+      .btnEditRecProfile{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnEditRecProfile:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnDeleteRecProf{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnDeleteRecProf:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .colLeft {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+        padding-right: 30px;
+      }
+    
+      .colRight {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        padding-left: 40px;
+      }
+    
+      .recRow:after {
+        content: "";
+        display: table;
+        clear: both;
+      }

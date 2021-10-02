@@ -79,7 +79,7 @@ input[type=text], select, textarea{
 .btnSave{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
-    height: 45px;
+    height: 55px;
     line-height: 35px;
     width: 100%;
     border: none;
@@ -106,7 +106,7 @@ input[type=text], select, textarea{
 .btnCancel{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
-    height: 45px;
+    height: 55px;
     line-height: 35px;
     width: 100%;
     border: none;
@@ -132,7 +132,7 @@ input[type=text], select, textarea{
 .btnDelete{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #EEEEEE;
-  height: 45px;
+  height: 55px;
   line-height: 35px;
   width: 100%;
   border: none;

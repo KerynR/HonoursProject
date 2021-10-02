@@ -92,8 +92,9 @@
 
 
 .btnRegisterHome, .btnLoginHome{
-  padding: 16px 16px 16px;
-  width: 100px;
+  padding: 20px 20px 20px;
+  width: 150px;
+  height: 80px;
   background-color: transparent;
   color: #FFF9FB;
   font-size: 16px;

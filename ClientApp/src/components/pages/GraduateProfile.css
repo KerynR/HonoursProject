@@ -1,6 +1,6 @@
 .gridGradProf {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 150px auto;
     grid-gap: 0.1em;
     }
@@ -9,7 +9,15 @@
         font-size: 80px;
         font-family: 'Noto Sans Display', sans-serif;
         text-align: center;
-        color: #FFF9FB;
+        color: #4B88A2;
+    }
+
+    .fa-user-circle{
+      color: #FFF9FB;
+    }
+
+    .fa-user-circle:hover{
+      color: #BB0A21;
     }
     
     .gradProfHeader,
@@ -114,16 +122,7 @@
         color: #252627;
       }
 
-      .btnDeleteGradProf{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-      }
-
-      .btnDeleteGradProf:hover{
-        background-color: #D3D4D9;
-        color: #252627;
-      }
+      
 
       .btnViewSubmissions{
         background-color: #4B88A2;
@@ -135,3 +134,28 @@
         background-color: #D3D4D9;
         color: #252627;
       }
+
+      .colLeft {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+        padding-right: 30px;
+      }
+    
+      .colRight {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        padding-left: 40px;
+      }
+    
+      .gradRow:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+.GraduateForm{
+  padding: 40px;
+  padding-left: 50px;
+}

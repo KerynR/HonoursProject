@@ -26,7 +26,7 @@
         font-family: 'Noto Sans Display', sans-serif;
     }
 
-    .tblVacancies{
+    .tblRecruiters{
         color: #fff;
         
     }
@@ -40,7 +40,7 @@
         font-size: 1em;
     }
 
-    .vacanciesWrapper{
+    .RecruitersWrapper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 200px;

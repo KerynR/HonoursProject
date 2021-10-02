@@ -21,7 +21,6 @@ function About() {
         Graduates are able to view available jobs, company profiles, upload CVs, 
         view MOOCs, and apply for available positions. Companies are able to upload
          available job opportunities, review applications, and to create their company profile.
-
         </main>
         <aside>
         <img src="images/hunters-race-MYbhN8KaaEc-unsplash.jpg" />
