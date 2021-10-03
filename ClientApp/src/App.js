@@ -27,6 +27,8 @@ import EditVacancy from './components/pages/EditVacancy';
 import SubmissionDetails from './components/pages/SubmissionDetails';
 import Recruiters from './components/pages/Recruiters';
 import RecruiterProfile from './components/pages/RecruiterProfile';
+import EditRecruiterProfile from './components/pages/EditRecruiterProfile';
+import SignupTest from './components/pages/SignupTest';
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";
@@ -67,6 +69,8 @@ function App() {
         <Route exact path='/SubmissionDetails' component={SubmissionDetails}/>
         <Route exact path='/Recruiters' component={Recruiters}/>
         <Route exact path='/RecruiterProfile' component={RecruiterProfile}/>
+        <Route exact path ='/EditRecruiterProfile' component={EditRecruiterProfile}/>
+        <Route exact path ='/SignupTest' component={SignupTest}/>
 
       </Switch>
       </Router>

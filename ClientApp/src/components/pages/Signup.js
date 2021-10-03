@@ -18,8 +18,6 @@ function Signup() {
     console.log('[Login Failed] currentUser:', res);
   };
 
-  
-
   return (
     <div form-wrapper>
     <div className="form-container">
@@ -37,48 +35,114 @@ function Signup() {
           <input name="radAccTypeChoice" id="radioComp" type="radio" value="Company" />
           <label for="radioComp">Company</label>
         </div>
+
+            {/** GRADUATE/RECRUITER/COMPANY */}
             <div className="row">
               <div class="col-25">
-                <label for="fname">First Name:</label>
+                <label className="lblFName" for="fname">First Name:</label>
               </div>
               <div className="col-75">
-                <input type="text" placeholder="First Name"  />
+                <input type="text" id="fname" placeholder="First Name or Company Name"  />
               </div>
             </div>
 
+          {/** GRADUATE/RECRUITER */}
           <div className="row">
             <div class="col-25">
-              <label>Last Name:</label>
+              <label className="lblLName" for="lname">Last Name:</label>
             </div>
             <div className="col-75">
-              <input type="text" placeholder="Surname"  />
+              <input type="text" id="lname" placeholder="Surname"  />
             </div>
           </div>
 
+          {/** GRADUATE/RECRUITER/COMPANY */}
           <div className="row">
             <div class="col-25">    
-              <label>Email:</label>
+              <label className="lblEmail" for="email">Email:</label>
             </div>
             <div className="col-75">
-              <input type="email" placeholder="Email"  />
+              <input type="email" id="email" placeholder="Email"  />
+            </div>
+          </div>
+
+          {/** GRADUATE/RECRUITER */}
+          <div className="row">
+            <div class="col-25">    
+              <label className="lblDOB" for="dob">Date of Birth:</label>
+            </div>
+            <div className="col-75">
+              <input type="date" id="dob" placeholder="Email"  />
+            </div>
+          </div>
+
+          {/** GRADUATE/RECRUITER */}
+          <div className="row">
+            <div class="col-25">    
+              <label className="lblGender" for="gender">Gender:</label>
+            </div>
+            <div className="col-75">
+              <input type="text" id="gender" placeholder="e.g. male, female or other"  />
+            </div>
+          </div>
+
+          {/** GRADUATE/RECRUITER */}
+          <div className="row">
+            <div class="col-25">    
+              <label className="lblMobile" for="mobile">Mobile:</label>
+            </div>
+            <div className="col-75">
+              <input type="tel" id="mobile" placeholder="Contact Number"  />
+            </div>
+          </div>
+
+          {/** COMPANY */}
+          <div className="row">
+            <div class="col-25">    
+              <label className="lblSector" for="sector">Sector:</label>
+            </div>
+            <div className="col-75">
+              <input type="text" id="sector" placeholder="E.g. Marketing"  />
+            </div>
+          </div>
+
+          {/** COMPANY */}
+          <div className="row">
+            <div class="col-25">    
+              <label className="lblVision" for="vision">Vision:</label>
+            </div>
+            <div className="col-75">
+              <input type="text" id="vision" placeholder="..."  />
+            </div>
+          </div>
+
+          {/** COMPANY */}
+          <div className="row">
+            <div class="col-25">    
+              <label className="lblMission" for="mission">Mission:</label>
+            </div>
+            <div className="col-75">
+              <input type="text" id="mission" placeholder="..."  />
             </div>
           </div>
             
+          {/** GRADUATE/RECRUITER/COMPANY */}  
           <div className="row">
             <div class="col-25">   
-              <label>Password:</label>
+              <label className="lblPassword" for="password">Password:</label>
             </div>
             <div className="col-75">
-              <input type="password" placeholder="Password"  />
+              <input type="password" id="password" placeholder="Password"  />
             </div>
           </div>
               
+          {/** GRADUATE/RECRUITER/COMPANY */}    
           <div className="row">
             <div class="col-25">          
-              <label>Confirm Password:</label>
+              <label className="lblConfirmPassword" for="confirmpassword">Confirm Password:</label>
             </div>
             <div className="col-75">
-              <input type="password" placeholder="Re-enter Password"  />
+              <input type="password" id="confirmpassword" placeholder="Re-enter Password"  />
             </div>
           </div>          
            <input className="btnSignup" type="submit" value="Register" />

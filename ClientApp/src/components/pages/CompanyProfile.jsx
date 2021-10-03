@@ -11,41 +11,74 @@ function CompanyProfile() {
 <header className="companyHeader">
 <i class="fa fa-user-circle" aria-hidden="true"></i>
     Company Profile</header>
-<main className="leftGrid"> 
+<main className="leftGridComp"> 
 
 <table className="tblCompPos">
     <tr>
-        <th>Position Name</th>
-        <th>Start Date</th>
+        <th>Job Title</th>
+        <th>Application Closing Date</th>
     </tr>
     <tr>
-        <td>Position Name</td>
-        <td>Position Start Date</td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>Position Name</td>
-        <td>Position Start Date</td>
+    <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>Position Name</td>
-        <td>Position Start Date</td>
+    <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>Position Name</td>
-        <td>Position Start Date</td>
+    <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>Position Name</td>
-        <td>Position Start Date</td>
+    <td></td>
+        <td></td>
     </tr>
 </table>
 </main>
 <aside className="RightCompProf">
-    <ul>
-        <h2>Ask us a question:</h2>
-        <input type="text" /><br /><br />
-        <button type="submit" className="btnAskQ">Send</button>
-    </ul>
+<form className="CompanyForm">
+
+    <div className="compRow">
+        <div className="compColLeft">
+            <label>Company Name:</label>
+        </div>
+        <div className="compColRight">
+            <label>___________</label>
+        </div>
+    </div>
+
+    <div className="compRow">
+        <div className="compColLeft">
+            <label>Sector:</label>
+        </div>
+        <div className="compColRight">
+            <label>___________</label>
+        </div>
+    </div>
+
+    <div className="compRow">
+        <div className="compColLeft">
+            <label>Vission:</label>
+        </div>
+        <div className="compColRight">
+            <label>___________</label>
+        </div>
+    </div>
+    <div className="compRow">
+        <div className="compColLeft">
+            <label>Mission:</label>
+        </div>
+        <div className="compColRight">
+            <label>___________</label>
+        </div>
+    </div>
+   
+</form>
 </aside>
 </div>
 
