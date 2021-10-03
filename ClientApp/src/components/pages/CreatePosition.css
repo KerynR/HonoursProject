@@ -100,7 +100,7 @@ h1{
     
 }
 .btnPostPos:hover {
-  background: #1F2421;
+  background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -127,7 +127,7 @@ h1{
     
 }
 .btnCancel:hover {
-  background: #1F2421;
+  background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

@@ -21,78 +21,66 @@ function Recruiters() {
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
-                    <th></th>
-                    <th></th>
+                    
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                   
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                  
                 </tr>
                 <tr>
-                <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                   
                 </tr>            
                 <tr>
-                <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    
                 </tr>
                 <tr>
-                <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    
                 </tr>
                 <tr>
-                <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                   
                 </tr>
                 <tr>
-                <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
+                    
+                </tr>
+                <tr>
                     <td></td>
+                    <td></td>
+                    <td></td>
+                   
                 </tr>
             </table>
             </div>

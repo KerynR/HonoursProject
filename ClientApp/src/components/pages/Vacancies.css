@@ -28,7 +28,10 @@
 
     .tblVacancies{
         color: #fff;
-        
+    }
+
+    .tblVacancies th{
+        color: #4B88A2;
     }
 
     tr{

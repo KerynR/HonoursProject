@@ -38,7 +38,7 @@ function EditProfile() {
         </div>
         <div className="row">
           <div className="col-25">    
-            <label>Cellphone:</label>
+            <label>Mobile:</label>
           </div>
           <div className="col-75">
             <input type="tel" placeholder="e.g. 093 463 4664"  />

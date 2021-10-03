@@ -15,7 +15,7 @@ function Contact() {
         <ul>
         <h1 className="h1Contact">Contact Us</h1>
         
-          Feel free to contact us via any of the following:
+          <h2 className="h2Contact">Feel free to contact us via any of the following:</h2>
           <br /><br />
           <li>xyzrecruitment@gmail.com <i class="fa fa-envelope" aria-hidden="true"></i></li>
           <br />
@@ -27,14 +27,12 @@ function Contact() {
         </main>
         <aside >
           <div className="contactRight">
-            <div className="transparentbox">
-              <input className="transInput" type="text" placeholder=" Enter your name"/>
-              <br />
-              <input className="transInput" type="text" placeholder="Enter a valid email address"/>
-              <br />
-              <input className="transInput" type="text" placeholder="Enter your message"/>
-            </div>
-            <button className="SubmitButton" >Submit</button>
+            <h3 className="h3Contact">Find us on Social Media:</h3>
+            <br /><br />
+            <li> <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</li>
+            <li> <i class="fa fa-twitter" aria-hidden="true"></i>Twitter</li>
+            <li> <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</li>
+            <li> <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</li>
           </div>
         </aside>
         </div>

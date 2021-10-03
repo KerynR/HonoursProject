@@ -67,8 +67,6 @@ function CreatePosition() {
           </div>
         </div>
 
-        
-
         <div className="row">
           <div class="col-25">    
             <label>Responsibilities:</label>

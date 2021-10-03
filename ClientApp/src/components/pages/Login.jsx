@@ -33,19 +33,19 @@ function Login() {
           
         <div className="row">
           <div class="col-25">    
-            <label>Email:</label>
+            <label className="lblEmail" for="email">Email:</label>
           </div>
           <div className="col-75">
-            <input type="email" placeholder="Enter your email"  />
+            <input type="email" id="email" placeholder="Enter your email"  />
           </div>
         </div>
                      
         <div className="row">
           <div class="col-25">          
-            <label>Password:</label>
+            <label className="lblPassword" for="password">Password:</label>
           </div>
           <div className="col-75">
-            <input type="password" placeholder="Enter your password"  />
+            <input type="password" id="password" placeholder="Enter your password"  />
           </div>
         </div>
         <input className="btnLogin" type="submit" value="Login" />

@@ -1,1 +1,168 @@
-/*NOTE - ADD IN CSS*/
+
+.h1EditRecProf{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 15px;
+    color: #4B88A2;
+    font-family: 'Noto Sans Display', sans-serif;
+  }
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=tel], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+   
+  .form-container {
+    border-radius: 5px;
+    background-color: #252627;
+    padding: 100px;
+    
+  }
+
+  .title_container .h1EditRecProf{
+    color: #4B88A2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+  }
+
+  .title_container label{
+    color: #fff9FB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.btnSave{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #EEEEEE;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #334257;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+
+    
+}
+.btnSave:hover {
+  background: #4B88A2;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnCancel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #EEEEEE;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #334257;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.btnCancel:hover{
+   background: #4B88A2;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnDelete{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #EEEEEE;
+  height: 55px;
+  line-height: 35px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: #334257;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.btnCancel:hover{
+  background: #4B88A2;
+color: #fff;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnDelete:hover{
+  background: #4B88A2;
+  color: #fff9FB;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+label{
+    color: #fff;
+}

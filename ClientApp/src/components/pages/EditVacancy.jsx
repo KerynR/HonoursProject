@@ -90,7 +90,7 @@ function EditVacancy() {
 
                 {/*ONLY VISIBLE TO COMPANY*/}
                 <button className="btnDeleteVac">Delete Vacancy</button><br />
-                <button className="btnSaveVac" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>Save Vacancy</button>
+                <button className="btnSave" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>Save Vacancy</button>
     
             </form>
         </div>

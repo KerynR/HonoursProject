@@ -34,6 +34,14 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
     }
+    
+    .contactRight{
+        color: #fff;
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+    
 
     .h1Contact{
         text-align: right;
@@ -43,8 +51,22 @@
         font-family: 'Noto Sans Display', sans-serif;
     }
 
+    .h2Contact{
+        color: #ffffff;
+        font-size: 16px;
+        text-align: right;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    .h3Contact{
+        color: #ffffff;
+        font-size: 16px;
+        text-align: right;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+
     .fa-envelope, .fa-mobile, .fa-phone,
-    .fa-facebook-square, .fa-twitter-square, .fa-linkedin-square
+    .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram
     {
         color: #fff;
         padding-left: 1em;

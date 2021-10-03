@@ -9,7 +9,7 @@ function EditRecruiterProfile() {
     <div form-wrapper>
     <div className="form-container">
       <div className="title_container">
-        <h1>Edit Recruiter Profile</h1>
+        <h1 className="h1EditRecProf">Edit Recruiter Profile</h1>
         <form>
 
         <div className="row">
