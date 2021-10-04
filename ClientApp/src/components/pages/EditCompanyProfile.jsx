@@ -1,6 +1,8 @@
 import React from 'react';
 import './EditCompanyProfile.css';
 import Footer from '../Footer';
+import history from '../history';
+
 
 
 function EditCompanyProfile() {
@@ -50,7 +52,7 @@ function EditCompanyProfile() {
 
         <input className="btnSave" type="submit" value="Save" />
         <input className="btnDelete" type="submit" value="Delete Profile" />
-        <input className="btnCancel" type="submit" value="Cancel" />
+        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/CompanyProfile')}>Cancel</button>
 
         </form>
         

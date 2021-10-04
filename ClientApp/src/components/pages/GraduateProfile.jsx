@@ -19,8 +19,8 @@ function GraduateProfile() {
     <>
       <div className="gridGradProf">
         <header className="gradProfHeader">
-        <i class="fa fa-user-circle" aria-hidden="true"></i>
-        Graduate Profile
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            Graduate Profile
         </header>
         <main className="leftGradProf">
         <ul>
@@ -44,6 +44,10 @@ function GraduateProfile() {
           <li>
           <button className="btnViewSubmissions" variant="btn btn-success" onClick={() => history.push('/ViewSubmissions')}>View Submissions</button>          
           </li>
+          <br />
+          <li>
+          <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
+          </li>
          
         </ul>
         </main>
@@ -56,7 +60,7 @@ function GraduateProfile() {
                   <label>Name:</label>
               </div>
               <div className="colRight">
-                  <label>___________</label>
+                  <label className="lblGradName"></label>
               </div>
           </div>
 
@@ -65,7 +69,7 @@ function GraduateProfile() {
                   <label>Surname:</label>
               </div>
               <div className="colRight">
-                  <label>___________</label>
+                  <label className="lblGradSurname"></label>
               </div>
           </div>
 
@@ -74,7 +78,7 @@ function GraduateProfile() {
                   <label>Email:</label>
               </div>
               <div className="colRight">
-                  <label>___________</label>
+                  <label className="lblGradEmail"></label>
               </div>
           </div>
           <div className="gradRow">
@@ -82,7 +86,7 @@ function GraduateProfile() {
                   <label>Contact:</label>
               </div>
               <div className="colRight">
-                  <label>___________</label>
+                  <label className="lblGradContact"></label>
               </div>
           </div>
           <div className="gradRow">
@@ -90,26 +94,22 @@ function GraduateProfile() {
                   <label>Company Representing:</label>
               </div>
               <div className="colRight">
-                  <label>___________</label>
+                  <label className="lblCompRep"></label>
               </div>
           </div>
-
-          <ul className="cvTips">
-                  <h2 className="cvTipsh2">Top 5 Tips for Creating a CV:</h2><br /><br />
-                    <li>Include two forms of contact, email and mobile</li><br />
-                    <li>Don’t include acronyms or organisation related terminology</li><br />
-                    <li>Explain any gaps in your CV & be sure to highlight the skills that you have developed</li><br />
-                    <li>Use the right ‘keywords’ to ensure your CV is picked up in word searches</li><br />
-                    <li>Spelling and grammar check</li>
-                </ul>
-
-</form>
-        
-        
-
+        </form>
         </aside>
-        
-      </div>
+        <div className="gradBottom">
+                    <ul className="cvTips">
+                        <h2 className="cvTipsh2">Top 5 Tips for Creating a CV:</h2><br /><br />
+                            <li>Include two forms of contact, email and mobile</li><br />
+                            <li>Don’t include acronyms or organisation related terminology</li><br />
+                            <li>Explain any gaps in your CV & be sure to highlight the skills that you have developed</li><br />
+                            <li>Use the right ‘keywords’ to ensure your CV is picked up in word searches</li><br />
+                            <li>Spelling and grammar check</li>
+                    </ul>
+                </div>
+        </div>
       <Footer/>
     </>
   );

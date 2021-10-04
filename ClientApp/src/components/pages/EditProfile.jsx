@@ -1,6 +1,8 @@
 import React from 'react';
 import './EditProfile.css';
 import Footer from '../Footer';
+import history from '../history';
+
 
 
 function EditProfile() {
@@ -54,9 +56,9 @@ function EditProfile() {
           </div>
         </div>
                   
-        <input className="btnSave" type="submit" value="Save" />
-        <input className="btnDelete" type="submit" value="Delete Profile" />
-        <input className="btnCancel" type="submit" value="Cancel" />
+        <button className="btnSave" variant="btn btn-success" onClick={() => history.push('/GraduateProfile')}>Save</button>          
+        <button className="btnDelete" variant="btn btn-success" onClick={() => history.push('/GraduateProfile')}>Delete Profile</button>          
+        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/GraduateProfile')}>Cancel</button>          
 
         </form>
         

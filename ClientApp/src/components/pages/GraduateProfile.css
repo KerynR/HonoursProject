@@ -1,7 +1,7 @@
 .gridGradProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 150px auto 400px;
     grid-gap: 0.1em;
     }
 
@@ -21,7 +21,7 @@
     }
     
     .gradProfHeader,
-    footer {
+    .gradBottom {
     grid-column-start: 1;
     grid-column-end: 3;
     }
@@ -47,9 +47,14 @@
         border: 2px solid #396a80;
     }
 
+    .leftGradProf li{
+      font-size: 15px;
+      font-family: 'Noto Sans Display', sans-serif;
+    }
+
     .cvTipsh2{
-        color: #4B88A2;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #BB0A21;
+        font-family: 'Noto Sans Display', sans-serif;
         font-size: 45px;
         font-style:oblique;
         list-style-type: none;
@@ -57,25 +62,20 @@
         padding-right: 20px;
     }
 
+    .cvTips li{
+      font-size: 18px;
+      font-family: 'Noto Sans Display', sans-serif;
+    }
+
     .cvTips{
         text-align: center;
         color: #FFF9FB;        
-        font-size: 20px;
+        font-size: 30px;
         list-style-type: none;
+        font-family: 'Noto Sans Display', sans-serif;
     }
     
-
-    input[type=file], select, textarea{
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #4B88A2;
-        border-radius: 4px;
-        box-sizing: border-box;
-        resize: vertical;
-      }
-
       .fa-user-circle{
-          
           padding: 10px 20px 10px;
       }
 
@@ -88,7 +88,6 @@
           background-color: #4B88A2;
           color: #FFF9FB;
           width: 100%;
-
       }
 
       .btnMoocs:Hover{
@@ -96,6 +95,7 @@
         color: #252627;
       }
 
+      /*top 5 cv tips*/
       ul{
         list-style-type: none;
       }
@@ -122,8 +122,6 @@
         color: #252627;
       }
 
-      
-
       .btnViewSubmissions{
         background-color: #4B88A2;
         color: #FFF9FB;
@@ -131,6 +129,17 @@
       }
       
       .btnViewSubmissions:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnViewVacancies{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnViewVacancies:hover{
         background-color: #D3D4D9;
         color: #252627;
       }

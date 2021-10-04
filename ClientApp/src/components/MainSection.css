@@ -1,13 +1,3 @@
-
-/*img {
-    opacity: 100%;
-    background-size: 150px;
-    width: 100%;
-    height: 1100px;
-    border: 2px solid;
-    object-fit: cover;
-  }*/
-
   video {
     object-fit: cover;
     width: 100%;
@@ -49,7 +39,6 @@
   padding-right: 20px;
   color: #FFF9FB;
   }
-
 
 .main-btnss {
   margin-top: 32px;

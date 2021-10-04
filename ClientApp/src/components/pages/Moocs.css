@@ -1,12 +1,12 @@
 .gridMoocs {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 150px 400px;
+  grid-template-rows: 150px 100px 400px 150px 400px;
   grid-gap: 0.1em;
   }
   
   .moocsHeader,
-  footer {
+  .searchMoocsTop, .tblMoocsSearch, .moocIconsHeading, .moocIcons {
   grid-column-start: 1;
   grid-column-end: 3;
   }
@@ -25,6 +25,33 @@
       color: #4B88A2;
       font-family: 'Noto Sans Display', sans-serif;
   }
+
+  .searchMoocsTop h2{
+    color: #fff;
+}
+
+.searchMoocsTop::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.colLeftSearchMoocs{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.colLeftSearchMoocs label{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 19px;
+}
+
+.colRightSearchMoocs{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
 
   .tblVacancies{
       color: #fff;
@@ -96,4 +123,11 @@ th{
 
 td{
   height: 30px;
+}
+
+.moocIconsHeading h2{
+  color: #4B88A2;
+  font-size: 40px;
+  font-family: 'Noto Sans Display', sans-serif;
+  text-align: center;
 }

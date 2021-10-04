@@ -10,14 +10,18 @@ function Vacancies() {
         <header className="vacanciesHeader">
         Vacancies
         </header>
-       
-        
-        <main className="vacanciesWrapper">
+
         <div className="searchTopGrid">
-            Search
-            <input type="text"  />
-        </div>
-        <br />
+          <div className="colLeftSearch">    
+            <label>Search for vancancy:</label>
+          </div>
+          <div className="colRightSearch">
+            <input type="text" placeholder=""  />
+          </div>
+        </div> 
+
+        <main className="vacanciesWrapper">
+        
         <div>
             <table className="tblVacancies">
                 <tr>

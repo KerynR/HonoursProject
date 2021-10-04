@@ -20,17 +20,24 @@ function RecruiterProfile() {
       <div className="gridRecruiterProf">
         <header className="gradRecruiterHeader">
         <i class="fa fa-user-circle" aria-hidden="true"></i>
-        Graduate Profile
+        Recruiter Profile
         </header>
         <main className="leftRecruiterProf">
         <ul>
-         
           <li>
-          <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/')}>Edit Profile</button>          
+            <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/')}>Edit Profile</button>          
           </li>
           <br />                
           <li>
-          <button className="btnDeleteRecProf" variant="btn btn-success" onClick="confirmDelete()">Delete Profile</button>          
+            <button className="btnDeleteRecProf" variant="btn btn-success" onClick="confirmDelete()">Delete Profile</button>          
+          </li>
+          <br />
+          <li>
+            <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
+          </li>
+          <br />  
+          <li>
+            <button className="btnAddNewPos" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
           </li>
         </ul>
         </main>
@@ -43,7 +50,7 @@ function RecruiterProfile() {
                     <label>First Name:</label>
                 </div>
                 <div className="colRight">
-                    <label>___________</label>
+                    <label></label>
                 </div>
             </div>
 
@@ -52,7 +59,7 @@ function RecruiterProfile() {
                     <label>Second Name:</label>
                 </div>
                 <div className="colRight">
-                    <label>___________</label>
+                    <label></label>
                 </div>
             </div>
 
@@ -61,7 +68,7 @@ function RecruiterProfile() {
                     <label>Email:</label>
                 </div>
                 <div className="colRight">
-                    <label>___________</label>
+                    <label></label>
                 </div>
             </div>
             <div className="recRow">
@@ -69,7 +76,7 @@ function RecruiterProfile() {
                     <label>Mobile:</label>
                 </div>
                 <div className="colRight">
-                    <label>___________</label>
+                    <label></label>
                 </div>
             </div>
             <div className="recRow">
@@ -77,7 +84,7 @@ function RecruiterProfile() {
                     <label>Gender:</label>
                 </div>
                 <div className="colRight">
-                    <label>___________</label>
+                    <label></label>
                 </div>
             </div>
             <div className="recRow">
@@ -85,7 +92,7 @@ function RecruiterProfile() {
                     <label>Company Representing:</label>
                 </div>
                 <div className="colRight">
-                    <label><a href="/CompanyProfile">___________</a></label>
+                    <label><a href="/CompanyProfile"></a></label>
                 </div>
             </div>
 

@@ -8,13 +8,18 @@ function Moocs() {
     <>
       <div class="gridMoocs">
         <header className="moocsHeader">
-        Massive Open Online Courses (MOOCs)
+        Massive Open Online Courses
         </header>
-        <main>
+        <div className="searchMoocsTop">
+          <div className="colLeftSearchMoocs">    
+            <label>Search for MOOCs:</label>
+          </div>
+          <div className="colRightSearchMoocs">
+            <input type="text" placeholder=""  />
+          </div>
+        </div> 
 
-        {/*<label className="">Search for MOOC:</label>
-        <input type="text" className="moocInput"/>*/}
-
+        <main className="tblMoocsSearch">
         <table className="tblMoocs">
             <tr>
               <th>Company Name</th>
@@ -59,7 +64,15 @@ function Moocs() {
         </table>
         {/*ADD CLICKABLE ICONS OF RECOMMENDED MOOCS*/}
         </main>
+
+        <div className="moocIconsHeading">
+          <h2>Click on an icon below to view popular MOOC providers</h2>
         </div>
+        <div className="moocIcons">
+          <label>Icons go here</label>
+        </div>
+        </div>
+
         <Footer/>
     </>
   );

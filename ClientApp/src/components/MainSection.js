@@ -17,7 +17,7 @@ function MainSection() {
 
   return (
     <div className='main-container'>
-      <video src='/videos/Stripe - 86435.mp4' autoPlay loop muted />
+      <video src='/videos/Black-1.mp4' autoPlay loop muted />
         <div className='centerHeading'>
           <h1>XYZ Recruitment Company</h1>
           <div className="centerRest">

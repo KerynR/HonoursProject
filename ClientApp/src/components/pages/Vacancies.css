@@ -1,12 +1,12 @@
 .gridVacancies {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 800px;
+    grid-template-rows: 150px 100px 500px;
     grid-gap: 0.1em;
     }
     
     .vacanciesHeader,
-    footer {
+    .searchTopGrid, .vacanciesWrapper {
     grid-column-start: 1;
     grid-column-end: 3;
     }
@@ -22,7 +22,7 @@
         text-align: center;
         font-size: 7em;
         padding-bottom: 15px;
-        color: #fff;
+        color: #4B88A2;
         font-family: 'Noto Sans Display', sans-serif;
     }
 
@@ -34,13 +34,15 @@
         color: #4B88A2;
     }
 
-    tr{
+    th{
         font-size: 20px;
     }
 
-    table tr td, th{
+    table tr, th{
+        font-size: 30px;
+        font-style: normal;
         border-color: #4B88A2;
-        font-size: 1em;
+        border-width: 3px;
     }
 
     .vacanciesWrapper{
@@ -50,6 +52,29 @@
         padding-top: 150px;
     }
 
-    .searchTopGrid{
+    .searchTopGrid h2{
         color: #fff;
+    }
+
+    .colLeftSearch{
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .colLeftSearch label{
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 19px;
+    }
+    
+    .colRightSearch{
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+    }
+
+    .searchTopGrid::after{
+        content: "";
+        display: table;
+        clear: both;
     }
