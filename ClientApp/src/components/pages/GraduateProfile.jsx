@@ -1,18 +1,17 @@
 import React from 'react';
 import './GraduateProfile.css';
-import MainSection from '../MainSection';
 import Footer from '../Footer';
-import ReactDom from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import history from '../history';
 
-function confirmDelete(){
+/*function confirmDelete(){
   var result = window.confirm("Are you sure you want to delete?");
   if(result){
       //delete logic here
   }
-}
+}*/
+
+{/* GRADUATE PROFILE PAGE */}
 
 function GraduateProfile() {
   return (
@@ -24,13 +23,17 @@ function GraduateProfile() {
         </header>
         <main className="leftGradProf">
         <ul>
+
+          <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  />
+          <br /><br />  
+
           <li>Upload CV:</li><br /><input type="file" placeholder="Upload"  />
           <br /><br />  
           
           <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload"  />
           <br /><br />
           <li>
-          <button className="btnEditProfile" variant="btn btn-success" onClick={() => history.push('/EditProfile')}>Edit Profile</button>          
+          <button className="btnEditProfile" variant="btn btn-success" onClick={() => history.push('/EditGradProfile')}>Edit Profile</button>          
           </li>
           <br />        
           <li>
@@ -56,44 +59,44 @@ function GraduateProfile() {
         <form className="GraduateForm">
 
           <div className="gradRow">
-              <div className="colLeft">
-                  <label>Name:</label>
+              <div className="colLeftGrad">
+                  <label className="lblGradName">Name:</label>
               </div>
-              <div className="colRight">
+              <div className="colRightGrad">
                   <label className="lblGradName"></label>
               </div>
           </div>
 
           <div className="gradRow">
-              <div className="colLeft">
-                  <label>Surname:</label>
+              <div className="colLeftGrad">
+                  <label className="lblGradSurname">Surname:</label>
               </div>
-              <div className="colRight">
+              <div className="colRightGrad">
                   <label className="lblGradSurname"></label>
               </div>
           </div>
 
           <div className="gradRow">
-              <div className="colLeft">
-                  <label>Email:</label>
+              <div className="colLeftGrad">
+                  <label className="lblGradEmail">Email:</label>
               </div>
-              <div className="colRight">
+              <div className="colRightGrad">
                   <label className="lblGradEmail"></label>
               </div>
           </div>
           <div className="gradRow">
-              <div className="colLeft">
-                  <label>Contact:</label>
+              <div className="colLeftGrad">
+                  <label className="lblGradContact">Contact:</label>
               </div>
-              <div className="colRight">
+              <div className="colRightGrad">
                   <label className="lblGradContact"></label>
               </div>
           </div>
           <div className="gradRow">
-              <div className="colLeft">
-                  <label>Company Representing:</label>
+              <div className="colLeftGrad">
+                  <label className="lblGradCompRep">Company Representing:</label>
               </div>
-              <div className="colRight">
+              <div className="colRightGrad">
                   <label className="lblCompRep"></label>
               </div>
           </div>

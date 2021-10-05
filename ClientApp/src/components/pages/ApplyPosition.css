@@ -1,9 +1,9 @@
-h1{
+.title_container-ApplyPos h1{
     
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     padding-bottom: 15px;
-    color: #fff;
+    color: #4B88A2;
     font-family: 'Noto Sans Display', sans-serif;
 
 }
@@ -37,39 +37,39 @@ h1{
     align-items: center;
   }
 
-  .form-container {
+  .form-container-ApplyPos {
     border-radius: 5px;
     background-color: #252627;
     padding: 100px;
     
   }
 
-  .col-25 {
+  .col-25-ApplyPos {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
 
-  .col-75 {
+  .col-75-ApplyPos {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
 
-  .row:after {
+  .rowApplyPos:after {
     content: "";
     display: table;
     clear: both;
   }
 
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25-ApplyPos, .col-75-ApplyPos, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
 
-.btnApply{
+.btnApplyPos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
     height: 55px;
@@ -89,13 +89,13 @@ h1{
     transition: all 0.30s ease-in-out; 
 }
 
-.btnApply:hover {
+.btnApplyPos:hover {
   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.btnCancel{
+.btnCancelPos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
     height: 55px;
@@ -115,7 +115,7 @@ h1{
     transition: all 0.30s ease-in-out;
 }
 
-.btnCancel:hover {
+.btnCancelPos:hover {
   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

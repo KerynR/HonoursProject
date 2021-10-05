@@ -24,6 +24,8 @@ function RecruiterProfile() {
         </header>
         <main className="leftRecruiterProf">
         <ul>
+          <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  />
+          <br /><br />  
           <li>
             <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/')}>Edit Profile</button>          
           </li>
@@ -37,7 +39,7 @@ function RecruiterProfile() {
           </li>
           <br />  
           <li>
-            <button className="btnAddNewPos" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
+            <button className="btnAddNewPosRec" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
           </li>
         </ul>
         </main>
@@ -46,52 +48,52 @@ function RecruiterProfile() {
         <form className="RecruitersForm">
 
             <div className="recRow">
-                <div className="colLeft">
+                <div className="colLeftRecProf">
                     <label>First Name:</label>
                 </div>
-                <div className="colRight">
+                <div className="colRightRecProf">
                     <label></label>
                 </div>
             </div>
 
             <div className="recRow">
-                <div className="colLeft">
+                <div className="colLeftRecProf">
                     <label>Second Name:</label>
                 </div>
-                <div className="colRight">
+                <div className="colRightRecProf">
                     <label></label>
                 </div>
             </div>
 
             <div className="recRow">
-                <div className="colLeft">
+                <div className="colLeftRecProf">
                     <label>Email:</label>
                 </div>
-                <div className="colRight">
+                <div className="colRightRecProf">
                     <label></label>
                 </div>
             </div>
             <div className="recRow">
-                <div className="colLeft">
+                <div className="colLeftRecProf">
                     <label>Mobile:</label>
                 </div>
-                <div className="colRight">
+                <div className="colRightRecProf">
                     <label></label>
                 </div>
             </div>
             <div className="recRow">
-                <div className="colLeft">
+                <div className="colLeftRecProf">
                     <label>Gender:</label>
                 </div>
-                <div className="colRight">
+                <div className="colRightRecProf">
                     <label></label>
                 </div>
             </div>
             <div className="recRow">
-                <div className="colLeft">
+                <div className="colLeftRecProf">
                     <label>Company Representing:</label>
                 </div>
-                <div className="colRight">
+                <div className="colRightRecProf">
                     <label><a href="/CompanyProfile"></a></label>
                 </div>
             </div>

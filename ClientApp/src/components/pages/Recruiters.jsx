@@ -17,71 +17,74 @@ function Recruiters() {
         <br />
         <div>
             <table className="tblRecruiters">
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                   
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                   
-                </tr>            
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    </tr>            
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                   
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                   
-                </tr>
+                    </tr>
+                </tbody>
             </table>
             </div>
         </main>

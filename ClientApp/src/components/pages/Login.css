@@ -1,19 +1,17 @@
-.form-container h1{
+.form-container-login h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     padding-bottom: 15px;
     color: #4B88A2;
     font-family: 'Noto Sans Display', sans-serif;
   }
 
-  input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
+.title_container-login h3{
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Noto Sans Display', sans-serif;
+}
 
   input[type=email], select, textarea{
     width: 100%;
@@ -32,23 +30,8 @@
     box-sizing: border-box;
     resize: vertical;
   }
-
-  input[type=checkbox], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    align-items: center;
-  }
-
-  p{
-      text-align: center;
-  }
-
     
-  label {
+ .rowLogin label {
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #fff;
@@ -56,26 +39,30 @@
 
   }
 
-  .form-container {
+  .form-container-login {
     border-radius: 5px;
-    background-color: #216869;
+    background-color: #242526;
     padding: 100px;
     
   }
 
-  .col-25 {
+  .title_container-login a{
+    color: #BB0A21;
+  }
+
+  .col25Login {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
 
-  .col-75 {
+  .col75Login {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
 
-  .row:after {
+  .rowLogin:after {
     content: "";
     display: table;
     clear: both;
@@ -105,10 +92,9 @@
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
-    transition: all 0.30s ease-in-out;
-
-    
+    transition: all 0.30s ease-in-out;   
 }
+
 .btnLogin:hover {
   background: #4B88A2;
   color: #fff;
@@ -141,7 +127,7 @@
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.btnCancel{
+.btnCancelLogin{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
    background: #EEEEEE;
    height: 55px;
@@ -161,7 +147,7 @@
    transition: all 0.30s ease-in-out;
 }
 
-.btnCancel:hover{
+.btnCancelLogin:hover{
  background: #4B88A2;
  color: #fff;
  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

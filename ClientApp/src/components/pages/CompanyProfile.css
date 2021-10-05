@@ -1,7 +1,7 @@
 .gridCompProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 500px 150px 500px 150px 500px;
+    grid-template-rows: 150px 600px 150px auto 150px auto;
     grid-gap: 0.1em;
     }
    

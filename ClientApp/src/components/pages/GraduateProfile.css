@@ -144,14 +144,14 @@
         color: #252627;
       }
 
-      .colLeft {
+      .colLeftGrad {
         float: left;
         width: 25%;
         margin-top: 6px;
         padding-right: 30px;
       }
     
-      .colRight {
+      .colRightGrad {
         float: left;
         width: 75%;
         margin-top: 6px;

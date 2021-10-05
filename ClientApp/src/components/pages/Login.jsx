@@ -25,26 +25,26 @@ function Login() {
     <>
       <body>
     <div form-wrapper>
-    <div className="form-container">
-      <div className="title_container">
+    <div className="form-container-login">
+      <div className="title_container-login">
         <h1 >Login</h1>
         <h3>Don't have an account? <a href="/Signup" >Register Here</a> </h3>
         <form >
           
-        <div className="row">
-          <div class="col-25">    
+        <div className="rowLogin">
+          <div class="col25Login">    
             <label className="lblEmail" for="email">Email:</label>
           </div>
-          <div className="col-75">
+          <div className="col75Login">
             <input type="email" id="email" placeholder="Enter your email"  />
           </div>
         </div>
                      
-        <div className="row">
-          <div class="col-25">          
+        <div className="rowLogin">
+          <div class="col25Login">          
             <label className="lblPassword" for="password">Password:</label>
           </div>
-          <div className="col-75">
+          <div className="col75Login">
             <input type="password" id="password" placeholder="Enter your password"  />
           </div>
         </div>
@@ -64,7 +64,7 @@ function Login() {
             />
         </div>
 
-        <button className="btnCancel" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
+        <button className="btnCancelLogin" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
 
     </form>
         

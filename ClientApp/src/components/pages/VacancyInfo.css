@@ -1,5 +1,42 @@
-.title_container h1{
-    color: #4B88A2;
+.form-container-vacInfo h1{
+  text-align: center;
+  font-size: 80px;
+  padding-bottom: 15px;
+  color: #4B88A2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*.title_container-vacInfo label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}*/
+
+
+.col25VacInfo {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col75VacInfo {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.rowVacInfo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col25VacInfo, .col75VacInfo, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
   input[type=text], select, textarea{
@@ -21,6 +58,19 @@
     resize: vertical;
   }
 
+  .title_container-vacInfo label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .form-container-vacInfo{
+    border-radius: 5px;
+    background-color: #242526;
+    padding: 100px;
+  }
+
   .btnDeleteVac{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
@@ -39,9 +89,8 @@
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
 }
+
 .btnDeleteVac:hover {
   background: #4B88A2;
   color: #fff;
@@ -66,9 +115,8 @@
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
 }
+
 .btnEditVac:hover {
   background: #4B88A2;
   color: #fff;
@@ -93,9 +141,8 @@
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
 }
+
 .btnApplyVac:hover {
   background: #4B88A2;
   color: #fff;

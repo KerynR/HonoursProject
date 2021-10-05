@@ -1,6 +1,5 @@
 import React from 'react';
 import './VacancyInfo.css';
-import MainSection from '../MainSection';
 import Footer from '../Footer';
 import history from '../history';
 
@@ -9,78 +8,78 @@ function VacancyInfo() {
   return (
     <>
     <div form-wrapper>
-    <div className="form-container">
-      <div className="title_container">
+    <div className="form-container-vacInfo">
+      <div className="title_container-vacInfo">
             <h1>Vacancy Information</h1>
             <form>
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Job Title:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Company Name:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Location:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Job Description:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Sector:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Start Date:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Responsibilities:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div class="col-25">    
+                <div className="rowVacInfo">
+                    <div class="col25VacInfo">    
                         <label>Skill Name:</label>
                     </div>
-                    <div className="col-75">
+                    <div className="col75VacInfo">
                         <input type="text" placeholder="..."  />
                     </div>
                 </div>

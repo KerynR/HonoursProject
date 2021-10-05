@@ -7,96 +7,95 @@ function ApplyPosition() {
   return (
     <>
     <div form-wrapper>
-    <div className="form-container">
-      <div className="title_container">
+    <div className="form-container-ApplyPos">
+      <div className="title_container-ApplyPos">
         <h1>Position Details</h1>
         <form>
 
-        <div className="row">
-          <div className="col-25">    
-            <label>Employer:</label>
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblEmployerApplyPos">Employer:</label>
           </div>
-          <div className="col-75">
-          <input className="inputPosDetails" type="text" />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div className="col-25">    
-            <label>Location:</label>
-          </div>
-          <div className="col-75">
-          <input type="text" />
+          <div className="col-75-ApplyPos">
+          <label ></label>
           </div>
         </div> 
 
-        <div className="row">
-          <div className="col-25">    
-            <label>Salary:</label>
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblLocationApplyPos">Location:</label>
           </div>
-          <div className="col-75">
-          <input type="text" />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div className="col-25">    
-            <label>Job Type:</label>
-          </div>
-          <div className="col-75">
-          <input type="text" />
+          <div className="col-75-ApplyPos">
+          <label ></label>
           </div>
         </div> 
 
-        <div className="row">
-          <div className="col-25">    
-            <label>Start Date:</label>
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblSalaryApplyPos">Salary:</label>
           </div>
-          <div className="col-75">
-          <input type="text" />
-          </div>
-        </div> 
-
-        <div className="row">
-          <div className="col-25">    
-            <label>Sector:</label>
-          </div>
-          <div className="col-75">
-          <input type="text" />
+          <div className="col-75-ApplyPos">
+          <label ></label>
           </div>
         </div> 
 
-        <div className="row">
-          <div className="col-25">    
-            <label>Duties and Responsibilities:</label>
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblJobTypeApplyPos">Job Type:</label>
           </div>
-          <div className="col-75">
-          <input type="text" />
+          <div className="col-75-ApplyPos">
+          <label ></label>
           </div>
         </div> 
 
-        <div className="row">
-          <div className="col-25">    
-            <label>Skills and Competencies</label>
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblStartDateApplyPos">Start Date:</label>
           </div>
-          <div className="col-75">
-          <input type="text" />
+          <div className="col-75-ApplyPos">
+          <label ></label>
+          </div>
+        </div> 
+
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblSectorApplyPos">Sector:</label>
+          </div>
+          <div className="col-75-ApplyPos">
+          <label ></label>
+          </div>
+        </div> 
+
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblDutiesRespApplyPos">Duties & Responsibilities:</label>
+          </div>
+          <div className="col-75-ApplyPos">
+          <label ></label>
+          </div>
+        </div> 
+
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblSkillsCompApplyPos">Skills & Competencies</label>
+          </div>
+          <div className="col-75-ApplyPos">
+          <label ></label>
           </div>
         </div> 
                      
-        <div className="row">
-          <div className="col-25">    
-            <label>Minimum Requirements:</label>
+        <div className="rowApplyPos">
+          <div className="col-25-ApplyPos">    
+            <label className="lblMinReqApplyPos">Minimum Requirements:</label>
           </div>
-          <div className="col-75">
-          <input type="text" />
+          <div className="col-75-ApplyPos">
+          <label ></label>
           </div>
         </div> 
 
         
-        <input className="btnApply" type="submit" value="Apply" />
-        <input className="btnUpdate" type="submit" value="Update" />
-        <input className="btnCancel" type="submit" value="Cancel" />
+        <input className="btnApplyPos" type="submit" value="Apply" />
+        <input className="btnCancelPos" type="submit" value="Cancel" />
 
         </form>
         

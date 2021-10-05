@@ -1,8 +1,9 @@
 import React from 'react';
 import './CompanyProfile.css';
-import MainSection from '../MainSection';
 import Footer from '../Footer';
 import history from '../history';
+
+
 
 function CompanyProfile() {
   return (
@@ -12,8 +13,16 @@ function CompanyProfile() {
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                 Company Profile
             </header>
+
+        {/* TOP LEFT GRID WITH UPLOAD PFP, EDIT PROFILE, CREATE VACANCY, ADD RECRUITER, VIEW VACANCY */}
+
         <main className="leftGridComp"> 
             <ul>
+            <li>
+                <label for="pfpImage">Upload Profile Photo</label>
+                <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
+            </li>
+            <br /><br />
             <li>
                 <button className="btnEditCompanyProfile" variant="btn btn-success" onClick={() => history.push('/EditCompanyProfile')}>Edit Profile</button>          
             </li>
@@ -31,6 +40,9 @@ function CompanyProfile() {
             </li>          
             </ul>
         </main>
+
+        {/* DISPLAY COMPANY DETAILS */}
+
         <aside className="RightCompProf">
         
             <form className="CompanyForm">
@@ -72,55 +84,8 @@ function CompanyProfile() {
             </form>
         </aside>
         
-        <div className="compRepHeading">
-            <h2>Company Representatives</h2>
-        </div>
-        <div className="bottomSectComp">
-            <table className="tblCompPos">
-                <tr>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Email</th>
-                    <th>Remove Representative</th>
-                </tr>
-                <tr>
-                    <td><a href="/RecruiterProfile"></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href="/">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href="/">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href="/">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href="/">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href="/">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href=""></a></td>
-                    <td><a href="/">Delete</a></td>
-                </tr>
-            </table>
-        </div>
+        {/* SHOW ALL CURRENT POSITIONS AVAILABLE */}
+
         <div className="availPosHeading">
             <h2>Current Positions Available</h2>
         </div>
@@ -131,7 +96,6 @@ function CompanyProfile() {
                 <th>Application Closing Date</th>
                 <th>Edit Position</th>
                 <th>Remove Position</th>
-
             </tr>
             <tr>
                 <td><a href="/VacancyInfo"></a></td>
@@ -164,6 +128,62 @@ function CompanyProfile() {
                 <td><a href="/">Delete</a></td>
             </tr>
         </table>
+        </div>
+
+        {/* CURRENT COMPANY REPRESENTATIVES */}
+
+        <div className="compRepHeading">
+            <h2>Company Representatives</h2>
+        </div>
+        <div className="bottomSectComp">
+            <table className="tblCompPos">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                        <th>Remove Representative</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="/RecruiterProfile"></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="/">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="/">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="/">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="/">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="/">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="/">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 

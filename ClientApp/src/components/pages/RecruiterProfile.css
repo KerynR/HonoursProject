@@ -1,7 +1,7 @@
 .gridRecruiterProf {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 150px 500px;
+    grid-template-rows: 150px 600px;
     grid-gap: 0.1em;
     }
 
@@ -11,9 +11,17 @@
         text-align: center;
         color: #4B88A2;
     }
+
+    .fa-user-circle{
+      padding: 10px 20px 10px;
+  }
+
+  .fa-user-circle:hover{
+    color: #BB0A21;
+    cursor: pointer;
+  }
     
-    .gradRecruiterHeader,
-    footer {
+    .gradRecruiterHeader {
     grid-column-start: 1;
     grid-column-end: 3;
     }
@@ -39,52 +47,27 @@
         border: 2px solid #396a80;
     }
 
-      .fa-user-circle{
-          
-          padding: 10px 20px 10px;
-      }
+    .leftRecruiterProf li{
+      font-size: 15px;
+      font-family: 'Noto Sans Display', sans-serif;
+    }
 
-      .fa-user-circle:hover{
-        color: #BB0A21;
-        cursor: pointer;
+      .RecruitersForm label{
+        color: #FFF9FB;
       }
-
-      
 
       ul{
         list-style-type: none;
       }
 
-      .btnEditRecProfile{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-      }
-
-      .btnEditRecProfile:hover{
-        background-color: #D3D4D9;
-        color: #252627;
-      }
-
-      .btnDeleteRecProf{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-      }
-
-      .btnDeleteRecProf:hover{
-        background-color: #D3D4D9;
-        color: #252627;
-      }
-
-      .colLeft {
+      .colLeftRecProf {
         float: left;
         width: 25%;
         margin-top: 6px;
         padding-right: 30px;
       }
     
-      .colRight {
+      .colRightRecProf {
         float: left;
         width: 75%;
         margin-top: 6px;
@@ -95,4 +78,47 @@
         content: "";
         display: table;
         clear: both;
+      }
+
+      .btnEditRecProfile{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+      
+      .btnEditRecProfile:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+      
+      .btnDeleteRecProf{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+      
+      .btnDeleteRecProf:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnViewVacancies{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+      
+      .btnViewVacancies:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+      .btnAddNewPosRec{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+      
+      .btnAddNewPosRec:hover{
+        background-color: #D3D4D9;
+        color: #252627;
       }

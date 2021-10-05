@@ -12,7 +12,7 @@ function Moocs() {
         </header>
         <div className="searchMoocsTop">
           <div className="colLeftSearchMoocs">    
-            <label>Search for MOOCs:</label>
+            <label className="lblSearchMoocs">Search for MOOCs:</label>
           </div>
           <div className="colRightSearchMoocs">
             <input type="text" placeholder=""  />
@@ -21,46 +21,50 @@ function Moocs() {
 
         <main className="tblMoocsSearch">
         <table className="tblMoocs">
-            <tr>
-              <th>Company Name</th>
-              <th>Cost</th>
-              <th>Link (Click to visit)</th>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>            
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+          <thead>
+              <tr>
+                <th>Company Name</th>
+                <th>Cost</th>
+                <th>Link (Click to visit)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>            
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
         </table>
         {/*ADD CLICKABLE ICONS OF RECOMMENDED MOOCS*/}
         </main>

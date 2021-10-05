@@ -22,6 +22,7 @@ function Contact() {
           <br />
           <li>011 696 3358<i class="fa fa-phone" aria-hidden="true"></i></li>
           <br />
+          <li>South Africa<i class="fa fa-map-marker" aria-hidden="true"></i></li>
         </ul>
         </main>
         <aside >

@@ -13,30 +13,34 @@ function SubmissionDetails() {
         </header>
         <main>
           <table className="tblSubDetails">
-          <tr>
-                <th>Job Title</th>                
-                <th>Application Closing Date</th>
-            </tr>
-            <tr>
-                <td><a href="/ViewSubmissions"></a></td>
-                <td></td>                
-            </tr>
-            <tr>
-                <td><a href="/ViewSubmissions"></a></td>
-                <td></td>     
-            </tr>
-            <tr>
-                <td><a href="/ViewSubmissions"></a></td>
-                <td></td>   
-            </tr>
-            <tr>
-                <td><a href="/ViewSubmissions"></a></td>
-                <td></td>            
-            </tr>
-            <tr>
-                <td><a href="/ViewSubmissions"></a></td>
-                <td></td>              
-            </tr>
+            <thead>
+              <tr>
+                    <th>Job Title</th>                
+                    <th>Application Closing Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td><a href="/ViewSubmissions"></a></td>
+                  <td></td>                
+              </tr>
+              <tr>
+                  <td><a href="/ViewSubmissions"></a></td>
+                  <td></td>     
+              </tr>
+              <tr>
+                  <td><a href="/ViewSubmissions"></a></td>
+                  <td></td>   
+              </tr>
+              <tr>
+                  <td><a href="/ViewSubmissions"></a></td>
+                  <td></td>            
+              </tr>
+              <tr>
+                  <td><a href="/ViewSubmissions"></a></td>
+                  <td></td>              
+              </tr>
+            </tbody>
           </table>
         </main>
         </div>

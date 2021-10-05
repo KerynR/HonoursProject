@@ -1,6 +1,6 @@
-.form-container h1{
+.form-container-signup h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     padding-bottom: 15px;
     color: #4B88A2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -42,33 +42,26 @@ input[type=text], select, textarea{
     resize: vertical;
     align-items: center;
   }
-
-  p{
-      text-align: center;
-      color: #fff;
-      font-size: 20px;
-  }
-
     
-  .title_container label {
+  .title_container-signup label {
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
- .title_container h3{
+ .title_container-signup h3{
       color: #fff;
       font-size: 25px;
       text-align: center;
   }
 
-  .title_container a{
+  .title_container-signup a{
       color: #4B88A2;
       text-align: center;
   }
 
-  .title_container h4{
+  .title_container-signup h4{
     color: #FFF;
     text-align: center;
     font-size: 18px;
@@ -79,35 +72,32 @@ input[type=text], select, textarea{
     padding: 10px;
   }
 
-
-
-  .form-container {
+  .form-container-signup {
     border-radius: 5px;
-    background-color: #216869;
+    background-color: #242526;
     padding: 100px;
-    
   }
 
-  .col-25 {
+  .col25Signup {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
 
-  .col-75 {
+  .col75Signup {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
 
-  .row:after {
+  .rowSignup:after {
     content: "";
     display: table;
     clear: both;
   }
 
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col25Signup, .col75Signup, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
@@ -130,17 +120,16 @@ input[type=text], select, textarea{
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
-    transition: all 0.30s ease-in-out;
-
-    
+    transition: all 0.30s ease-in-out;    
 }
+
 .btnSignup:hover {
   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.btnCancel{
+.btnCancelSignup{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
     height: 55px;
@@ -160,7 +149,7 @@ input[type=text], select, textarea{
     transition: all 0.30s ease-in-out;
 }
 
-.btnCancel:hover {
+.btnCancelSignup:hover {
   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

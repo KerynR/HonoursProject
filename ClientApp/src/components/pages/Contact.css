@@ -39,20 +39,20 @@
     }
 
     .h2Contact{
-        color: #ffffff;
-        font-size: 16px;
+        color: #4B88A2;
+        font-size: 20px;
         text-align: right;
         font-family: 'Noto Sans Display', sans-serif;
     }
 
     .contactRight h3{
-        color: #ffffff;
-        font-size: 16px;
+        color: #4B88A2;
+        font-size: 20px;
         text-align: left;
         font-family: 'Noto Sans Display', sans-serif;
     }
 
-    .contactRight .fa-envelope, .fa-mobile, .fa-phone
+    .contactRight .fa-envelope, .fa-mobile, .fa-phone, .fa-map-marker
     {
         color: #fff;
         padding-left: 1em;

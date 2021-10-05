@@ -1,8 +1,8 @@
-h1{
+.title_container-editGradProf h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     padding-bottom: 15px;
-    color: #fff;
+    color: #4b88A2;
     font-family: 'Noto Sans Display', sans-serif;
   }
 
@@ -33,77 +33,39 @@ input[type=text], select, textarea{
     resize: vertical;
   }
 
-/*
-  .btnSignup {
-    background-color: #EEEEEE;
-    color: #334257;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }*/
-
-  .form-container {
+  .form-container-editGradProf {
     border-radius: 5px;
-    background-color: #216869;
+    background-color: #252627;
     padding: 100px;
     
   }
 
-  .col-25 {
+  .col-25-editGradProf {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
 
-  .col-75 {
+  .col-75-editGradProf {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
 
-  .row:after {
+  .rowEditGradProf:after {
     content: "";
     display: table;
     clear: both;
   }
 
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25-editGradProf, .col-75-editGradProf, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
 
-.btnSave{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #EEEEEE;
-    height: 55px;
-    line-height: 35px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-    color: #334257;
-    font-size: 1.2em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    transition: all 0.30s ease-in-out;
-
-    
-}
-.btnSave:hover {
-  background: #1F2421;
-  color: #fff;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.btnCancel{
+.btnSaveGradProf{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
     height: 55px;
@@ -123,13 +85,39 @@ input[type=text], select, textarea{
     transition: all 0.30s ease-in-out;
 }
 
-.btnCancel:hover{
-    background: #1F2421;
+.btnSaveGradProf:hover {
+  background: #4b88a2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.btnDelete{
+.btnDeleteGradProf{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #EEEEEE;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #334257;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.btnDeleteGradProf:hover{
+    background: #4b88a2;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnCancelGradProf{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #EEEEEE;
   height: 55px;
@@ -149,18 +137,8 @@ input[type=text], select, textarea{
   transition: all 0.30s ease-in-out;
 }
 
-.btnCancel:hover{
-  background: #1F2421;
-color: #fff;
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.btnDelete:hover{
-  background: #1F2421;
+.btnCancelGradProf:hover{
+  background: #4b88a2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-label{
-  color: #fff;
 }

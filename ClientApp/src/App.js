@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
-import EditProfile from './components/pages/EditProfile';
+import EditGradProfile from './components/pages/EditGradProfile';
 import CreatePosition from './components/pages/CreatePosition';
 import ViewSubmissions from './components/pages/ViewSubmissions';
 import GraduateProfile from './components/pages/GraduateProfile';
@@ -21,14 +21,12 @@ import CompanyProfile from './components/pages/CompanyProfile';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Vacancies from './components/pages/Vacancies';
-import Apply from './components/pages/Apply';
 import VacancyInfo from './components/pages/VacancyInfo';
 import EditVacancy from './components/pages/EditVacancy';
 import SubmissionDetails from './components/pages/SubmissionDetails';
 import Recruiters from './components/pages/Recruiters';
 import RecruiterProfile from './components/pages/RecruiterProfile';
 import EditRecruiterProfile from './components/pages/EditRecruiterProfile';
-import SignupTest from './components/pages/SignupTest';
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";
@@ -50,7 +48,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route exact path='/Login' component={Login}/>
         <Route exact path='/Signup' component={Signup}/>
-        <Route exact path='/EditProfile' component={EditProfile}/>
+        <Route exact path='/EditGradProfile' component={EditGradProfile}/>
         <Route exact path='/CreatePosition' component={CreatePosition}/>
         <Route exact path='/ViewSubmissions' component={ViewSubmissions}/>
         <Route exact path='/GraduateProfile' component={GraduateProfile}/>
@@ -63,14 +61,12 @@ function App() {
         <Route exact path='/Contact' component={Contact}/>
         <Route exact path='/About' component={About}/>
         <Route exact path='/Vacancies' component={Vacancies}/>
-        <Route exact path='/Apply' component={Apply}/>
         <Route exact path='/VacancyInfo' component={VacancyInfo}/>
         <Route exact path='/EditVacancy' component={EditVacancy}/>
         <Route exact path='/SubmissionDetails' component={SubmissionDetails}/>
         <Route exact path='/Recruiters' component={Recruiters}/>
         <Route exact path='/RecruiterProfile' component={RecruiterProfile}/>
         <Route exact path ='/EditRecruiterProfile' component={EditRecruiterProfile}/>
-        <Route exact path ='/SignupTest' component={SignupTest}/>
 
       </Switch>
       </Router>
