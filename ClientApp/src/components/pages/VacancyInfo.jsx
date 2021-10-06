@@ -17,7 +17,7 @@ function VacancyInfo() {
                         <label>Job Title:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                        <label></label>
                     </div>
                 </div>
 
@@ -26,7 +26,7 @@ function VacancyInfo() {
                         <label>Company Name:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
@@ -35,7 +35,7 @@ function VacancyInfo() {
                         <label>Location:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ function VacancyInfo() {
                         <label>Job Description:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ function VacancyInfo() {
                         <label>Sector:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
@@ -62,7 +62,7 @@ function VacancyInfo() {
                         <label>Start Date:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@ function VacancyInfo() {
                         <label>Responsibilities:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
@@ -80,19 +80,20 @@ function VacancyInfo() {
                         <label>Skill Name:</label>
                     </div>
                     <div className="col75VacInfo">
-                        <input type="text" placeholder="..."  />
+                    <label></label>
                     </div>
                 </div>
 
 
-                {/*ONLY VISIBLE TO COMPANY*/}
-                <button className="btnDeleteVac">Delete Vacancy</button><br />
-                <button className="btnEditVac" variant="btn btn-success" onClick={() => history.push('/EditVacancy')}>Edit Vacancy</button>
-
                 {/*ONLY VISIBLE TO GRADUATE*/}
-                <input type="file" /><br />
-                <button className="btnApplyVac">Apply for Vacancy</button>
-            
+                <label>Upload motivation:</label>
+                <input type="file" /><br /><br />
+                <label>Upload CV:</label>
+                <input type="file" /><br /><br />
+                <button className="btnApplyVac">Apply</button>
+                <button className="btnCancelApplyVac">Cancel</button>
+
+
             </form>
         </div>
         </div>

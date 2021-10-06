@@ -4,14 +4,9 @@ import Footer from '../Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import history from '../history';
 
-/*function confirmDelete(){
-  var result = window.confirm("Are you sure you want to delete?");
-  if(result){
-      //delete logic here
-  }
-}*/
 
-{/* GRADUATE PROFILE PAGE */}
+
+{/* GRADUATES CURRENT APPLICATIONS - THIS PAGE OPENS WHEN THE GRADUATE CLICKS ON THE JOB TITLE */}
 
 function GraduateProfile() {
   return (
@@ -22,6 +17,8 @@ function GraduateProfile() {
             Graduate Profile
         </header>
         <main className="leftGradProf">
+
+           {/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
         <ul>
 
           <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  />
@@ -45,16 +42,14 @@ function GraduateProfile() {
           </li>
           <br />
           <li>
-          <button className="btnViewSubmissions" variant="btn btn-success" onClick={() => history.push('/ViewSubmissions')}>View Submissions</button>          
-          </li>
-          <br />
-          <li>
           <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
           </li>
          
         </ul>
         </main>
         <aside className="rightGradProf">
+
+            {/** VISIBLE TO EVERYONE */} 
 
         <form className="GraduateForm">
 
@@ -63,7 +58,7 @@ function GraduateProfile() {
                   <label className="lblGradName">Name:</label>
               </div>
               <div className="colRightGrad">
-                  <label className="lblGradName"></label>
+                  <label className=""></label>
               </div>
           </div>
 
@@ -72,7 +67,7 @@ function GraduateProfile() {
                   <label className="lblGradSurname">Surname:</label>
               </div>
               <div className="colRightGrad">
-                  <label className="lblGradSurname"></label>
+                  <label className=""></label>
               </div>
           </div>
 
@@ -81,7 +76,7 @@ function GraduateProfile() {
                   <label className="lblGradEmail">Email:</label>
               </div>
               <div className="colRightGrad">
-                  <label className="lblGradEmail"></label>
+                  <label className=""></label>
               </div>
           </div>
           <div className="gradRow">
@@ -89,7 +84,15 @@ function GraduateProfile() {
                   <label className="lblGradContact">Contact:</label>
               </div>
               <div className="colRightGrad">
-                  <label className="lblGradContact"></label>
+                  <label className=""></label>
+              </div>
+          </div>
+          <div className="gradRow">
+              <div className="colLeftGrad">
+                  <label className="lblGradGender">Gender:</label>
+              </div>
+              <div className="colRightGrad">
+                  <label className=""></label>
               </div>
           </div>
           <div className="gradRow">
@@ -97,11 +100,46 @@ function GraduateProfile() {
                   <label className="lblGradCompRep">Company Representing:</label>
               </div>
               <div className="colRightGrad">
-                  <label className="lblCompRep"></label>
+                  <label className=""></label>
               </div>
           </div>
         </form>
         </aside>
+        <div className="currentApplicationsHeader">
+            <h1>Current Applications</h1>
+        </div>
+        <div className="currentApplications">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Application Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="/gradSubmissions"></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/gradSubmissions"></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/gradSubmissions"></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/gradSubmissions"></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/gradSubmissions"></a></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div className="gradBottom">
                     <ul className="cvTips">
                         <h2 className="cvTipsh2">Top 5 Tips for Creating a CV:</h2><br /><br />

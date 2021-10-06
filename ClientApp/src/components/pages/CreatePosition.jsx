@@ -46,7 +46,8 @@ function CreatePosition() {
             <label className="lblJobDescr">Job Description:</label>
           </div>
           <div className="col-75-CreatePos">
-            <input type="text" placeholder=""  />
+          <textarea name="txtAreaCPJobDes" rows="5" cols="50" type="text" placeholder="" ></textarea>
+
           </div>
         </div> 
 
@@ -73,7 +74,8 @@ function CreatePosition() {
             <label className="lblJobResp">Responsibilities:</label>
           </div>
           <div className="col-75-CreatePos">
-            <input type="text" placeholder=""  />
+          <textarea name="txtAreaCPResp" rows="5" cols="50" type="text" placeholder="" ></textarea>
+
           </div>
         </div> 
 
@@ -82,7 +84,8 @@ function CreatePosition() {
             <label className="lblSkillReq">Skill Requirements:</label>
           </div>
           <div className="col-75-CreatePos">
-            <input type="text" placeholder=""  />
+          <textarea name="txtAreaCPSkillsReq" rows="5" cols="50" type="text" placeholder="" ></textarea>
+
           </div>
         </div>
 

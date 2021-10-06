@@ -27,13 +27,9 @@ function RecruiterProfile() {
           <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  />
           <br /><br />  
           <li>
-            <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/')}>Edit Profile</button>          
+            <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/EditRecruiterProfile')}>Edit Profile</button>          
           </li>
           <br />                
-          <li>
-            <button className="btnDeleteRecProf" variant="btn btn-success" onClick="confirmDelete()">Delete Profile</button>          
-          </li>
-          <br />
           <li>
             <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
           </li>

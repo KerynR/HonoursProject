@@ -58,6 +58,11 @@ input[type=text], select, textarea{
     clear: both;
   }
 
+  .rowEditGradProf label{
+    color: #fff;
+    font-family: 'Noto Sans Display', sans-serif;
+  }
+
   @media screen and (max-width: 600px) {
     .col-25-editGradProf, .col-75-editGradProf, input[type=submit] {
       width: 100%;

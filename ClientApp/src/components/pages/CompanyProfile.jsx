@@ -100,32 +100,32 @@ function CompanyProfile() {
             <tr>
                 <td><a href="/VacancyInfo"></a></td>
                 <td></td>
-                <td><a href="/EditVacancy">Edit</a></td>
-                <td><a href="/">Delete</a></td>
+                <td><button className="btnEditPos" variant="btn btn-success" onClick={() => history.push('/EditVacancy')}>Edit</button></td>
+                <td><button className="btnDeletePos" variant="btn btn-success" onClick={() => history.push('/')}>Delete</button></td>
             </tr>
             <tr>
                 <td><a href="/VacancyInfo"></a></td>
                 <td></td>
-                <td><a href="/EditVacancy">Edit</a></td>
-                <td><a href="/">Delete</a></td>
+                <td><button className="btnEditPos" variant="btn btn-success" onClick={() => history.push('/EditVacancy')}>Edit</button></td>
+                <td><button className="btnDeletePos" variant="btn btn-success" onClick={() => history.push('/')}>Delete</button></td>
             </tr>
             <tr>
                 <td><a href="/VacancyInfo"></a></td>
                 <td></td>
-                <td><a href="/EditVacancy">Edit</a></td>
-                <td><a href="/">Delete</a></td>
+                <td><button className="btnEditPos" variant="btn btn-success" onClick={() => history.push('/EditVacancy')}>Edit</button></td>
+                <td><button className="btnDeletePos" variant="btn btn-success" onClick={() => history.push('/')}>Delete</button></td>
             </tr>
             <tr>
                 <td><a href="/VacancyInfo"></a></td>
                 <td></td>
-                <td><a href="/EditVacancy">Edit</a></td>
-                <td><a href="/">Delete</a></td>
+                <td><button className="btnEditPos" variant="btn btn-success" onClick={() => history.push('/EditVacancy')}>Edit</button></td>
+                <td><button className="btnDeletePos" variant="btn btn-success" onClick={() => history.push('/')}>Delete</button></td>
             </tr>
             <tr>
                 <td><a href="/VacancyInfo"></a></td>
                 <td></td>
-                <td><a href="/EditVacancy">Edit</a></td>
-                <td><a href="/">Delete</a></td>
+                <td><button className="btnEditPos" variant="btn btn-success" onClick={() => history.push('/EditVacancy')}>Edit</button></td>
+                <td><button className="btnDeletePos" variant="btn btn-success" onClick={() => history.push('/')}>Delete</button></td>
             </tr>
         </table>
         </div>

@@ -108,6 +108,11 @@
         clear: both;
       }
 
+      .compRow{
+        color: #FFF9FB;
+        font-family: 'Noto Sans Display', sans-serif;
+      }
+
       .CompanyForm{
         padding: 40px;
         padding-left: 50px;
@@ -130,4 +135,10 @@
   background-color: #4B88A2;
   border-radius: 8px;
   border: 2px solid #396a80;
+}
+
+.btnEditPos, .btnDeletePos{
+  background-color: transparent;
+  color: #FFF9FB;
+  border: none;
 }

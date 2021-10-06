@@ -12,12 +12,11 @@
     border-radius: 5px;
     background-color: #252627;
     padding: 100px;
-    
   }
 
   .title_container-EditComp h1{
     color: #4B88A2;
-    font-size: 80px;
+    font-size: 5em;
     text-align: center;
     padding-bottom: 15px;
     font-family: 'Noto Sans Display', sans-serif;
@@ -45,6 +44,11 @@
     content: "";
     display: table;
     clear: both;
+  }
+
+  .rowEditComp label{
+    color: #fff9FB;
+    font-family: 'Noto Sans Display', sans-serif;
   }
 
   @media screen and (max-width: 600px) {

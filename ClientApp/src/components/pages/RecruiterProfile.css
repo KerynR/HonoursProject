@@ -91,13 +91,13 @@
         color: #252627;
       }
       
-      .btnDeleteRecProf{
+      .btnDeleteRecrProf{
         background-color: #4B88A2;
         color: #FFF9FB;
         width: 100%;
       }
       
-      .btnDeleteRecProf:hover{
+      .btnDeleteRecrProf:hover{
         background-color: #D3D4D9;
         color: #252627;
       }

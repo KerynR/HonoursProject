@@ -20,7 +20,7 @@ function Vacancies() {
             <label>Search for vancancy:</label>
           </div>
           <div className="colRightSearch">
-            <input type="text" placeholder=""  />
+            <input className="txtSearchVac" type="text" placeholder=""  />
           </div>
         </div> 
 
@@ -39,49 +39,49 @@ function Vacancies() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Hello</td>
-                        <td>How</td>
-                        <td>Are</td>
-                        <td>You</td>
-                        <td>Doing</td>
-                    </tr>
-                    <tr>
-                        <td>Testing</td>
+                        <td><a href="/CompanyProfile"></a></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
+                        <td><a href="/CompanyProfile"></a></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
+                        <td><a href="/CompanyProfile"></a></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
+                        <td><a href="/CompanyProfile"></a></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/CompanyProfile"></a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/CompanyProfile"></a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/CompanyProfile"></a></td>
                         <td></td>
                         <td></td>
                         <td></td>

@@ -1,0 +1,75 @@
+.gridGradSubmissions {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 500px;
+    grid-gap: 0.1em;
+    }
+    
+    .gradSubmissionsHeader, .gradSubmissionsWrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    .gridGradSubmissions > * {
+    background: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .gradSubmissionsHeader{
+        text-align: center;
+        font-size: 5em;
+        padding-bottom: 15px;
+        color: #4B88A2;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    .gradSubmissionsTable{
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        font-family: sans-serif;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    .gradSubmissionsTable thead tr{
+        background-color: #4B88A2;
+        color: #fff;
+        text-align: left;
+    }
+
+    .gradSubmissionsTable th
+    .gradSubmissionsTable td{
+        padding: 12px 15px;
+    }
+    
+    .gradSubmissionsTable tbody tr{
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .gradSubmissionsTable tbody tr:nth-of-type(even){
+        background-color: #3a3b3d;
+    }
+
+    .gradSubmissionsTable tbody tr:last-of-type{
+        border-bottom: 2px solid #4B88A2;
+    }
+
+    .gradSubmissionsTable tbody tr.active-row{
+        font-weight: bold;
+        color: #4B88A2;
+    }
+
+    .btnDeleteApp{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+    }
+
+    .btnDeleteApp:hover{
+       color:  #BB0A21;
+    }

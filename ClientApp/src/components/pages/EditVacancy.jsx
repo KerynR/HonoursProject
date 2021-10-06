@@ -36,7 +36,8 @@ function EditVacancy() {
                         <label className="lblJobDescrVac">Job Description:</label>
                     </div>
                     <div className="col-75-editVac">
-                        <input type="text" placeholder="..."  />
+                    <textarea name="txtAreaJobDesc" rows="5" cols="50" type="text" placeholder="..." ></textarea>
+
                     </div>
                 </div>
 
@@ -54,7 +55,7 @@ function EditVacancy() {
                         <label className="lblStartDateVac">Start Date:</label>
                     </div>
                     <div className="col-75-editVac">
-                        <input type="date" placeholder=""  />
+                        <input Text type="date" placeholder=""  />
                     </div>
                 </div>
 
@@ -72,7 +73,7 @@ function EditVacancy() {
                         <label className="lblRespVac">Responsibilities:</label>
                     </div>
                     <div className="col-75-editVac">
-                        <input type="text" placeholder="..."  />
+                    <textarea name="txtAreaResp" rows="5" cols="50" type="text" placeholder="" ></textarea>
                     </div>
                 </div>
 
@@ -81,7 +82,7 @@ function EditVacancy() {
                         <label className="lblSkillReqVac">Skill Requirement:</label>
                     </div>
                     <div className="col-75-editVac">
-                        <input type="text" placeholder="..."  />
+                        <textarea name="txtAreaSR" rows="5" cols="50" type="text" placeholder="" ></textarea>
                     </div>
                 </div>
 

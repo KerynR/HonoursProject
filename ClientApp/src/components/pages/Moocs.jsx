@@ -24,7 +24,6 @@ function Moocs() {
           <thead>
               <tr>
                 <th>Company Name</th>
-                <th>Cost</th>
                 <th>Link (Click to visit)</th>
               </tr>
             </thead>
@@ -32,35 +31,28 @@ function Moocs() {
               <tr>
                 <td></td>
                 <td></td>
+              </tr>
+              <tr>
+                <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
                 <td></td>
                 <td></td>
               </tr>            
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
               </tr>
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
               </tr>
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
               </tr>

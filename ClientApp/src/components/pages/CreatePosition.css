@@ -60,6 +60,12 @@
     clear: both;
   }
 
+  .rowCreatePos label{
+    color: #fff;
+    font-family: 'Noto Sans Display', sans-serif;
+
+  }
+
   @media screen and (max-width: 600px) {
     .col-25-CreatePos, .col-75-CreatePos, input[type=submit] {
       width: 100%;

@@ -1,15 +1,22 @@
 .gridGradProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px auto 400px;
+    grid-template-rows: 150px auto 150px 400px 400px;
     grid-gap: 0.1em;
     }
 
     .gradProfHeader{
-        font-size: 80px;
+        font-size: 5em;
         font-family: 'Noto Sans Display', sans-serif;
         text-align: center;
         color: #4B88A2;
+    }
+
+    .currentApplicationsHeader h1{
+      font-size: 4em;
+      font-family: 'Noto Sans Display', sans-serif;
+      text-align: center;
+      color: #4B88A2;
     }
 
     .fa-user-circle{
@@ -20,7 +27,7 @@
       color: #BB0A21;
     }
     
-    .gradProfHeader,
+    .gradProfHeader, .currentApplications, .currentApplicationsHeader,
     .gradBottom {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -167,4 +174,8 @@
 .GraduateForm{
   padding: 40px;
   padding-left: 50px;
+}
+
+.GraduateForm label{
+  color: #FFF9FB;
 }

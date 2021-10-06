@@ -19,7 +19,7 @@ function EditCompanyProfile() {
             <label className="lblCompNameEdit">Name:</label>
           </div>
           <div className="col-75-EditComp">
-            <input type="text" placeholder="..."  />
+            <input type="text" placeholder=""  />
           </div>
         </div> 
 
@@ -28,7 +28,7 @@ function EditCompanyProfile() {
             <label className="lblSectorEdit">Sector:</label>
           </div>
           <div className="col-75-EditComp">
-            <input type="text" placeholder="..."  />
+            <input type="text" placeholder=""  />
           </div>
         </div>
                      
@@ -37,7 +37,8 @@ function EditCompanyProfile() {
             <label className="lblVisionEdit">Vision:</label>
           </div>
           <div className="col-75-EditComp">
-            <input type="text" placeholder="..."  />
+          <textarea name="txtAreaVision" rows="3" cols="50" type="text" placeholder="" ></textarea>
+
           </div>
         </div>
 
@@ -46,7 +47,8 @@ function EditCompanyProfile() {
             <label className="lblMissionEdit">Mission:</label>
           </div>
           <div className="col-75-EditComp">
-            <input type="text" placeholder="..."  />
+          <textarea name="txtAreaMission" rows="5" cols="50" type="text" placeholder="" ></textarea>
+
           </div>
         </div>
 

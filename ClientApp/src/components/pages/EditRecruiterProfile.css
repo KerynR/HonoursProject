@@ -34,7 +34,8 @@
   .title_container-editRec .h1EditRecProf{
     color: #4B88A2;
     font-family: 'Noto Sans Display', sans-serif;
-    font-size: 80px;
+    font-size: 5em;
+    text-align: center;
   }
 
   .title_container-editRec label{

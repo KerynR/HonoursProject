@@ -3,6 +3,8 @@ import './ViewSubmissions.css';
 import Footer from '../Footer';
 
 
+{/** ONLY VISIBLE TO THE COMPANY AND COMPANY REP */}
+
 function ViewSubmissions() {
  
   return (
