@@ -52,7 +52,7 @@
         padding-left: 20px;
     }
 
-    table th, tr{
+   /* table th, tr{
         font-size: 30px;
         font-style: normal;
         border-color: #4B88A2;
@@ -77,7 +77,7 @@
           width: 500px;
           text-align: center;
           font-size: 25px;
-      }    
+      }    */
 
       .fa-user-circle{
         padding: 10px 20px 10px;
@@ -139,6 +139,101 @@
 
 .btnEditPos, .btnDeletePos{
   background-color: transparent;
-  color: #FFF9FB;
+  color: #242526;
   border: none;
 }
+
+/* CURRENT POSITIONS AVAIABLE TABLE STYLES*/
+    
+.table{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.tblActiveApplications table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.tblActiveApplications th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tblActiveApplications td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/* .tblActiveApplications tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */
+
+
+/*  COMPANY REPRESENTATIVES TABLE STYLES*/
+    
+.table{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.bottomSectComp table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.bottomSectComp th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bottomSectComp td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/* .tblActiveApplications tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */

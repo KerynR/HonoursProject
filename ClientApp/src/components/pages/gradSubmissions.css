@@ -25,51 +25,61 @@
         font-family: 'Noto Sans Display', sans-serif;
     }
 
-    .gradSubmissionsTable{
-        border-collapse: collapse;
-        margin: 25px 0;
-        font-size: 0.9em;
-        min-width: 400px;
-        font-family: sans-serif;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        font-family: 'Noto Sans Display', sans-serif;
-    }
-
-    .gradSubmissionsTable thead tr{
-        background-color: #4B88A2;
-        color: #fff;
-        text-align: left;
-    }
-
-    .gradSubmissionsTable th
-    .gradSubmissionsTable td{
-        padding: 12px 15px;
-    }
     
-    .gradSubmissionsTable tbody tr{
-        border-bottom: 1px solid #dddddd;
-    }
-
-    .gradSubmissionsTable tbody tr:nth-of-type(even){
-        background-color: #3a3b3d;
-    }
-
-    .gradSubmissionsTable tbody tr:last-of-type{
-        border-bottom: 2px solid #4B88A2;
-    }
-
-    .gradSubmissionsTable tbody tr.active-row{
-        font-weight: bold;
-        color: #4B88A2;
-    }
 
     .btnDeleteApp{
         border: none;
         background-color: transparent;
-        color: #fff;
         text-align: center;
+        font-size: 0.5em;
     }
 
     .btnDeleteApp:hover{
        color:  #BB0A21;
     }
+
+    /* TABLE STYLES*/
+    
+ table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-style: normal;
+    align-content: center;
+  }
+  
+  .gradSubmissionsTable table{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-style: normal;
+    width: auto;
+  }
+  
+  .gradSubmissionsTable th{
+    color: #FFF9FB;
+    font-size: 0.6em;
+    background-color: #4B88A1;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .gradSubmissionsTable td{
+    color: #242526;
+    background-color: #D3D4D9;
+    border-bottom: #252627;
+    border-left: #D3D4D9;
+    border-right: #D3D4D9;
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+  }
+  
+  /* .gradSubmissionsTable tr td:hover{
+    background-color: #4B88A1;
+    color: #FFF9FB;
+    
+  }*/
+  
+  /* END OF TABLE STYLES */

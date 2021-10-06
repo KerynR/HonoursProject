@@ -16,8 +16,8 @@ function gradSubmissions() {
 
         <main className="gradSubmissionsWrapper">
         
-        <div>
-            <table className="gradSubmissionsTable">
+        <div className="gradSubmissionsTable">
+            <table >
                 <thead>
                     <tr>
                         <th>Company Name</th>

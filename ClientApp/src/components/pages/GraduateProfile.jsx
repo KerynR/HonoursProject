@@ -109,7 +109,7 @@ function GraduateProfile() {
             <h1>Current Applications</h1>
         </div>
         <div className="currentApplications">
-            <table>
+            <table className="currAppTbl">
                 <thead>
                     <tr>
                         <th>Job Title</th>

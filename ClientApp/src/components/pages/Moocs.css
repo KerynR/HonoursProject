@@ -54,20 +54,6 @@
     margin-top: 6px;
 }
 
-  .tblVacancies{
-      color: #fff;
-  }
-
-  tr{
-      font-size: 20px;
-  }
-
-  table tr td, th{
-      border-color: #4B88A2;
-      color: #FFF9FB;
-  }
-
-
 .moocSearch {
     padding: 6px;
     border:rgba(0, 0, 0, 0.8);
@@ -107,28 +93,56 @@
     }
   }
 
-  .tblMoocs{
-    width: auto;
-  }
-.tblMoocs, th, td{
-  border: 1px solid black;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-th{
-  font-size: 20px;
-  text-align: left;
-  height: 40px;
-}
-
-td{
-  height: 30px;
-}
-
 .moocIconsHeading h2{
   color: #4B88A2;
   font-size: 40px;
   font-family: 'Noto Sans Display', sans-serif;
   text-align: center;
 }
+
+/* TABLE STYLES*/
+    
+.tblMoocs{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%
+}
+
+.tblMoocs{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%
+}
+
+.tblMoocs th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tblMoocs td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/* .tblMoocs tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */

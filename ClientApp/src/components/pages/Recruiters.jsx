@@ -15,13 +15,14 @@ function Recruiters() {
         <main className="RecruitersWrapper">
         
         <br />
-        <div>
-            <table className="tblRecruiters">
+        <div className="tblRecruiters">
+            <table>
                 <thead>
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,61 +30,45 @@ function Recruiters() {
                         <td></td>
                         <td></td>
                         <td></td>
-                        
+                        <td>Remove</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                    
+                        <td>Remove</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                    
+                        <td>Remove</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                    
+                        <td>Remove</td>
                     </tr>            
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td>Remove</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                        
+                        <td>Remove</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td></td>
                         <td></td>
-                        
+                        <td>Remove</td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                     
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    
-                    </tr>
                 </tbody>
             </table>
             </div>

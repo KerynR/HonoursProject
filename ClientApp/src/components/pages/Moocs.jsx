@@ -26,8 +26,8 @@ function Moocs() {
                 <th>Company Name</th>
                 <th>Link (Click to visit)</th>
               </tr>
-            </thead>
-            <tbody>
+          </thead>
+          <tbody>
               <tr>
                 <td></td>
                 <td></td>
@@ -56,7 +56,7 @@ function Moocs() {
                 <td></td>
                 <td></td>
               </tr>
-            </tbody>
+          </tbody>
         </table>
         {/*ADD CLICKABLE ICONS OF RECOMMENDED MOOCS*/}
         </main>

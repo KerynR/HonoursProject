@@ -15,60 +15,62 @@ function ViewSubmissions() {
         </header>
         <main>
           <table className="tblViewSub">
-          <tr>
-                <th>First Name</th>                
-                <th>Last Name</th>
-                <th>Motivation</th>
-                <th>CV URL</th>
-                <th>Approve Application</th>
-                <th>Reject Application</th>
+            <thead>
+              <tr>
+                    <th>First Name</th>                
+                    <th>Last Name</th>
+                    <th>Motivation</th>
+                    <th>CV URL</th>
+                    <th>Approve Application</th>
+                    <th>Reject Application</th>
 
-            </tr>
-            <tr>
-                <td><a href=""></a></td> 
-                <td><a href=""></a></td>    
-                <td></td>
-                <td><a href=""></a></td>    
-                <td><button>Approve</button></td>   
-                <td><button>Reject</button></td>           
-            </tr>
-            <tr>
-                <td><a href=""></a></td> 
-                <td><a href=""></a></td>    
-                <td></td>
-                <td><a href=""></a></td> 
-                <td><button>Approve</button></td>   
-                <td><button>Reject</button></td>   
-            </tr>
-            <tr>
-                <td><a href=""></a></td> 
-                <td><a href=""></a></td>  
-                <td></td>
-                <td><a href=""></a></td>   
-                <td><button>Approve</button></td>   
-                <td><button>Reject</button></td> 
-            </tr>
-            <tr>
-                <td><a href=""></a></td> 
-                <td><a href=""></a></td>   
-                <td></td>
-                <td><a href=""></a></td>   
-                <td><button>Approve</button></td>   
-                <td><button>Reject</button></td>         
-            </tr>
-            <tr>
-                <td><a href=""></a></td> 
-                <td><a href=""></a></td>  
-                <td></td>
-                <td><a href=""></a></td>   
-                <td><button>Approve</button></td>   
-                <td><button>Reject</button></td>            
-            </tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td><a href=""></a></td> 
+                  <td><a href=""></a></td>    
+                  <td></td>
+                  <td><a href=""></a></td>    
+                  <td><button>Approve</button></td>   
+                  <td><button>Reject</button></td>           
+              </tr>
+              <tr>
+                  <td><a href=""></a></td> 
+                  <td><a href=""></a></td>    
+                  <td></td>
+                  <td><a href=""></a></td> 
+                  <td><button>Approve</button></td>   
+                  <td><button>Reject</button></td>   
+              </tr>
+              <tr>
+                  <td><a href=""></a></td> 
+                  <td><a href=""></a></td>  
+                  <td></td>
+                  <td><a href=""></a></td>   
+                  <td><button>Approve</button></td>   
+                  <td><button>Reject</button></td> 
+              </tr>
+              <tr>
+                  <td><a href=""></a></td> 
+                  <td><a href=""></a></td>   
+                  <td></td>
+                  <td><a href=""></a></td>   
+                  <td><button>Approve</button></td>   
+                  <td><button>Reject</button></td>         
+              </tr>
+              <tr>
+                  <td><a href=""></a></td> 
+                  <td><a href=""></a></td>  
+                  <td></td>
+                  <td><a href=""></a></td>   
+                  <td><button>Approve</button></td>   
+                  <td><button>Reject</button></td>            
+              </tr>
+            </tbody>
           </table>
-
-
         </main>
-        <button>ddd</button>
+        
         </div>
       <Footer/>
     </>

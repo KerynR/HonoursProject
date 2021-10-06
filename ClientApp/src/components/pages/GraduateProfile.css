@@ -179,3 +179,50 @@
 .GraduateForm label{
   color: #FFF9FB;
 }
+
+ /* TABLE STYLES*/
+    
+ table{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+  align-content: center;
+}
+
+.currentApplications table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.currentApplications th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.currentApplications td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  height: 40px;
+}
+
+/* .currentApplications tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */

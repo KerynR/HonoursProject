@@ -24,10 +24,44 @@
         font-family: 'Noto Sans Display', sans-serif;
     }
   
-    .tblSubDetails{
-      text-align: center;
-    }
-  
-    .tblSubDetails th{
-      color: #4B88b4;
-    }
+    /* TABLE STYLES*/
+    
+   table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-style: normal;
+    width: 70%
+  }
+
+  .tblSubDetails{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .tblSubDetails th{
+    color: #FFF9FB;
+    font-size: 1em;
+    background-color: #4B88A1;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .tblSubDetails td{
+    color: #FFF9FB;
+    background-color: #D3D4D9;
+    border-bottom: #252627;
+    border-left: #D3D4D9;
+    border-right: #D3D4D9;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+ /* .tblSubDetails tr td:hover{
+    background-color: #4B88A1;
+    color: #FFF9FB;
+    
+  }*/
+
+  /* END OF TABLE STYLES */
+    

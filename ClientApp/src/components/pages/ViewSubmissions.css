@@ -24,24 +24,53 @@
       font-family: 'Noto Sans Display', sans-serif;
   }
 
-  .tblViewSub{
-    text-align: center;
+/* TABLE STYLES */
+
+  table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+    font-style: normal;
+    width: 80%;
   }
 
-  .tblViewSub th{
-    color: #4B88b4;
+  .tblViewSub{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  table.tblViewSub th{
+    color: #FFF9FB;
+    font-size: 1em;
+    background-color: #4B88A1;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .tblViewSub td{
-    color: #FFF9FB;
+    color: #242526;
+    background-color: #D3D4D9;
+    border-bottom: #252627;
+    border-left: #D3D4D9;
+    border-right: #D3D4D9;
+    font-family: 'Open Sans', sans-serif;
+    height: 50px;
+    font-size: 0.8em;
   }
+
+ /* .tblViewSub tr td:hover{
+    background-color: #4B88A1;
+    color: #FFF9FB;
+    
+  }*/
 
   .tblViewSub button{
     background-color: transparent;
-    color: #fff;
+    color: #242526;
     border-color: transparent;
   }
 
   .tblViewSub button:hover{
-    color: #BB0A21;
+    cursor: pointer;
+    color: #FFF9FB;
   }
