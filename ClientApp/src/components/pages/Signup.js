@@ -8,6 +8,16 @@ import {GoogleLogin } from 'react-google-login';
 //my clientId from google
 const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
 
+//GREY OUT TEXBOXES DEPENDING ON RADIO BUTTON SELECTED
+function EnableDisableTextbox(){
+  var chkYes = document.getElementById("chkYes");
+  var txtSector = document.getElementById("txtSector");
+  txtSector.disabled = chkYes.checked ? false : true;
+    if (!txtSector.disabled){
+      txtSector.focus();
+    }
+}
+
 function Signup() {
 
   const onSuccess = ( res ) => {
@@ -28,9 +38,9 @@ function Signup() {
         <form>
          <h4>Select the account type that applies to you:</h4>
          <div className="radioAccType">
-          <input name="radAccTypeChoice" id="radioGrad" type="radio" value="Graduate" />
+          <input name="radAccTypeChoice" id="chkYes" type="radio" onClick="EnableDisableTextbox()" />
           <label for="radioGrad">Graduate</label>
-          <input name="radAccTypeChoice" id="radioRec" type="radio" value="Recruiter" />
+          <input name="radAccTypeChoice" id="chkYes" type="radio" onClick="EnableDisableTextbox()" />
           <label for="radioRec">Recruiter</label>
           <input name="radAccTypeChoice" id="radioComp" type="radio" value="Company" />
           <label for="radioComp">Company</label>
@@ -42,7 +52,7 @@ function Signup() {
                 <label className="lblFName" for="fname">First Name:</label>
               </div>
               <div className="col75Signup">
-                <input type="text" id="fname" placeholder="First Name or Company Name"  />
+                <input type="text" id="" placeholder="First Name or Company Name"  />
               </div>
             </div>
 
@@ -52,7 +62,7 @@ function Signup() {
               <label className="lblLName" for="lname">Last Name:</label>
             </div>
             <div className="col75Signup">
-              <input type="text" id="lname" placeholder="Surname"  />
+              <input type="text" id="" placeholder="Surname"  />
             </div>
           </div>
 
@@ -62,7 +72,7 @@ function Signup() {
               <label className="lblEmail" for="email">Email:</label>
             </div>
             <div className="col75Signup">
-              <input type="email" id="email" placeholder="Email"  />
+              <input type="email" id="" placeholder="Email"  />
             </div>
           </div>
 
@@ -72,17 +82,17 @@ function Signup() {
               <label className="lblDOB" for="dob">Date of Birth:</label>
             </div>
             <div className="col75Signup">
-              <input type="date" id="dob" placeholder="Email"  />
+              <input type="date" id="" placeholder="Email"  />
             </div>
           </div>
 
           {/** GRADUATE/RECRUITER */}
           <div className="rowSignup">
             <div class="col25Signup">    
-              <label className="lblGender" for="gender">Gender:</label>
+              <label className="" for="gender">Gender:</label>
             </div>
             <div className="col75Signup">
-              <input type="text" id="gender" placeholder="e.g. male, female or other"  />
+              <input type="text" id="" placeholder="e.g. male, female or other"  />
             </div>
           </div>
 
@@ -92,7 +102,7 @@ function Signup() {
               <label className="lblMobile" for="mobile">Mobile:</label>
             </div>
             <div className="col75Signup">
-              <input type="tel" id="mobile" placeholder="Contact Number"  />
+              <input type="tel" id="" placeholder="Contact Number"  />
             </div>
           </div>
 
@@ -102,7 +112,7 @@ function Signup() {
               <label className="lblSector" for="sector">Sector:</label>
             </div>
             <div className="col75Signup">
-              <input type="text" id="sector" placeholder="E.g. Marketing"  />
+              <input type="text" id="txtSector" placeholder="E.g. Marketing"  />
             </div>
           </div>
 
@@ -112,7 +122,7 @@ function Signup() {
               <label className="lblVision" for="vision">Vision:</label>
             </div>
             <div className="col75Signup">
-              <input type="text" id="vision" placeholder="..."  />
+              <input type="text" id="" placeholder="..."  />
             </div>
           </div>
 
@@ -122,7 +132,7 @@ function Signup() {
               <label className="lblMission" for="mission">Mission:</label>
             </div>
             <div className="col75Signup">
-              <input type="text" id="mission" placeholder="..."  />
+              <input type="text" id="" placeholder="..."  />
             </div>
           </div>
             
@@ -132,7 +142,7 @@ function Signup() {
               <label className="lblPassword" for="password">Password:</label>
             </div>
             <div className="col75Signup">
-              <input type="password" id="password" placeholder="Password"  />
+              <input type="password" id="" placeholder="Password"  />
             </div>
           </div>
               
@@ -142,7 +152,7 @@ function Signup() {
               <label className="lblConfirmPassword" for="confirmpassword">Confirm Password:</label>
             </div>
             <div className="col75Signup">
-              <input type="password" id="confirmpassword" placeholder="Re-enter Password"  />
+              <input type="password" id="" placeholder="Re-enter Password"  />
             </div>
           </div>          
            <input className="btnSignup" type="submit" value="Register" />

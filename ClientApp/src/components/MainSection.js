@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import history from './history';
 import 'bootstrap/dist/css/bootstrap.css';
 
-
 function MainSection() {
 
   const [click, setClick] = useState(false);

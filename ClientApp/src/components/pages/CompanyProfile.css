@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px 600px 150px auto 150px auto;
-    grid-gap: 0.1em;
+    grid-gap: 0em;
     }
    
     .companyHeader{
@@ -111,11 +111,12 @@
       .compRow{
         color: #FFF9FB;
         font-family: 'Noto Sans Display', sans-serif;
+        font-size: 25px;
+        padding: 20px;
       }
 
       .CompanyForm{
-        padding: 40px;
-        padding-left: 50px;
+        padding: 20px;
       }
 
 .btnEditCompanyProfile, .btnAddNewPos, .btnAddRecruiter, .btnViewVacanciesComp{

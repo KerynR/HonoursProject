@@ -64,10 +64,37 @@ function Moocs() {
         <div className="moocIconsHeading">
           <h2>Click on an icon below to view popular MOOC providers</h2>
         </div>
-        <div className="moocIcons">
-          <label>Icons go here</label>
+        
+        <div className="section moocIconsGroup">
+          <div className="colIcons">
+            <a href="https://www.udemy.com/">
+              <img src="./images/udemy(2).png" alt="" />
+            </a>
+          </div>
+          <div className="colIcons">
+            <a href="https://www.coursera.org/">
+              <img src="./images/coursera(2).png" alt="" />
+            </a>
+          </div>
+          <div className="colIcons">
+            <a href="https://www.khanacademy.org/">
+              <img src="./images/icons8-khan-academy-144.png" alt="" />
+            </a>
+          </div>
+          <div className="colIcons">
+            <a href="https://www.linkedin.com/learning-login/">
+              <img src="./images/icons8-linkedin-144.png" alt="" />
+            </a>
+          </div>
+          <div className="colIcons">
+            <a href="https://www.udacity.com/">
+              <img src="./images/udacity(1).png" alt="" />
+            </a>
+          </div>
         </div>
-        </div>
+          
+      
+      </div>
 
         <Footer/>
     </>

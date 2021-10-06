@@ -1,7 +1,7 @@
 .gridMoocs {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 150px 100px 400px 150px 400px;
+  grid-template-rows: 150px 100px 400px 150px 200px;
   grid-gap: 0.1em;
   }
   
@@ -146,3 +146,44 @@
 }*/
 
 /* END OF TABLE STYLES */
+
+/* MOOC ICONS */
+
+.section{
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+.colIcons{
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.colIcons:first-child{
+  margin-left: 0;
+}
+
+.moocIconsGroup:before, .moocIconsGroup:after{
+  content: "";
+  display: table;
+}
+
+.moocIconsGroup::after{
+  clear: both;
+}
+
+.moocIconsGroup{
+  zoom: 1;
+}
+
+.colIcons img{
+  max-width: 150px;
+  max-height: auto;
+  padding: 20px;
+}
+
+.colIcons img:hover{
+  transform: scale(1.5);
+}
