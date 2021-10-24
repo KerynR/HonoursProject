@@ -1,8 +1,8 @@
 .gridGradProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px auto 150px 400px 400px;
-    grid-gap: 0.1em;
+    grid-template-rows: 150px auto 150px auto 400px;
+    grid-gap: 0em;
     }
 
     .gradProfHeader{
@@ -56,13 +56,13 @@
 
     .leftGradProf li{
       font-size: 15px;
-      font-family: 'Noto Sans Display', sans-serif;
+      font-family: 'Work Sans', sans-serif;
     }
 
     .cvTipsh2{
         color: #BB0A21;
         font-family: 'Neuton', serif;
-        font-size: 45px;
+        font-size: 55px;
         list-style-type: none;
         padding-left: 20px;
         padding-right: 20px;
@@ -70,7 +70,7 @@
 
     .cvTips li{
       font-size: 18px;
-      font-family: 'Noto Sans Display', sans-serif;
+      font-family: 'Work Sans', sans-serif;
     }
 
     .cvTips{
@@ -94,6 +94,7 @@
           background-color: #4B88A2;
           color: #FFF9FB;
           width: 100%;
+          box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
       }
 
       .btnMoocs:Hover{
@@ -110,6 +111,8 @@
         background-color: #4B88A2;
         color: #FFF9FB;
         width: 100%;
+        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
 
       .btnViewCV:hover{
@@ -121,6 +124,8 @@
         background-color: #4B88A2;
         color: #FFF9FB;
         width: 100%;
+        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
 
       .btnEditProfile:hover{
@@ -132,6 +137,8 @@
         background-color: #4B88A2;
         color: #FFF9FB;
         width: 100%;
+        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
       
       .btnViewSubmissions:hover{
@@ -143,6 +150,8 @@
         background-color: #4B88A2;
         color: #FFF9FB;
         width: 100%;
+        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
 
       .btnViewVacancies:hover{
@@ -188,6 +197,8 @@
   font-style: normal;
   width: 80%;
   align-content: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .currentApplications table{

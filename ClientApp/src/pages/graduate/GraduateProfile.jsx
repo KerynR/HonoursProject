@@ -118,24 +118,19 @@ function GraduateProfile() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
+                       
                     </tr>
                     <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
+                        
                     </tr>
                     <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
+                        
                     </tr>
                     <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
+                       
                     </tr>
                     <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
+                        
                     </tr>
                 </tbody>
             </table>
