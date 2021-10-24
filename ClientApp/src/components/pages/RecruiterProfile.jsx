@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './RecruiterProfile.css';
 import MainSection from '../MainSection';
 import Footer from '../Footer';
@@ -7,6 +7,9 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import history from '../history';
 
+
+import axios, { Axios } from 'axios';
+
 function confirmDelete(){
     var result = window.confirm("Are you sure you want to delete?");
     if(result){
@@ -14,7 +17,17 @@ function confirmDelete(){
     }
 }
 
+
+const apiUrl='https://localhost:44347/api/';
+const http = axios;
+
 function RecruiterProfile() {
+    const[firstName,setFirstName] = useState(localStorage.getItem("firstName"))
+    const[lastName,setLastName] = useState(localStorage.getItem("lastName"))
+    const[email,setEmail] = useState(localStorage.getItem("email"))
+    const[mobile,setMobile] = useState(localStorage.getItem("mobile"))
+    const[gender,setGender] = useState(localStorage.getItem("gender"))
+    const[company,setCompanyName] = useState("TransformIT")
   return (
     <>
       <div className="gridRecruiterProf">
@@ -48,7 +61,7 @@ function RecruiterProfile() {
                     <label>First Name:</label>
                 </div>
                 <div className="colRightRecProf">
-                    <label></label>
+                    <label>{firstName}</label>
                 </div>
             </div>
 
@@ -57,7 +70,7 @@ function RecruiterProfile() {
                     <label>Second Name:</label>
                 </div>
                 <div className="colRightRecProf">
-                    <label></label>
+                    <label>{lastName}</label>
                 </div>
             </div>
 
@@ -66,7 +79,7 @@ function RecruiterProfile() {
                     <label>Email:</label>
                 </div>
                 <div className="colRightRecProf">
-                    <label></label>
+                    <label>{email}</label>
                 </div>
             </div>
             <div className="recRow">
@@ -74,7 +87,7 @@ function RecruiterProfile() {
                     <label>Mobile:</label>
                 </div>
                 <div className="colRightRecProf">
-                    <label></label>
+                    <label>{mobile}</label>
                 </div>
             </div>
             <div className="recRow">
@@ -82,7 +95,7 @@ function RecruiterProfile() {
                     <label>Gender:</label>
                 </div>
                 <div className="colRightRecProf">
-                    <label></label>
+                    <label>{gender}</label>
                 </div>
             </div>
             <div className="recRow">
@@ -90,7 +103,7 @@ function RecruiterProfile() {
                     <label>Company Representing:</label>
                 </div>
                 <div className="colRightRecProf">
-                    <label><a href="/CompanyProfile"></a></label>
+                    <label>{company}<a href="/CompanyProfile"></a></label>
                 </div>
             </div>
 

@@ -219,6 +219,17 @@
   height: 40px;
 }
 
+.uploadButton{
+  font-size: 20px !important;
+  color: white;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 11px !important;
+  margin-top: 7px !important;
+}
+
 /* .currentApplications tr td:hover{
   background-color: #4B88A1;
   color: #FFF9FB;
