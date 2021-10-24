@@ -24,9 +24,15 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
+  margin-top: 10px;
+}
+
+.navbar-logo:hover{
+  text-decoration: none;
+  color: #548CA8;
 }
 
 .fa-typo3 {

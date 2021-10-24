@@ -32,6 +32,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
+          
           <Link to="/" className='navbar-logo' onClick ={closeMobileMenu}>
             XYZ Recruitment
             <i class="fa fa-graduation-cap" aria-hidden="true"></i>

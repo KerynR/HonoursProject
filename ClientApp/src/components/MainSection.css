@@ -8,7 +8,7 @@
   }
 .main-container {
 /*  background: url('/images/img-home.jpg') center center/cover no-repeat;*/
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,26 +18,37 @@
   object-fit: contain;
   color: #4B88A2;
   text-align: center;
+  background-color: #252627;
 }
 
 .main-container h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Neuton', serif;
   text-transform: uppercase;
   color: #FFF9FB;
   text-align: center;
   font-size: 80px;
   /*margin-top: -100px;*/
   position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.main-container h2{
+  color: #4B88A2;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
 .main-container p {
   margin-top: 8px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
   color: #FFF9FB;
+  margin-bottom: 30px;
   }
 
 .main-btnss {
@@ -86,11 +97,17 @@
   height: 80px;
   background-color: transparent;
   color: #FFF9FB;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .btnRegisterHome:hover, .btnLoginHome:hover{
   background-color: #4B88A2;
   cursor: pointer;
+}
+
+.btnLoginHome{
+  margin-bottom: 100px;
 }

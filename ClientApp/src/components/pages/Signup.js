@@ -261,6 +261,17 @@ function Signup() {
                 style={{ marginTop: '100px' }}
                 isSignedIn={true}
                 />
+            </div>
+          
+           <button 
+            className="btnCancelSignup" 
+            onClick={() => {
+            history.push("/");
+            }}
+            >
+              Back
+            </button>
+          
             </div> */}
            <button className="btnCancelSignup" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
           </form>

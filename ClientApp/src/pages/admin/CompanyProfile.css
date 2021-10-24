@@ -1,0 +1,252 @@
+.gridCompProf {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 600px 150px auto 150px auto;
+    grid-gap: 0.1em;
+    }
+   
+    .companyHeader{
+        font-size: 80px;
+        color: #4B88A2;
+        text-align: center;
+        font-family: 'Neuton', serif;
+    }
+
+    .availPosHeading h2{
+      font-size: 60px;
+      color: #4B88A2;
+      text-align: center;
+      font-family: 'Neuton', serif;
+    }
+
+    .compRepHeading h2{
+      font-size: 60px;
+      color: #4B88A2;
+      text-align: center;
+      font-family: 'Neuton', serif;
+    }
+
+    .fa-user-circle{
+        color: #FFF9FB;
+      }
+  
+      .fa-user-circle:hover{
+        color: #BB0A21;
+      }
+
+    .companyHeader, .bottomSectComp, .tblActiveApplications, .availPosHeading, .compRepHeading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    .gridCompProf > * {
+    background: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftGridComp{
+        color: #FFF9FB;
+        padding-right: 20px;
+        padding-left: 20px;
+        float: left;
+        padding-right: 30px;
+        font-size: 20px;
+        padding-bottom: 20px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+   /* table th, tr{
+        font-size: 30px;
+        font-style: normal;
+        border-color: #4B88A2;
+        border-width: 3px;
+    }
+
+      .tblCompPos, .tblCompPos{
+          font-size: 10px;
+          color: #FFF9FB;
+      }
+
+      .tblCompPos th, .tblCompPos th{
+          color: #4B88A2;
+          font-size: 25px;
+          height: 80px;
+          width: 350px;
+          text-align: center;
+      }
+
+      .tblCompPos td, .tblCompPos td{
+          height: 70px;
+          width: 500px;
+          text-align: center;
+          font-size: 25px;
+      }    */
+
+      .fa-user-circle{
+        padding: 10px 20px 10px;
+    }
+
+    .fa-user-circle:hover{
+      color: #BB0A21;
+      cursor: pointer;
+    }
+
+      .compColLeft{
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+        padding-right: 30px;
+      }
+
+      .compColRight{
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        padding-left: 40px;
+      }
+
+      .compRow:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .compRow label {
+        color: #FFF9FB;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 23px;
+        padding: 20px;
+        margin-left: -150px;
+      }
+
+      .CompanyForm{
+        padding: 20px;
+      }
+
+.btnEditCompanyProfile, .btnAddNewPos, .btnAddRecruiter, .btnViewVacanciesComp{
+  background-color: #4B88A2;
+  color: #FFF9FB;
+  width: 100%;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btnEditCompanyProfile:hover, .btnAddNewPos:hover, .btnAddRecruiter:hover, .btnViewVacanciesComp:hover{
+  background-color: #D3D4D9;
+  color: #252627;
+}
+
+.leftGridComp button{
+  font-size: 30px;
+  padding: 30px 15px;
+  background-color: #4B88A2;
+  border-radius: 8px;
+  border: 2px solid #396a80;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btnEditPos, .btnDeletePos{
+  background-color: transparent;
+  color: #242526;
+  border: none;
+}
+
+/* CURRENT POSITIONS AVAIABLE TABLE STYLES*/
+    
+.table{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.tblActiveApplications table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.tblActiveApplications th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tblActiveApplications td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/* .tblActiveApplications tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */
+
+
+/*  COMPANY REPRESENTATIVES TABLE STYLES*/
+    
+.table{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.bottomSectComp table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.bottomSectComp th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bottomSectComp td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/* .tblActiveApplications tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */

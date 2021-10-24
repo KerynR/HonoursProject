@@ -1,0 +1,158 @@
+.editVacH1{
+    color: #4B88A2;
+    font-family: 'Neuton', serif;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -100px;
+}
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  input[type=date], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  .form-container-editVac {
+    background-color: #252627;
+    padding: 100px;
+  }
+
+  .title_container-editVac{
+    color: #4B88A2;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .title_container-editVac label{
+    color: #fff9FB;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+  }
+
+  .col-25-editVac {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75-editVac {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .rowEditVac:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-25-editVac, .col-75-editVac, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .btnDeleteVac{
+    background: #4B88A2;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btnDeleteVac:hover {
+  background-color: #D3D4D9;
+  color: #334257;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnSaveVac{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #4B88A2;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btnSaveVac:hover {
+  background-color: #D3D4D9;
+  color: #334257;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnCancelVac{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #4B88A2;
+  height: 55px;
+  line-height: 35px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btnCancelVac:hover{
+  background-color: #D3D4D9;
+  color: #334257;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
