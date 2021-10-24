@@ -1,0 +1,123 @@
+.form-container-vacInfo h1{
+  text-align: center;
+  font-size: 80px;
+  padding-bottom: 15px;
+  color: #4B88A2;
+  font-family: 'Neuton', serif;
+
+}
+
+.col25VacInfo {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col75VacInfo {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.rowVacInfo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title_container-vacInfo{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .col25VacInfo, .col75VacInfo, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  input[type=file], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    resize: vertical;
+  }
+
+  .title_container-vacInfo label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 20px;
+  }
+
+  .form-container-vacInfo{
+    border-radius: 5px;
+    background-color: #242526;
+    padding: 100px;
+  }
+
+  .btnCancelApplyVac{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #EEEEEE;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #334257;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.btnCancelApplyVac:hover {
+  background: #4B88A2;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnApplyVac{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #EEEEEE;
+    height: 55px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    color: #334257;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.btnApplyVac:hover {
+  background: #4B88A2;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

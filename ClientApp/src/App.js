@@ -3,31 +3,58 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import reactDOM from "react-dom";
 
-import Home from './components/pages/Home';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+
+
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
-import EditGradProfile from './components/pages/EditGradProfile';
-import CreatePosition from './components/pages/CreatePosition';
-import ViewSubmissions from './components/pages/ViewSubmissions';
-import GraduateProfile from './components/pages/GraduateProfile';
+
+
+
+
 import Settings from './components/pages/Settings';
-import ApplyPosition from './components/pages/ApplyPosition';
+
 import testing from './components/pages/testing';
-import EditCompanyProfile from './components/pages/EditCompanyProfile';
-import Moocs from './components/pages/Moocs';
-import CompanyProfile from './components/pages/CompanyProfile';
-import Contact from './components/pages/Contact';
-import About from './components/pages/About';
-import Vacancies from './components/pages/Vacancies';
-import VacancyInfo from './components/pages/VacancyInfo';
-import EditVacancy from './components/pages/EditVacancy';
+
+
+
+
+
+
+
 import SubmissionDetails from './components/pages/SubmissionDetails';
-import Recruiters from './components/pages/Recruiters';
-import RecruiterProfile from './components/pages/RecruiterProfile';
-import EditRecruiterProfile from './components/pages/EditRecruiterProfile';
+
+
+
 import gradSubmissions from './components/pages/gradSubmissons';
+
+/* ========= GLOBAL PAGES ========= */
+import Home from './pages/globalPages/Home';
+import Contact from './pages/globalPages/Contact';
+import About from './pages/globalPages/About';
+
+/* ========= ADMIN & RECRUITER PAGES ========= */
+import CreatePosition from './pages/admin/CreatePosition';
+import ViewSubmissions from './pages/admin/ViewSubmissions';
+import CompanyProfile from './pages/admin/CompanyProfile';
+import EditCompanyProfile from './pages/admin/EditCompanyProfile';
+import EditVacancy from './pages/admin/EditVacancy';
+import Recruiters from './pages/admin/Recruiters';
+import Vacancies from './pages/admin/Vacancies';
+
+import RecruiterProfile from './pages/admin/RecruiterProfile';
+import EditRecruiterProfile from './pages/admin/EditRecruiterProfile';
+
+/* ========= GRADUATE PAGES ========= */
+import GraduateProfile from './pages/graduate/GraduateProfile';
+import EditGradProfile from './pages/graduate/EditGradProfile';
+import ApplyPosition from './pages/graduate/ApplyPosition';
+
+import VacancyInfo from './pages/graduate/VacancyInfo';
+import Moocs from './pages/graduate/Moocs';
+
+/* ========= COMPONENTS ========= */
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 /*LIGHT/DARK THEME*/ 
 import {ThemeProvider} from "styled-components";

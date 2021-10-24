@@ -1,0 +1,87 @@
+.gridRecruiters {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto;
+    grid-gap: 0em;
+    }
+    
+    .RecruitersHeader,
+    footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    .gridRecruiters > * {
+    background: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .RecruitersHeader{
+        text-align: center;
+        font-size: 80px;
+        padding-bottom: 15px;
+        color: #4B88A2;
+        font-family: 'Neuton', serif;
+    }
+
+   /* .RecruitersWrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        padding-top: 150px;
+    }*/
+
+    .searchTopGrid{
+        color: #fff;
+    }
+
+     /* TABLE STYLES*/
+    
+   table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-style: normal;
+    width: 80%;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-left: 60px;
+  }
+
+  .tblRecruiters{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-style: normal;
+    width: 80%;
+}
+
+  .tblRecruiters th{
+    color: #FFF9FB;
+    font-size: 1em;
+    background-color: #4B88A1;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .tblRecruiters td{
+    color: #242526;
+    background-color: #D3D4D9;
+    border-bottom: #252627;
+    border-left: #D3D4D9;
+    border-right: #D3D4D9;
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+  }
+
+ /* .tblRecruiters tr td:hover{
+    background-color: #4B88A1;
+    color: #FFF9FB;
+    
+  }*/
+
+  /* END OF TABLE STYLES */

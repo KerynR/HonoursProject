@@ -1,0 +1,227 @@
+.gridGradProf {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px auto 150px 400px 400px;
+    grid-gap: 0.1em;
+    }
+
+    .gradProfHeader{
+        font-size: 80px;
+        font-family: 'Neuton', serif;
+        text-align: center;
+        color: #4B88A2;
+    }
+
+    .currentApplicationsHeader h1{
+      font-size: 80px;
+      font-family: 'Neuton', serif;
+      text-align: center;
+      color: #4B88A2;
+    }
+
+    .fa-user-circle{
+      color: #FFF9FB;
+    }
+
+    .fa-user-circle:hover{
+      color: #BB0A21;
+    }
+    
+    .gradProfHeader, .currentApplications, .currentApplicationsHeader,
+    .gradBottom {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    
+    .gridGradProf > * {
+    background: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftGradProf{
+        color: #FFF9FB;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .leftGradProf button{
+        font-size: 30px;
+        padding: 30px 15px;
+        background-color: #4B88A2;
+        border-radius: 8px;
+        border: 2px solid #396a80;
+    }
+
+    .leftGradProf li{
+      font-size: 15px;
+      font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    .cvTipsh2{
+        color: #BB0A21;
+        font-family: 'Neuton', serif;
+        font-size: 45px;
+        list-style-type: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cvTips li{
+      font-size: 18px;
+      font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    .cvTips{
+        text-align: center;
+        color: #FFF9FB;        
+        font-size: 25px;
+        list-style-type: none;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+      .fa-user-circle{
+          padding: 10px 20px 10px;
+      }
+
+      .fa-user-circle:hover{
+        color: #BB0A21;
+        cursor: pointer;
+      }
+
+      .btnMoocs{
+          background-color: #4B88A2;
+          color: #FFF9FB;
+          width: 100%;
+      }
+
+      .btnMoocs:Hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      /*top 5 cv tips*/
+      ul{
+        list-style-type: none;
+      }
+
+      .btnViewCV{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnViewCV:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnEditProfile{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnEditProfile:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnViewSubmissions{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+      
+      .btnViewSubmissions:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .btnViewVacancies{
+        background-color: #4B88A2;
+        color: #FFF9FB;
+        width: 100%;
+      }
+
+      .btnViewVacancies:hover{
+        background-color: #D3D4D9;
+        color: #252627;
+      }
+
+      .colLeftGrad {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+        padding-right: 30px;
+      }
+    
+      .colRightGrad {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        padding-left: 40px;
+      }
+    
+      .gradRow:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+.GraduateForm{
+  padding: 40px;
+  padding-left: 50px;
+}
+
+.GraduateForm label{
+  color: #FFF9FB;
+}
+
+ /* TABLE STYLES*/
+    
+ table{
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+  align-content: center;
+}
+
+.currentApplications table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.currentApplications th{
+  color: #FFF9FB;
+  font-size: 1em;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.currentApplications td{
+  color: #242526;
+  background-color: #D3D4D9;
+  border-bottom: #252627;
+  border-left: #D3D4D9;
+  border-right: #D3D4D9;
+  font-family: 'Open Sans', sans-serif;
+  height: 40px;
+}
+
+/* .currentApplications tr td:hover{
+  background-color: #4B88A1;
+  color: #FFF9FB;
+  
+}*/
+
+/* END OF TABLE STYLES */
