@@ -2,8 +2,11 @@ import React from 'react';
 import './Vacancies.css';
 import Footer from '../../components/Footer';
 import history from '../../components/history';
+import { useHistory } from "react-router";
 
 function Vacancies() {
+
+  const history = useHistory();
 
   return (
     <>
@@ -60,6 +63,17 @@ function Vacancies() {
             </table>
             </div>
         </main>
+
+        <div className="vacanciesBtns">
+        <button 
+          className="btnVacanciesBack" 
+          onClick={() => {
+            history.push("/CompanyProfile");
+        }}
+          >
+            Back
+          </button>
+        </div>
         
 
         </div>

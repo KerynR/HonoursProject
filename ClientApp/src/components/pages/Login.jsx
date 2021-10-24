@@ -64,7 +64,14 @@ function Login() {
             />
         </div>
 
-        <button className="btnCancelLogin" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
+        <button 
+          className="btnCancelLogin" 
+          onClick={() => {
+          history.push("/");
+          }}
+        >
+          Back
+        </button>
 
     </form>
         

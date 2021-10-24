@@ -3,8 +3,6 @@ import { Button } from './Button';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './Navbar.css';
 
-
-
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

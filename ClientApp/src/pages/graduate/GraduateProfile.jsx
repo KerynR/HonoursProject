@@ -3,12 +3,16 @@ import './GraduateProfile.css';
 import Footer from '../../components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import history from '../../components/history';
+import { useHistory } from "react-router";
 
 
 
 {/* GRADUATES CURRENT APPLICATIONS - THIS PAGE OPENS WHEN THE GRADUATE CLICKS ON THE JOB TITLE */}
 
 function GraduateProfile() {
+
+    const history = useHistory();
+
   return (
     <>
       <div className="gridGradProf">
@@ -30,19 +34,45 @@ function GraduateProfile() {
           <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload"  />
           <br /><br />
           <li>
-          <button className="btnEditProfile" variant="btn btn-success" onClick={() => history.push('/EditGradProfile')}>Edit Profile</button>          
+          <button 
+            className="btnEditProfile" 
+            onClick={() => {
+                history.push("/EditGradProfile");
+            }}
+            >
+                Edit Profile
+            </button>          
           </li>
           <br />        
           <li>
-          <button className="btnMoocs" variant="btn btn-success" onClick={() => history.push('/Moocs')}>View MOOCs</button>          
+          <button 
+            className="btnMoocs" 
+            onClick={() => {
+                history.push("/Moocs");
+            }}
+            >
+              View MOOCs
+            </button>          
           </li>
           <br />
           <li>
-          <button className="btnViewCV" variant="btn btn-success" onClick={() => history.push('/')}>View CV</button>          
+          <button 
+            className="btnViewCV"
+            onClick={() => {
+                history.push("/");
+            }}
+            >
+                View CV
+            </button>          
           </li>
           <br />
           <li>
-          <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
+          <button 
+            className="btnViewVacancies"
+            onClick={() => {
+                history.push("/Vacancies");
+            }}
+            >View Vacancies</button>          
           </li>
          
         </ul>

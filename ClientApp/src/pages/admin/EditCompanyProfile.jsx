@@ -2,10 +2,14 @@ import React from 'react';
 import './EditCompanyProfile.css';
 import Footer from '../../components/Footer';
 import history from '../../components/history';
+import { useHistory } from "react-router";
 
 {/* COMPANY CAN EDIT THEIR DETAILS HERE */}
 
 function EditCompanyProfile() {
+
+  const history = useHistory();
+
   return (
     <>
         <div form-wrapper>
@@ -54,7 +58,14 @@ function EditCompanyProfile() {
 
         <input className="btnSaveCompProf" type="submit" value="Save" />
         <input className="btnDeleteCompProf" type="submit" value="Delete Profile" />
-        <button className="btnCancelCompProf" variant="btn btn-success" onClick={() => history.push('/CompanyProfile')}>Cancel</button>
+        <button 
+          className="btnCancelCompProf" 
+          onClick={() => {
+            history.push("/CompanyProfile");
+        }}
+          >
+            Cancel
+          </button>
 
         </form>
         

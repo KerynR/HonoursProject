@@ -2,11 +2,15 @@ import React from 'react';
 import './CreatePosition.css';
 import Footer from '../../components/Footer';
 import history from '../../components/history';
+import { useHistory } from "react-router";
 
 
 {/* COMPANIES AND RECRUITERS CAN CREATE JOB VACANCIES HERE */}
 
 function CreatePosition() {
+
+  const history = useHistory();
+
   return (
     <>
     <div form-wrapper-CreatePos>
@@ -90,7 +94,14 @@ function CreatePosition() {
         </div>
 
         <input className="btnPostPos" type="submit" value="Post Position" />
-        <button className="btnCancelCreatePos" variant="btn btn-success" onClick={() => history.push('/CompanyProfile')}>Cancel</button>
+        <button 
+          className="btnCancelCreatePos" 
+          onClick={() => {
+            history.push("/CompanyProfile");
+        }}
+          >
+            Cancel
+          </button>
 
         </form>
         

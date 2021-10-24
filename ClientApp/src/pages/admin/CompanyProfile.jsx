@@ -2,8 +2,12 @@ import React from 'react';
 import './CompanyProfile.css';
 import Footer from '../../components/Footer';
 import history from '../../components/history';
+import { useHistory } from "react-router";
 
 function CompanyProfile() {
+
+    const history = useHistory();
+
   return (
     <>
         <div className="gridCompProf">           
@@ -22,19 +26,47 @@ function CompanyProfile() {
             </li>
             <br /><br />
             <li>
-                <button className="btnEditCompanyProfile" variant="btn btn-success" onClick={() => history.push('/EditCompanyProfile')}>Edit Profile</button>          
+                <button 
+                    className="btnEditCompanyProfile" 
+                    onClick={() => {
+                        history.push("/EditCompanyProfile");
+                    }}
+                    >
+                        Edit Profile
+                    </button>          
             </li>
                 <br /><br />  
             <li>
-                <button className="btnAddNewPos" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
+                <button 
+                    className="btnAddNewPos" 
+                    onClick={() => {
+                        history.push("/CreatePosition");
+                    }}
+                    >
+                        Create Vacancy
+                    </button>          
             </li>
                 <br /><br /> 
             <li>
-                <button className="btnAddRecruiter" variant="btn btn-success" onClick={() => history.push('/')}>Add Recruiter</button>          
+                <button 
+                    className="btnAddRecruiter" 
+                    onClick={() => {
+                        history.push("/");
+                    }}
+                    >
+                        Add Recruiter
+                    </button>          
             </li>     
             <br /><br />
             <li>
-                <button className="btnViewVacanciesComp" variant="btn btn-success" onClick={() => history.push('/ViewSubmissions')}>View Vacancies</button>          
+                <button 
+                    className="btnViewVacanciesComp" 
+                    onClick={() => {
+                        history.push("/Vacancies");
+                    }}
+                    >
+                        View Vacancies
+                    </button>          
             </li>          
             </ul>
         </main>
