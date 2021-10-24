@@ -1,7 +1,7 @@
 import React ,{useState}from 'react';
 import './EditGradProfile.css';
-import Footer from '../Footer';
-import history from '../history';
+import Footer from '../../components/Footer';
+import history from '../../components/history';
 import { Http } from '@material-ui/icons';
 
 

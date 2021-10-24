@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import './ApplyPosition.css';
-import Footer from '../Footer';
+import Footer from '../../components/Footer';
 import * as author from "firebase/auth";
 import {firebase} from "../../firebase-config"
 import { auth } from '../../firebase-config';
 import axios, { Axios } from 'axios';
-import history from '../history';
-import Footer from '../../components/Footer';
+import history from '../../components/history';
+
 
 const apiUrl='https://localhost:44347/api/';
 const http = axios;
