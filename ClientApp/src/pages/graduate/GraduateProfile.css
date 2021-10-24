@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px auto 150px auto 400px;
-    grid-gap: 0em;
+    grid-gap: 0.1em;
     }
 
     .gradProfHeader{
@@ -160,10 +160,11 @@
       }
 
       .colLeftGrad {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
-        padding-right: 30px;
+        color: #FFF9FB;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 23px;
+        padding: 20px;
+        margin-left: -150px;
       }
     
       .colRightGrad {

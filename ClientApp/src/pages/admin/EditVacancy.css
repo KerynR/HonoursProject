@@ -3,8 +3,8 @@
     font-family: 'Neuton', serif;
     font-size: 80px;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: -35px;
+    margin-bottom: 30px;
+    margin-top: -100px;
 }
 
   input[type=text], select, textarea{
@@ -15,7 +15,6 @@
     box-sizing: border-box;
     resize: vertical;
   }
-
   
   input[type=date], select, textarea{
     width: 100%;
@@ -36,7 +35,6 @@
   }
 
   .form-container-editVac {
-    border-radius: 5px;
     background-color: #252627;
     padding: 100px;
   }
@@ -79,7 +77,7 @@
 
   .btnDeleteVac{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #EEEEEE;
+    background: #4B88A2;
     height: 55px;
     line-height: 35px;
     width: 100%;
@@ -87,26 +85,26 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
-    color: #334257;
+    color: #fff;
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .btnDeleteVac:hover {
-  background: #4B88A2;
-  color: #fff;
+  background-color: #D3D4D9;
+  color: #334257;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btnSaveVac{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #EEEEEE;
+    background: #4B88A2;
     height: 55px;
     line-height: 35px;
     width: 100%;
@@ -114,7 +112,7 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
-    color: #334257;
+    color: #fff;
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -122,18 +120,19 @@
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
-
-    
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .btnSaveVac:hover {
-  background: #4B88A2;
-  color: #fff;
+  background-color: #D3D4D9;
+  color: #334257;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btnCancelVac{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #EEEEEE;
+  background: #4B88A2;
   height: 55px;
   line-height: 35px;
   width: 100%;
@@ -141,7 +140,7 @@
   border-radius: 8px;
   outline: none;
   cursor: pointer;
-  color: #334257;
+  color: #fff;
   font-size: 1.2em;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -149,10 +148,12 @@
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .btnCancelVac:hover{
-  background: #4B88A2;
-  color: #fff;
+  background-color: #D3D4D9;
+  color: #334257;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

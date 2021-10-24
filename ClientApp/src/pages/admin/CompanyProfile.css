@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px 600px 150px auto 150px auto;
-    grid-gap: 0em;
+    grid-gap: 0.1em;
     }
    
     .companyHeader{
@@ -50,6 +50,11 @@
         color: #FFF9FB;
         padding-right: 20px;
         padding-left: 20px;
+        float: left;
+        padding-right: 30px;
+        font-size: 20px;
+        padding-bottom: 20px;
+        font-family: 'Work Sans', sans-serif;
     }
 
    /* table th, tr{
@@ -111,8 +116,9 @@
       .compRow label {
         color: #FFF9FB;
         font-family: 'Work Sans', sans-serif;
-        font-size: 25px;
+        font-size: 23px;
         padding: 20px;
+        margin-left: -150px;
       }
 
       .CompanyForm{
@@ -123,6 +129,9 @@
   background-color: #4B88A2;
   color: #FFF9FB;
   width: 100%;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .btnEditCompanyProfile:hover, .btnAddNewPos:hover, .btnAddRecruiter:hover, .btnViewVacanciesComp:hover{
@@ -136,6 +145,9 @@
   background-color: #4B88A2;
   border-radius: 8px;
   border: 2px solid #396a80;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .btnEditPos, .btnDeletePos{
