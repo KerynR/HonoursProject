@@ -395,8 +395,8 @@ function GraduateProfile() {
                         applicatons.map((applications) =>{
                             return(
                                 <tr>
-                                    <th>Job Title</th>
-                                    <th>Application Status</th>
+                                    <th>{applications.jobTitle}</th>
+                                    <th>{applications.applicationStatus}</th>
                                 </tr>
                             )
                         })
