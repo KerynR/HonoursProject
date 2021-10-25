@@ -73,13 +73,32 @@ function Signup() {
           RoleId:parseInt(userRole),
           UUID : response.user.uid,
         }
-        http.post(`${apiUrl}Auth/SingUpUser`,userToSave).then((response)=>{
-          localStorage.setItem("userId",response.id)
-          localStorage.setItem("displayName",userToSave.firstName)
-          localStorage.setItem("imageUrl",userToSave.ImageUrl)
-          localStorage.setItem("email",userToSave.email)
-          history.push('/')
-        });
+        if(userToSave.RoleId == 3 ){
+          var company ={
+            Name: firstName,
+            Sector: sector,
+            Mobile: mobile,
+            Vision:vision,
+            Mission:mission,
+            Email:email,
+            IsActive:true,
+          }
+          http.post(`${apiUrl}Auth/SingUpCompany`,company).then((companyResp)=>{
+            debugger
+            const companyId = companyResp.data
+            http.post(`${apiUrl}Auth/SingUpUser`,userToSave).then((response)=>{
+              const userId = response.data
+              http.put(`${apiUrl}Company/AddNewCompanyRep/${companyId}/${userId}`).then((response)=>{
+                alert('Company and Company Rep created')
+              })
+            //   localStorage.setItem("userId",response.id)
+            //   localStorage.setItem("displayName",userToSave.firstName)
+            //   localStorage.setItem("imageUrl",userToSave.ImageUrl)
+            //   localStorage.setItem("email",userToSave.email)
+            //   history.push('/')
+            });
+          })
+        }
       })
     }
     catch(error){

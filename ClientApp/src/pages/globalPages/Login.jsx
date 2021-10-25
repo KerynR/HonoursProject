@@ -49,6 +49,9 @@ function Login() {
           else if(userInfo.roleId == 2){
             history.push('/RecruiterProfile')
           }
+          else if(userInfo.roleId == 3){
+            history.push('/CompanyProfile')
+          }
           }
           else{
             alert('User not found in the system. Please register User')
