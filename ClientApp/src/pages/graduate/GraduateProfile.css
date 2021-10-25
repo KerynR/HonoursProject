@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px auto 150px auto 400px;
-    grid-gap: 0.1em;
+    grid-gap: 0em;
     }
 
     .gradProfHeader{
@@ -222,6 +222,7 @@
   color: #FFF9FB;
   font-family: 'Work Sans', sans-serif;
   font-size: 25px;
+  margin-left: 50px;
 }
 
  /* TABLE STYLES*/

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Moocs.css';
 import Footer from '../../components/Footer';
+import { useHistory } from "react-router";
 
 import * as author from "firebase/auth";
 import {firebase} from "../../firebase-config"
@@ -16,6 +17,9 @@ const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleuserc
 const apiUrl='https://localhost:44347/api/'
 
 function Moocs() {
+
+  const history = useHistory();
+
   const[moocs,setMoocs]=useState(null);
   const[loading,setLoading]=useState(true);
   const[searchTerm,setSearch]=useState("")
@@ -51,6 +55,12 @@ function Moocs() {
               <input type="text" placeholder=""  />
             </div>
           </div> 
+
+          <div className="moocsBtns">
+            <button className="btnSearchMooc">Search</button>
+            <button className="btnClearMooc">Clear</button>
+          </div>
+
           <div className="moocIconsHeading">
             <h2>Click on an icon below to view popular MOOC providers</h2>
           </div>
@@ -102,6 +112,11 @@ function Moocs() {
               <input type="text" placeholder=""  />
             </div>
           </div> 
+
+          <div className="moocsBtns">
+            <button className="btnSearchMooc">Search</button>
+            <button className="btnClearMooc">Clear</button>
+          </div>
   
           <main className="tblMoocsSearch">
           <table className="tblMoocs">
@@ -160,7 +175,18 @@ function Moocs() {
             </div>
           </div>
             
+            <div className="backMoocs">
+              <button 
+                className="btnBackMooc"
+                onClick={() => {
+                history.push("/GraduateProfile");
+            }}
+            >
+              Back
+            </button>
+            </div>
         
+
         </div>
   
           <Footer/>
