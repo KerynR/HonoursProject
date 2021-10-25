@@ -184,14 +184,12 @@ function GraduateProfile() {
                         <label className="">{gender}</label>
                     </div>
                 </div>
-                {/*<div className="gradRow">
-                    <div className="colLeftGrad">
-                        <label className="lblGradCompRep">Company Representing:</label>
-                    </div>
-                    <div className="colRightGrad">
-                        <label className="">{companyRep}</label>
-                    </div>
-            </div>*/}
+                <button 
+                    className="btnLogoutGrad" 
+                    onClick={() => history.push('/')}
+                    >
+                        Logout
+                </button>  
                 </form>
                 </aside>
                 <div className="currentApplicationsHeader">

@@ -5,8 +5,8 @@ import reactDOM from "react-dom";
 
 
 
-import Login from './components/pages/Login';
-import Signup from './components/pages/Signup';
+import Login from './pages/globalPages/Login';
+import Signup from './pages/globalPages/Signup';
 
 
 
@@ -21,11 +21,11 @@ import testing from './components/pages/testing';
 
 
 
-import SubmissionDetails from './components/pages/SubmissionDetails';
+import SubmissionDetails from './pages/admin/SubmissionDetails';
 
 
 
-import gradSubmissions from './components/pages/gradSubmissons';
+
 
 /* ========= GLOBAL PAGES ========= */
 import Home from './pages/globalPages/Home';
@@ -40,6 +40,7 @@ import EditCompanyProfile from './pages/admin/EditCompanyProfile';
 import EditVacancy from './pages/admin/EditVacancy';
 import Recruiters from './pages/admin/Recruiters';
 import Vacancies from './pages/admin/Vacancies';
+import gradSubmissions from './pages/admin/gradSubmissons';
 
 import RecruiterProfile from './pages/admin/RecruiterProfile';
 import EditRecruiterProfile from './pages/admin/EditRecruiterProfile';

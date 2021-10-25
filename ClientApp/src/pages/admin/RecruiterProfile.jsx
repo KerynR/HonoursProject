@@ -105,6 +105,12 @@ function RecruiterProfile() {
                     <label>{company}<a href="/CompanyProfile"></a></label>
                 </div>
             </div>
+            <button 
+                    className="btnLogoutRec" 
+                    onClick={() => history.push('/')}
+                    >
+                        Logout
+            </button>  
 
 
         </form>
