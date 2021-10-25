@@ -27,10 +27,12 @@ function Login() {
     try{
       const user = await author.signInWithEmailAndPassword(auth,email,password).then((response) =>{
         const uuid = response.user.uid
+        debugger
         localStorage.setItem("userToken",response.user.stsTokenManager.accessToken)
         http.get(`${apiUrl}Auth/SingIn?uuid=${uuid}`).then((response)=>{
           debugger
-          const userInfo= response.data[0]
+          if(response != null){
+            const userInfo= response.data[0]
           localStorage.setItem('email',userInfo.email);
           localStorage.setItem('firstName',userInfo.firstName);
           localStorage.setItem('gender',userInfo.gender);
@@ -40,6 +42,12 @@ function Login() {
           localStorage.setItem('mobile',userInfo.mobile);
           localStorage.setItem('userId',userInfo.userId);
           history.push('/GraduateProfile')
+          }
+          else{
+            alert('User not found in the system. Please register User')
+            history.push("/SignUp")
+          }
+          
         });
       })
     }

@@ -16,10 +16,7 @@ function Vacancies() {
             debugger
           })
           .finally(()=>{
-              debugger
-            if(vacancies != null){
-              setLoading(false);
-            }
+              setLoading(false); 
           })
         }
         catch(error){

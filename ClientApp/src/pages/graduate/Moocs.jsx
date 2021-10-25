@@ -28,9 +28,7 @@ function Moocs() {
         debugger
       })
       .finally(()=>{
-        if(moocs != null){
           setLoading(false);
-        }
       })
     }
     catch(error){

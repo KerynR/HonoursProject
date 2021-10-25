@@ -67,9 +67,9 @@ function GraduateProfile() {
             debugger
           })
           .finally(()=>{
-            if(applicatons != null){
+            
               setLoading(false);
-            }
+
           })
         }
         catch(error){
@@ -359,7 +359,13 @@ function GraduateProfile() {
         <div className="currentApplications">
             <table className="currAppTbl">
                 <thead>
-                    {
+                <tr>
+                        <th>Job Title</th>
+                        <th>Application Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                {
                         applicatons.map((applications) =>{
                             return(
                                 <tr>
@@ -369,23 +375,6 @@ function GraduateProfile() {
                             )
                         })
                     }
-                </thead>
-                <tbody>
-                    <tr>
-                       
-                    </tr>
-                    <tr>
-                        
-                    </tr>
-                    <tr>
-                        
-                    </tr>
-                    <tr>
-                       
-                    </tr>
-                    <tr>
-                        
-                    </tr>
                 </tbody>
             </table>
         </div>
