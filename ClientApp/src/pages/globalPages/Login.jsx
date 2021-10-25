@@ -50,7 +50,21 @@ function Login() {
             history.push('/RecruiterProfile')
           }
           else if(userInfo.roleId == 3){
-            history.push('/CompanyProfile')
+            // Company/GetSpecificCompany/{CompId}
+            http.get(`${apiUrl}Company/GetCompanyFromRepId/${userInfo.userId}`).then((response)=>{
+              debugger
+              http.get(`${apiUrl}Company/GetSpecificCompany/${response.data}`).then((response)=>{
+                debugger
+                localStorage.setItem('companyId',response.data[0].companyId)
+                localStorage.setItem('companyName',response.data[0].companyName)
+                localStorage.setItem('sector',response.data[0].sector)
+                localStorage.setItem('vision',response.data[0].vision)
+                localStorage.setItem('mission',response.data[0].mission)
+                history.push('/CompanyProfile')
+              })
+             
+            })
+            
           }
           }
           else{

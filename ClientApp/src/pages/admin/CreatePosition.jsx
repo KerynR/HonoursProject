@@ -26,7 +26,7 @@ function CreatePosition() {
     try{
       const vacancy ={
         Id:0,
-        CompanyId:3,
+        CompanyId:localStorage.getItem("companyId"),
         SkillRequirementId:2,
         JobTitle: title,
         JobDescription:jobDesc,
@@ -41,7 +41,7 @@ function CreatePosition() {
         ModifiedBy:localStorage.getItem("firstName") + '' +localStorage.getItem("lastName"),
 
       }
-      http.post(`${apiUrl}/Company/Vacancy/CreatePosition/${3}`,vacancy).then((response)=>{
+      http.post(`${apiUrl}/Company/Vacancy/CreatePosition/${localStorage.getItem("companyId")}`,vacancy).then((response)=>{
         alert("Vacancy Created Successfully")
       })
     } 
