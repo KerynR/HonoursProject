@@ -134,7 +134,7 @@ function CreatePosition() {
           </div>
         </div>
 
-        <input className="btnPostPos" type="submit" value="Post Position" />
+        <button className="btnPostPos" type="button" onClick={creatVacancy} >Post Position</button>
         <button 
           className="btnCancelCreatePos" 
           onClick={() => {

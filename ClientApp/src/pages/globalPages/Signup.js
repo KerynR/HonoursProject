@@ -24,7 +24,7 @@ function EnableDisableTextbox(){
     }
 }
 
-const apiUrl='https://project-web.conveyor.cloud/api/'
+const apiUrl='https://localhost:44347/api/'
 
 
 function Signup() {
@@ -243,7 +243,7 @@ function Signup() {
               <input type="password" id="" placeholder="Re-enter Password"  onChange={(event) => {setConfirmPassword(event.target.value)}} />
             </div>
           </div>          
-          <input className="btnSub" type="submit" value="Register" />
+          <button className="btnSub" type="button" onClick={registerUser}>Register </button>
            <button className="btnCancelSignup" type="button" onClick={registerGoogleUser}>Sign Up Using Google</button>
             {/* <div>
               <GoogleLogin className="btnGoogle"

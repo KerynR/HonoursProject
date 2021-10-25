@@ -30,16 +30,20 @@ function GraduateProfile() {
     const [certUrl , setCert] = useState("");
     const [applicatons,setApplication]=useState();
     const[loading,setLoading]=useState(true);
-
+    const [file,setFile]=useState(null);
+    const [cvDoc, setCVDoc] = useState(null);
+    const [certDoc,setCertDoc] = useState(null);
     const uploadProfileImg = async () =>{
         try{
-            debugger
             const url = profileImgUrl
-            debugger
             const formData = new FormData();
-            formData.append('fromFile',profileImgUrl)
+            formData.append('file',profileImgUrl)
             formData.append('fileName',profileImgUrl.name)
-            http.put(`${apiUrl}User/UploadProfileImage/${localStorage.getItem('userId')}`,formData)
+            setFile(formData)
+            http.put(`${apiUrl}User/UploadProfileImage/${localStorage.getItem('userId')}`,file).then((response)=>{
+                debugger
+                alert('file uploaded')
+            })
             debugger
         }
         catch(error){
@@ -48,16 +52,41 @@ function GraduateProfile() {
         
     }
     const uploadCV = async () =>{  
-        debugger 
-        const url = cvUrl
-        http.put(`${apiUrl}/User/UploadCVDocument/${localStorage.getItem('userId')}`,url)
-        debugger
+        try{
+            const url = cvUrl
+            const formData = new FormData();
+            formData.append('file',cvUrl)
+            formData.append('fileName',cvUrl.name)
+            setFile(formData)
+            http.put(`${apiUrl}/User/UploadCVDocument/${localStorage.getItem('userId')}`,file).then((response)=>{
+                debugger
+                alert('file uploaded')
+            })
+            debugger
+        }   
+        catch(error){
+            alert(error.message)
+        }
+  
     }
     const uploadCert = async () =>{
-        debugger
-        const url = certUrl
-        http.put(`${apiUrl}User/UploadCourseCert/${localStorage.getItem('userId')}`,url)
-        debugger
+        try{
+            debugger
+            const url = certUrl
+            const formData = new FormData();
+            formData.append('file',certUrl)
+            formData.append('fileName',certUrl.name)
+            setCertDoc(formData)
+            const file = certDoc
+            http.put(`${apiUrl}User/UploadCourseCert/${localStorage.getItem('userId')}`,file).then((response)=>{
+                debugger
+                alert('file uploaded')
+            })
+            debugger
+        }   
+        catch(error){
+            alert(error.message)
+        }
     }
 
     useEffect (() =>{

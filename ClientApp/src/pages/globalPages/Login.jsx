@@ -33,6 +33,7 @@ function Login() {
           debugger
           if(response != null){
             const userInfo= response.data[0]
+            debugger
           localStorage.setItem('email',userInfo.email);
           localStorage.setItem('firstName',userInfo.firstName);
           localStorage.setItem('gender',userInfo.gender);
@@ -41,7 +42,13 @@ function Login() {
           localStorage.setItem('roleId',userInfo.roleId)
           localStorage.setItem('mobile',userInfo.mobile);
           localStorage.setItem('userId',userInfo.userId);
-          history.push('/GraduateProfile')
+
+          if(userInfo.roleId == 1){
+            history.push('/GraduateProfile')
+          }
+          else if(userInfo.roleId == 2){
+            history.push('/RecruiterProfile')
+          }
           }
           else{
             alert('User not found in the system. Please register User')
