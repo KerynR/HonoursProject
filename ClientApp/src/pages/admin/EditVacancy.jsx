@@ -21,21 +21,22 @@ function EditVacancy() {
     const[responsibilities,setresponsibilities]=useState();
     const[skillName,setskillName]=useState();
     const[closingDate,setClosingDate]=useState("");
-
+    const[vacancyId,setVacancyID]=useState(localStorage.getItem('vacancyId'))
     const[loading,setLoading]=useState(true);
     useEffect (() =>{
         try{
-          http.get(`${apiUrl}Vacancy/${localStorage.getItem('vacancyId')}`).then((response)=>{
+          http.get(`${apiUrl}Vacancy/${vacancyId}`).then((response)=>{
            const vacancy = response.data[0];
-           debugger
-           setjobTitle(vacancy.jobTitle);
-           setcompanyName(vacancy.companyName);
-           setlocation(vacancy.location);
-           setjobDescription(vacancy.jobDescription);
-           setsector(vacancy.sector);
-           setstartDate(Date(vacancy.startDate));
-           setresponsibilities(vacancy.responsibilities);
-           setskillName(vacancy.skillName);
+            if(vacancy != null){
+                setjobTitle(vacancy.jobTitle);
+                setcompanyName(vacancy.companyName);
+                setlocation(vacancy.location);
+                setjobDescription(vacancy.jobDescription);
+                setsector(vacancy.sector);
+                setstartDate(Date(vacancy.startDate));
+                setresponsibilities(vacancy.responsibilities);
+                setskillName(vacancy.skillName);
+            }
           })
           .finally(()=>{
             
