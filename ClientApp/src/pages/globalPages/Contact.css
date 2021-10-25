@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px 300px;
-    grid-gap: 0.1em;
+    grid-gap: 0em;
     }
     
-    .ContactUsHeader{
+    .ContactUsHeader, .socialMediaContact, .contactUsDetails{
         grid-column-start: 1;
         grid-column-end: 3;
         }
@@ -23,60 +23,67 @@
     justify-content: center;
     }
 
-    .contactLeft li{
+    .contactTop li{
         color: #fff;
-        text-align: right;
+        text-align: left;
         font-family: 'Work Sans', sans-serif;
         font-size: 20px;
     }
     
-    .contactRight li{
+    .contactRight li {
         color: #fff;
         text-align: left;
         font-family: 'Work Sans', sans-serif;
         font-size: 20px;
+
     }
+
+    .contactTop i{
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    .contactRight i{
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    /*sub headings*/
 
     .h2Contact{
         color: #4B88A2;
-        font-size: 20px;
-        text-align: right;
+        font-size: 30px;
+        text-align: center;
         font-family: 'Neuton', serif;
         font-weight: bolder;
         margin-top: 10px;
+        font-family: 'Neuton', serif;
     }
-
-    .h2Contact a i{
-        text-decoration: none;
-        font-family: 'Work Sans', sans-serif;
-        color: #fff;
-    }
-
-    .contactRight a{
-        align-items: left;
-    }
-
-    aside .contactRight h3{
+   
+    .h3Contact{
         color: #4B88A2;
-        font-size: 20px;
-        text-align: left;
+        font-size: 30px;
+        text-align: center;
         font-family: 'Neuton', serif;
         font-weight: bolder;
-        margin-left: -100px;
         margin-top: 10px;
     }
+    
+    
 
     .contactRight .fa-envelope, .fa-mobile, .fa-phone, .fa-map-marker
     {
         color: #fff;
         padding-left: 1em;
         font-size: 1.4em;
+        margin-left: 50px;
     }
 
     .contactRight .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
         color: #fff;
         padding-right: 1em;
         font-size: 1.4em;
+        margin-left: 50px;
     }
 
     .contactRight a{
@@ -89,3 +96,6 @@
         color: #4B88A2;
     }
 
+.fa-instagram{
+    margin-bottom: 30px;
+}
