@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Signup.css';
 import { useHistory } from "react-router";
 import Footer from '../../components/Footer';
@@ -10,6 +10,7 @@ import {firebase} from "../../firebase-config"
 import { auth } from '../../firebase-config';
 import axios, { Axios } from 'axios';
 import { ajax } from 'jquery';
+import { Dropdown } from 'bootstrap';
 //my clientId from google
 const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
 
@@ -46,7 +47,8 @@ function Signup() {
   const [rectruiter, setRecruiter] = useState("")
   const [company,setCompany] = useState("")
   const [userRole,setUserRole] = useState("")
-
+  const[loading,setLoading]=useState(true);
+  const [companies,setCompanies] = useState("")
   const onSuccess = ( res ) => {
     console.log('[Login Success] currentUser:', res.profileObj);
   };
@@ -144,7 +146,185 @@ function Signup() {
       alert(error.message)
     }
   }
+  useEffect (() =>{
+    try{
+      http.get(`${apiUrl}Company/GetCompanies`).then((response)=>{
+        debugger
+        setCompanies(response.data)
+        debugger
+      })
+      .finally(()=>{
+        
+          setLoading(false);
 
+      })
+    }
+    catch(error){
+      alert(error.message)
+    }
+  },[])
+
+
+  if(loading){
+    return(
+      <div form-wrapper>
+      <div className="form-container-signup">
+        <div class="title_container-signup">
+          <h1>Create Account</h1>
+          <h3>Already have an account? <a href="/Login" >Login Here</a> </h3> 
+          <br />
+          <form>
+          <h4>Select the account type that applies to you:</h4>
+          <div className="radioAccType" onChange={setUser.bind(this)}>
+            <input name="radAccTypeChoice" id="chkYes" type="radio" value={1}  />
+            <h5 for="radioGrad">Graduate</h5>
+            <input name="radAccTypeChoice" id="chkYes" type="radio" value={2}   />
+            <h5 for="radioRec">Recruiter</h5>
+            <input name="radAccTypeChoice" id="radioComp" type="radio" value={3}  />
+            <h5 for="radioComp">Company</h5>
+          </div>
+
+              {/** GRADUATE/RECRUITER/COMPANY */}
+              <div className="rowSignup">
+                <div class="col25Signup">
+                  <label className="lblFName" for="fname">First Name:</label>
+                </div>
+                <div className="col75Signup">
+                  <input type="text" id="" placeholder="First Name or Company Name"  onChange={(event) => {setFirstName(event.target.value)}}/>
+                </div>
+              </div>
+
+            {/** GRADUATE/RECRUITER */}
+            <div className="rowSignup">
+              <div class="col25Signup">
+                <label className="lblLName" for="lname">Last Name:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="text" id="" placeholder="Surname"  onChange={(event) => {setLastName(event.target.value)}}/>
+              </div>
+            </div>
+
+            {/** GRADUATE/RECRUITER/COMPANY */}
+            <div className="rowSignup">
+              <div class="col25Signup">    
+                <label className="lblEmail" for="email">Email:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="email" id="" placeholder="Email" onChange={(event) => {setEmail(event.target.value)}} />
+              </div>
+            </div>
+
+            {/** GRADUATE/RECRUITER */}
+            <div className="rowSignup">
+              <div class="col25Signup">    
+                <label className="" for="gender">Gender:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="text" id="" placeholder="e.g. male, female or other" onChange={(event) => {setGender(event.target.value)}} />
+              </div>
+            </div>
+
+            {/** GRADUATE/RECRUITER */}
+            <div className="rowSignup">
+              <div class="col25Signup">    
+                <label className="lblMobile" for="mobile">Mobile:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="tel" id="" placeholder="Contact Number"  onChange={(event) => {setMobile(event.target.value)}}/>
+              </div>
+            </div>
+
+          <div hidden={userRole ==1 ||userRole ==2}>
+            {/** COMPANY */}
+            <div  className="rowSignup">
+              <div class="col25Signup">    
+                <label className="lblSector" for="sector">Sector:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="text" id="txtSector" placeholder="E.g. Marketing" onChange={(event) => {setSector(event.target.value)}} />
+              </div>
+            </div>
+
+            {/** COMPANY */}
+            <div className="rowSignup">
+              <div class="col25Signup">    
+                <label className="lblVision" for="vision">Vision:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="text" id="" placeholder="..."  onChange={(event) => {setVision(event.target.value)}} />
+              </div>
+            </div>
+
+            {/** COMPANY */}
+            <div className="rowSignup">
+              <div class="col25Signup">    
+                <label className="lblMission" for="mission">Mission:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="text" id="" placeholder="..." onChange={(event) => {setMission(event.target.value)}} />
+              </div>
+            </div>
+            </div>
+              
+            {/** GRADUATE/RECRUITER/COMPANY */}  
+            <div className="rowSignup">
+              <div class="col25Signup">   
+                <label className="lblPassword" for="password">Password:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="password" id="" placeholder="Password"  onChange={(event) => {setPassword(event.target.value)}}/>
+              </div>
+            </div>
+                
+            {/** GRADUATE/RECRUITER/COMPANY */}    
+            <div className="rowSignup">
+              <div class="col25Signup">          
+                <label className="lblConfirmPassword" for="confirmpassword">Confirm Password:</label>
+              </div>
+              <div className="col75Signup">
+                <input type="password" id="" placeholder="Re-enter Password"  onChange={(event) => {setConfirmPassword(event.target.value)}} />
+              </div>
+            </div>          
+            <button className="btnSub" type="button" onClick={registerUser}>Register </button>
+            <button className="btnCancelSignup" type="button" onClick={registerGoogleUser}>Sign Up Using Google</button>
+              {/* <div>
+                <GoogleLogin className="btnGoogle"
+                  clientId={clientId}
+                  buttonText="Sign In using Google"
+                  onSuccess={onSuccess}
+                  onFailure={onFailure}
+                  cookiePolicy={'single_host_origin'}
+                  style={{ marginTop: '100px' }}
+                  isSignedIn={true}
+                  />
+              </div>
+            
+            <button 
+              className="btnCancelSignup" 
+              onClick={() => {
+              history.push("/");
+              }}
+              >
+                Back
+              </button>
+            
+              </div> */}
+            <button 
+              className="btnCancelSignup" 
+              onClick={() => {
+                history.push("/")
+              }}
+              >
+                Cancel
+              </button>
+            </form>
+          </div>
+          </div>
+          <Footer/>
+      </div>  
+  );
+  }
+  else{
   return (
     <div form-wrapper>
     <div className="form-container-signup">
@@ -213,8 +393,21 @@ function Signup() {
             </div>
           </div>
 
-          {/** COMPANY */}
+          {/**Recruiter Company */}
+          {/* <div>
           <div className="rowSignup">
+            <div class="col25Signup">    
+              <label className="lblCompany" for="Company">Company:</label>
+            </div>
+            <div className="col75Signup">
+              <Dropdown type="" id="" placeholder="Company Name" data={companies} onChange={(event) => {setCompany(event.target.value)}}/>
+            </div>
+          </div>
+          </div> */}
+
+        <div hidden={userRole ==1 ||userRole ==2}>
+          {/** COMPANY */}
+          <div  className="rowSignup">
             <div class="col25Signup">    
               <label className="lblSector" for="sector">Sector:</label>
             </div>
@@ -241,6 +434,7 @@ function Signup() {
             <div className="col75Signup">
               <input type="text" id="" placeholder="..." onChange={(event) => {setMission(event.target.value)}} />
             </div>
+          </div>
           </div>
             
           {/** GRADUATE/RECRUITER/COMPANY */}  
@@ -301,5 +495,5 @@ function Signup() {
     </div>  
   );
 }
-
+}
 export default Signup;

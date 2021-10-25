@@ -28,7 +28,14 @@ function EditCompanyProfile() {
        LogoUrl:"blob:http://localhost:3000/c5242f3e-0a46-4ec5-8848-6344bc8587e4"
      }
     http.put(`${apiUrl}Company/UpdateCompany/${localStorage.getItem("companyId")}`,company).then((response)=>{
-      debugger
+      alert('Company Profile Updated')
+    })
+  }
+
+  const deleteCompany = async()=>{
+    http.delete(`${apiUrl}Company/DeleteCompany/${localStorage.getItem("companyId")}`).then((response)=>{
+      alert('Company Profile Deactivated')
+      history.push('/SignUp')
     })
   }
   return (
@@ -78,7 +85,7 @@ function EditCompanyProfile() {
         </div>
 
         <button className="btnSaveCompProf" type="button" onClick={updateCompany}>Update</button>
-        <input className="btnDeleteCompProf" type="submit" value="Delete Profile" />
+        <button className="btnDeleteCompProf" type="button" onClick={deleteCompany}>Delete Profile</button>
         <button 
           className="btnCancelCompProf" 
           onClick={() => {
