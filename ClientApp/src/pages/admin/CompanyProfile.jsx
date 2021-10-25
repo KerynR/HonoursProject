@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import history from '../../components/history';
 import { useHistory } from "react-router";
 import axios, { Axios } from 'axios';
+import { holdReady } from 'jquery';
 
 const http = axios;
 
@@ -22,10 +23,21 @@ function CompanyProfile() {
     
     function editPosition(vacancyId){
         localStorage.setItem("vacancyId",vacancyId)
+        history.push("/EditVacancy")
     }
     function deleteVacancy(vacancyId){
+        http.put(`${apiUrl}Company/Vacancy/DeletePosition/${vacancyId}`).then((response)=>{
+            history.push("/CompanyProfile")
+        })
+    }
+
+    function deleteRep(rep){
+        http.delete(`${apiUrl}Company/RemoveCompanyRep/${rep.repId}`).then((response)=>{
+            history.push("/CompanyProfile")
+        })
         debugger
     }
+
     useEffect (() =>{
         try{
           http.get(`${apiUrl}Company/GetCompSpecificReps/${localStorage.getItem("companyId")}`).then((response)=>{
@@ -397,7 +409,7 @@ function CompanyProfile() {
                                 <td>{rep.repFirstName}</td>
                                 <td>{rep.repLastName}</td>
                                 <td>{rep.email}</td>
-                                <td></td>
+                                <td><button type="button" onClick={()=>{deleteRep(rep)}}>Delete</button></td>
                                 </tr>
                             )
                             })
@@ -544,8 +556,8 @@ function CompanyProfile() {
                                 <tr >
                                 <td>{position.jobTitle}</td>
                                 <td>{position.applicationClosingDate}</td>
-                                <td onClick={editPosition(position.vacancyId)}></td>
-                                <td onClick={deleteVacancy(position.vacancyId)}></td>
+                                <td><button type="button" onClick={()=>{editPosition(position.vacancyId)}}>Delete</button></td>
+                                <td><button type="button" onClick={()=>{deleteVacancy(position.vacancyId)}}>Delete</button></td>
                                 </tr>
                             )
                             })
@@ -577,7 +589,7 @@ function CompanyProfile() {
                                 <td>{rep.repFirstName}</td>
                                 <td>{rep.repLastName}</td>
                                 <td>{rep.email}</td>
-                                <td></td>
+                                <td><button type="button" onClick={()=>{deleteRep(rep)}}>Delete</button></td>
                                 </tr>
                             )
                             })
