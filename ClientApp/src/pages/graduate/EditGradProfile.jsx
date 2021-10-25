@@ -1,8 +1,8 @@
 import React ,{useState}from 'react';
 import './EditGradProfile.css';
 import Footer from '../../components/Footer';
-import history from '../../components/history';
 import { Http } from '@material-ui/icons';
+import { useHistory } from "react-router";
 
 
 import * as author from "firebase/auth";
@@ -15,6 +15,9 @@ const apiUrl='https://localhost:44347/api/';
 const http = axios;
 
 function EditGradProfile() {
+
+  const history = useHistory();
+
     const [firstName,setFirstName] =useState(localStorage.getItem("firstName"))
     const [lastName,setLastName] =useState(localStorage.getItem("lastName"))
     const [email,setEmail] =useState(localStorage.getItem("email"))
@@ -112,7 +115,12 @@ function EditGradProfile() {
                   
         <button type="button" className="btnSaveGradProf" variant="btn btn-success" onClick={updateUser}>Save</button>          
         <button type="button" className="btnDeleteGradProf" variant="btn btn-success" onClick={deleteUser}>Delete Profile</button>          
-        <button className="btnCancelGradProf" variant="btn btn-success" onClick={() => history.push('/GraduateProfile')}>Cancel</button>          
+        <button 
+          className="btnCancelGradProf"
+          onClick={() => history.push('/GraduateProfile')}
+          >
+            Cancel
+          </button>          
 
         </form>
         

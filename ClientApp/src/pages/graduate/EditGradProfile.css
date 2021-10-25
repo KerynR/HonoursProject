@@ -15,6 +15,7 @@ input[type=text], select, textarea{
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  margin-bottom: 10px;
 }
 
   input[type=email], select, textarea{
@@ -24,6 +25,7 @@ input[type=text], select, textarea{
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    margin-bottom: 10px;
   }
    
   input[type=tel], select, textarea{
@@ -33,6 +35,7 @@ input[type=text], select, textarea{
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    margin-bottom: 10px;
   }
 
   .form-container-editGradProf {
@@ -85,7 +88,7 @@ input[type=text], select, textarea{
     cursor: pointer;
     color: #334257;
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;

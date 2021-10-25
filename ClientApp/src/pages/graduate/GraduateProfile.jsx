@@ -218,7 +218,8 @@ function GraduateProfile() {
                     onClick={() => history.push('/')}
                     >
                         Logout
-                </button>  
+                </button> 
+                 
                 </form>
                 </aside>
                 <div className="currentApplicationsHeader">
@@ -235,9 +236,7 @@ function GraduateProfile() {
                 
                 </thead>
                 <tbody>
-                    <tr>
-                       
-                    </tr>
+                    
                     
                 </tbody>
             </table>
@@ -326,7 +325,7 @@ function GraduateProfile() {
 
             {/** VISIBLE TO EVERYONE */} 
 
-        <form className="GraduateForm">
+        <div className="GraduateForm">
 
           <div className="gradRow">
               <div className="colLeftGrad">
@@ -378,7 +377,7 @@ function GraduateProfile() {
                   <label className="">{companyRep}</label>
               </div>
           </div>
-        </form>
+        </div>
         </aside>
         <div className="currentApplicationsHeader">
             <h1>Current Applications</h1>

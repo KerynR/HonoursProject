@@ -1,12 +1,12 @@
 .gridMoocs {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 150px 100px 400px 150px 200px;
-  grid-gap: 0.1em;
+  grid-template-rows: 150px 100px 100px auto 100px auto 120px;
+  grid-gap: 0em;
   }
   
   .moocsHeader,
-  .searchMoocsTop, .tblMoocsSearch, .moocIconsHeading, .moocIcons {
+  .searchMoocsTop, .tblMoocsSearch, .moocsBtns, .moocIconsHeading, .moocIcons, .backMoocs {
   grid-column-start: 1;
   grid-column-end: 3;
   }
@@ -20,11 +20,12 @@
 
   .moocsHeader{
       text-align: center;
-      font-size: 60px;
+      font-size: 70px;
       padding-bottom: 15px;
       color: #4B88A2;
       font-family: 'Neuton', serif;
     }
+
 
   .searchMoocsTop h2{
     color: #fff;
@@ -67,19 +68,7 @@
     float: inherit;
   }
 
-  .btnSearchMooc{
-    float: inherit;
-    width: 100px;
-    height: 35px;
-    border-radius: 8px;
-    border: 2px solid #396a80;
-  }
-
-  .btnSearchMooc:hover{
-    background-color: #4B88A2;
-    color: #FFF9FB;
-    
-  }
+  
 
   @media screen and (max-width: 600px) {
      input[type=text] {
@@ -105,22 +94,17 @@
 /* TABLE STYLES*/
     
 .tblMoocs{
-  border-collapse: collapse;
-  overflow: hidden;
-  border-radius: 10px;
-  font-style: normal;
-  width: 80%
-}
-
-.tblMoocs{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 10px;
   font-style: normal;
-  width: 80%
+  width: 50%;
+  float: inherit;
+  margin-bottom: 30px;
 }
+
 
 .tblMoocs th{
   color: #FFF9FB;
@@ -188,4 +172,60 @@
 
 .colIcons img:hover{
   transform: scale(1.5);
+}
+
+.btnBackMooc{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #EEEEEE;
+  height: 55px;
+  line-height: 35px;
+  width: 20%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: #334257;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out; 
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.btnBackMooc:hover{
+  background-color: #4B88A2;
+  color: #FFF9FB;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnSearchMooc{
+  float: inherit;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.btnSearchMooc:hover{
+  background-color: #4B88A2;
+  color: #FFF9FB;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnClearMooc{
+  float: inherit;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.btnClearMooc:hover{
+  background-color: #4B88A2;
+  color: #FFF9FB;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
