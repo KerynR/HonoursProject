@@ -302,7 +302,18 @@ function CompanyProfile() {
                             >
                                 View Vacancies
                             </button>          
-                    </li>          
+                    </li>  
+                    <br /><br />
+                    <li>
+                        <button 
+                            className="btnViewSubmissions" 
+                            onClick={() => {
+                                history.push("/ViewSubmissions");
+                            }}
+                            >
+                                View Submissions
+                            </button>          
+                    </li>               
                     </ul>
                 </main>
 
@@ -470,6 +481,17 @@ function CompanyProfile() {
                             }}
                             >
                                 View Vacancies
+                            </button>          
+                    </li>    
+                    <br /><br />      
+                    <li>
+                        <button 
+                            className="btnViewSubmissions" 
+                            onClick={() => {
+                                history.push("/ViewSubmissions");
+                            }}
+                            >
+                                View Submissions
                             </button>          
                     </li>          
                     </ul>
