@@ -89,7 +89,7 @@ function CompanyProfile() {
                         <button 
                             className="btnAddRecruiter" 
                             onClick={() => {
-                                history.push("/");
+                                history.push("/SignUp");
                             }}
                             >
                                 Add Recruiter
@@ -286,7 +286,7 @@ function CompanyProfile() {
                         <button 
                             className="btnAddRecruiter" 
                             onClick={() => {
-                                history.push("/");
+                                history.push("/SignUp");
                             }}
                             >
                                 Add Recruiter

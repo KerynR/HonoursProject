@@ -3,12 +3,24 @@ import './Vacancies.css';
 import Footer from '../../components/Footer';
 import { isConstructorTypeNode } from 'typescript';
 import axios, { Axios } from 'axios';
-
+import { useHistory } from "react-router";
 const apiUrl='https://localhost:44347/api/';
 const http = axios;
+
 function Vacancies() {
+  const history = useHistory();
     const [vacancies,setVacancies] =useState(null)
     const [loading,setLoading]=useState(true)
+    const [userId,setUserId] = useState(localStorage.getItem("roleId"))
+    function  editVacancy(job) {
+      localStorage.setItem("vacancyId",job.id)
+      if(userId == 1){
+        history.push("/VacancyInfo")
+      }
+      else{
+        history.push("/EditVacancy")
+      }
+    }
     useEffect (() =>{
         try{
           http.get(`${apiUrl}Company/GetVacancies`).then((response)=>{
@@ -109,7 +121,7 @@ else{
                     {
                         vacancies.map((job) =>{
                         return (
-                            <tr >
+                            <tr onClick={()=>{editVacancy(job)}}>
                             <td>{job.companyName}</td>
                             <td>{job.sector}</td>
                             <td>{job.jobTitle}</td>
