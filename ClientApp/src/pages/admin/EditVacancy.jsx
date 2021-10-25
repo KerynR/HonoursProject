@@ -70,7 +70,8 @@ const updateVacancy = () =>{
     }
     debugger
    http.put(`${apiUrl}Company/Vacancy/UpdatePosition/${localStorage.getItem('companyId')}/${localStorage.getItem('vacancyId')}`,vacancy).then((response)=>{
-       debugger
+       alert("Vacancy updated")
+       history.push("/Vacancies")
    })
 }
 
