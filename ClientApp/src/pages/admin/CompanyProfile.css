@@ -1,7 +1,7 @@
 .gridCompProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 600px 150px auto 150px auto;
+    grid-template-rows: 150px auto 150px auto 150px auto;
     grid-gap: 0.1em;
     }
    
@@ -57,34 +57,7 @@
         font-family: 'Work Sans', sans-serif;
     }
 
-   /* table th, tr{
-        font-size: 30px;
-        font-style: normal;
-        border-color: #4B88A2;
-        border-width: 3px;
-    }
-
-      .tblCompPos, .tblCompPos{
-          font-size: 10px;
-          color: #FFF9FB;
-      }
-
-      .tblCompPos th, .tblCompPos th{
-          color: #4B88A2;
-          font-size: 25px;
-          height: 80px;
-          width: 350px;
-          text-align: center;
-      }
-
-      .tblCompPos td, .tblCompPos td{
-          height: 70px;
-          width: 500px;
-          text-align: center;
-          font-size: 25px;
-      }    */
-
-      .fa-user-circle{
+    .fa-user-circle{
         padding: 10px 20px 10px;
     }
 
@@ -125,7 +98,7 @@
         padding: 20px;
       }
 
-.btnEditCompanyProfile, .btnAddNewPos, .btnAddRecruiter, .btnViewVacanciesComp{
+.btnEditCompanyProfile, .btnAddNewPos, .btnAddRecruiter, .btnViewVacanciesComp, .btnViewSubmissions{
   background-color: #4B88A2;
   color: #FFF9FB;
   width: 100%;
@@ -134,7 +107,7 @@
 
 }
 
-.btnEditCompanyProfile:hover, .btnAddNewPos:hover, .btnAddRecruiter:hover, .btnViewVacanciesComp:hover{
+.btnEditCompanyProfile:hover, .btnAddNewPos:hover, .btnAddRecruiter:hover, .btnViewVacanciesComp:hover, .btnViewSubmissions:hover{
   background-color: #D3D4D9;
   color: #252627;
 }
