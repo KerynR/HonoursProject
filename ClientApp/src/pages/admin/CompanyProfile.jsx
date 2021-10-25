@@ -157,6 +157,16 @@ function CompanyProfile() {
                         </button>     
                     </form>
                 </aside>
+
+                <div className="dropdown">
+                    <label>DropDown</label>
+                    <select name="cars" id="cars">
+                        <option value="value1">Value1</option>
+                        <option value="value2">Value2</option>
+                        <option value="value3">Value2</option>
+                        <option value="value4">Value2</option>
+                    </select>
+                </div>
                 
                 {/* SHOW ALL CURRENT POSITIONS AVAILABLE */}
 
