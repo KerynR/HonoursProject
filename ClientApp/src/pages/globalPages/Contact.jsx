@@ -11,22 +11,22 @@ function Contact() {
           <header className="ContactUsHeader">
             Contact Us
           </header>
-        <main className="contactLeft">
-         
+        <div className="contactUsDetails">
           <ul>
-          
-            <h2 className="h2Contact">Feel free to contact us via any of the following:</h2>
+            <div className="contactTop">
+            <h2 className="h2Contact">Feel free to contact us:</h2>
             <br /><br />
-            <li>xyzrecruitment@gmail.com <i class="fa fa-envelope" aria-hidden="true"></i></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>xyzrecruitment@gmail.com</li>
             <br />
-            <li>071 696 5982<i class="fa fa-mobile" aria-hidden="true"></i></li>
+            <li><i class="fa fa-mobile" aria-hidden="true"></i>071 696 5982</li>
             <br />
-            <li>011 696 3358<i class="fa fa-phone" aria-hidden="true"></i></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>011 696 3358</li>
             <br />
-            <li>South Africa<i class="fa fa-map-marker" aria-hidden="true"></i></li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>South Africa</li>
+            </div>
           </ul>
-        </main>
-        <aside >
+        </div>
+        <div className="socialMediaContact" >
             <ul>
               <div className="contactRight">
                 <h3 className="h3Contact">Find us on Social Media:</h3>
@@ -40,7 +40,7 @@ function Contact() {
                 <li> <i class="fab fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/">Instagram</a></li>
               </div>
             </ul>
-        </aside>
+        </div>
         </div>
         <Footer/>
     </>
