@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Signup.css';
-import history from '../history';
+import { useHistory } from "react-router";
+import Footer from '../../components/Footer';
 
 //GOOGLE LOGIN
 import {GoogleLogin } from 'react-google-login';
@@ -27,6 +28,9 @@ const apiUrl='https://project-web.conveyor.cloud/api/'
 
 
 function Signup() {
+
+  const history = useHistory();
+  
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("");
@@ -133,11 +137,11 @@ function Signup() {
          <h4>Select the account type that applies to you:</h4>
          <div className="radioAccType" onChange={setUser.bind(this)}>
           <input name="radAccTypeChoice" id="chkYes" type="radio" value={1}  />
-          <label for="radioGrad">Graduate</label>
+          <h5 for="radioGrad">Graduate</h5>
           <input name="radAccTypeChoice" id="chkYes" type="radio" value={2}   />
-          <label for="radioRec">Recruiter</label>
+          <h5 for="radioRec">Recruiter</h5>
           <input name="radAccTypeChoice" id="radioComp" type="radio" value={3}  />
-          <label for="radioComp">Company</label>
+          <h5 for="radioComp">Company</h5>
         </div>
 
             {/** GRADUATE/RECRUITER/COMPANY */}
@@ -167,16 +171,6 @@ function Signup() {
             </div>
             <div className="col75Signup">
               <input type="email" id="" placeholder="Email" onChange={(event) => {setEmail(event.target.value)}} />
-            </div>
-          </div>
-
-          {/** GRADUATE/RECRUITER */}
-          <div className="rowSignup">
-            <div class="col25Signup">    
-              <label className="lblDOB" for="dob">Date of Birth:</label>
-            </div>
-            <div className="col75Signup">
-              <input type="date" id="" placeholder="Email" onChange={(event) => {setDBO(event.target.value)}} />
             </div>
           </div>
 
@@ -249,8 +243,8 @@ function Signup() {
               <input type="password" id="" placeholder="Re-enter Password"  onChange={(event) => {setConfirmPassword(event.target.value)}} />
             </div>
           </div>          
-           <button   type="button" className="btnSignup" onClick={registerUser}>Register</button>
-           <button className="btnCancelSignup" type="button" onClick={registerGoogleUser}>Sign Up Using Goolgle</button>
+          <input className="btnSub" type="submit" value="Register" />
+           <button className="btnCancelSignup" type="button" onClick={registerGoogleUser}>Sign Up Using Google</button>
             {/* <div>
               <GoogleLogin className="btnGoogle"
                 clientId={clientId}
@@ -273,10 +267,18 @@ function Signup() {
             </button>
           
             </div> */}
-           <button className="btnCancelSignup" variant="btn btn-success" onClick={() => history.push('/')}>Cancel</button>
+           <button 
+            className="btnCancelSignup" 
+            onClick={() => {
+              history.push("/")
+            }}
+            >
+              Cancel
+            </button>
           </form>
         </div>
         </div>
+        <Footer/>
     </div>  
   );
 }

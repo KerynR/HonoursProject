@@ -17,6 +17,8 @@ const http = axios;
 {/* GRADUATES CURRENT APPLICATIONS - THIS PAGE OPENS WHEN THE GRADUATE CLICKS ON THE JOB TITLE */}
 
 function GraduateProfile() {
+    const history = useHistory();
+
     const [firstName,setFirstName] =useState(localStorage.getItem("firstName"))
     const [lastName,setLastName] =useState(localStorage.getItem("lastName"))
     const [email,setEmail] =useState(localStorage.getItem("email"))
@@ -97,19 +99,39 @@ function GraduateProfile() {
                 <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
                 <br /><br />
                 <li>
-                <button className="btnEditProfile" variant="btn btn-success" onClick={() => history.push('/EditGradProfile')}>Edit Profile</button>          
+                <button 
+                    className="btnEditProfile" 
+                    onClick={() => history.push('/EditGradProfile')}
+                    >
+                        Edit Profile
+                    </button>          
                 </li>
                 <br />        
                 <li>
-                <button className="btnMoocs" variant="btn btn-success" onClick={() => history.push('/Moocs')}>View MOOCs</button>          
+                <button 
+                    className="btnMoocs" 
+                    onClick={() => history.push('/Moocs')}
+                    >
+                        View MOOCs
+                    </button>          
                 </li>
                 <br />
-                <li>
-                <button className="btnViewCV" variant="btn btn-success" onClick={() => history.push('/')}>View CV</button>          
+               {/* <li>
+                <button 
+                    className="btnViewCV" 
+                    onClick={() => history.push('/')}
+                    >
+                        View CV
+                </button>        
                 </li>
-                <br />
+                <br />*/}  
                 <li>
-                <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
+                <button 
+                    className="btnViewVacancies" 
+                    onClick={() => history.push('/Vacancies')}
+                    >
+                        View Vacancies
+                    </button>          
                 </li>
                 
                 </ul>
@@ -162,14 +184,14 @@ function GraduateProfile() {
                         <label className="">{gender}</label>
                     </div>
                 </div>
-                <div className="gradRow">
+                {/*<div className="gradRow">
                     <div className="colLeftGrad">
                         <label className="lblGradCompRep">Company Representing:</label>
                     </div>
                     <div className="colRightGrad">
                         <label className="">{companyRep}</label>
                     </div>
-                </div>
+            </div>*/}
                 </form>
                 </aside>
                 <div className="currentApplicationsHeader">
@@ -187,25 +209,9 @@ function GraduateProfile() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
+                       
                     </tr>
-                    <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/gradSubmissions"></a></td>
-                        <td></td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>

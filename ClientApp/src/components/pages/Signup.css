@@ -3,51 +3,70 @@
     font-size: 80px;
     padding-bottom: 15px;
     color: #4B88A2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Neuton', serif;
+    margin-top: -100px;
 }
 
-input[type=text], select, textarea{
-    width: 100%;
+.title_container-signup input[type=text], select, textarea{
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    margin-left: 50px;
+    margin-bottom: 20px;
   }
 
-  input[type=email], select, textarea{
-    width: 100%;
+  .title_container-signup input[type=email], select, textarea{
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    margin-left: 50px;
+    margin-bottom: 20px;
   }
 
-  input[type=password], select, textarea{
-    width: 100%;
+  .title_container-signup input[type=password], select, textarea{
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    margin-left: 50px;
+    margin-bottom: 20px;
   }
 
-  input[type=checkbox], select, textarea{
-    width: 100%;
+  .title_container-signup input[type=tel], select, textarea{
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
     align-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
   }
     
   .title_container-signup label {
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 125px;
+  }
+
+  .title_container-signup h5 {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
   }
 
  .title_container-signup h3{
@@ -57,7 +76,7 @@ input[type=text], select, textarea{
   }
 
   .title_container-signup a{
-      color: #4B88A2;
+      color: #BB0A21;
       text-align: center;
   }
 
@@ -73,7 +92,6 @@ input[type=text], select, textarea{
   }
 
   .form-container-signup {
-    border-radius: 5px;
     background-color: #242526;
     padding: 100px;
   }
@@ -103,7 +121,7 @@ input[type=text], select, textarea{
     }
   }
 
-.btnSignup{
+.btnSub{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #EEEEEE;
     height: 55px;
@@ -115,15 +133,17 @@ input[type=text], select, textarea{
     cursor: pointer;
     color: #334257;
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;    
+
+
 }
 
-.btnSignup:hover {
+.btnSub:hover {
   background: #4B88A2;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

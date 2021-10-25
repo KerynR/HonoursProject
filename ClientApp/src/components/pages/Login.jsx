@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
-import Footer from '../Footer';
-import history from '../history';
-
+import Footer from '../../components/Footer';
+import { useHistory } from "react-router";
 
 //GOOGLE LOGIN
 import {GoogleLogin } from 'react-google-login';
@@ -16,7 +15,11 @@ import axios, { Axios } from 'axios';
 const clientId = '619690593220-h60fclv6skikhfqajjpredm31mi54b2e.apps.googleusercontent.com';
 const apiUrl='https://localhost:44347/api/';
 const http = axios;
+
 function Login() {
+
+  const history = useHistory();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
 
@@ -95,10 +98,16 @@ function Login() {
             <input type="password" id="password" placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
           </div>
         </div>
-        <button className="btnLogin" type="button" onClick={loginUser}>Login</button>
+        <button 
+          className="btnLogin" 
+          type="button" 
+          onClick={loginUser}
+          >
+            Login
+          </button>
                 
        
-        <button className="btnCancelSignup" type="button" onClick={loginGoogleUser}>Log In Using Goolgle</button>
+        <button className="btnCancelSignup" type="button" onClick={loginGoogleUser}>Login Using Goolgle</button>
         {/* <div>
           <GoogleLogin className="btnGoogle"
             clientId={clientId}

@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap';
+import { Button } from './Button';
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import './MainSection.css';
@@ -26,11 +26,15 @@ function MainSection() {
           <br/>
           <ul>
             <li>
-            <button className="btnRegisterHome" variant="btn btn-success" onClick={() => history.push('/Signup')}>Register</button>
-            </li><br/>
-            <li>
-            <button className="btnLoginHome" variant="btn btn-success" onClick={() => history.push('/Login')}>Login</button>
+            <Button 
+              className="btnRegisterHome" 
+              buttonStyle="btn--outline"
+              buttonSize="btn--large"
+              >
+                Register
+              </Button>
             </li>
+           
           </ul>
           </div>
         </div>

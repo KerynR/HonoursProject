@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px 300px;
-    grid-gap: 0em;
+    grid-gap: 0.1em;
     }
     
     .ContactUsHeader{
@@ -26,14 +26,14 @@
     .contactLeft li{
         color: #fff;
         text-align: right;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 20px;
     }
     
     .contactRight li{
         color: #fff;
         text-align: left;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 20px;
     }
 
@@ -43,20 +43,27 @@
         text-align: right;
         font-family: 'Neuton', serif;
         font-weight: bolder;
+        margin-top: 10px;
     }
 
-    .h2Contact a{
+    .h2Contact a i{
         text-decoration: none;
         font-family: 'Work Sans', sans-serif;
         color: #fff;
     }
 
-    .contactRight h3{
+    .contactRight a{
+        align-items: left;
+    }
+
+    aside .contactRight h3{
         color: #4B88A2;
         font-size: 20px;
         text-align: left;
         font-family: 'Neuton', serif;
         font-weight: bolder;
+        margin-left: -100px;
+        margin-top: 10px;
     }
 
     .contactRight .fa-envelope, .fa-mobile, .fa-phone, .fa-map-marker

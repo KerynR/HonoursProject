@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './CreatePosition.css';
 import Footer from '../../components/Footer';
-import history from '../../components/history';
 import { useHistory } from "react-router";
 
 import axios, { Axios } from 'axios';
@@ -11,6 +10,8 @@ const http = axios;
 {/* COMPANIES AND RECRUITERS CAN CREATE JOB VACANCIES HERE */}
 
 function CreatePosition() {
+
+  
   const [vacancyName,setVacancyName]=useState("");
   const [title,setTitle]=useState("");
   const [startDate,setStartDate]=useState(null);

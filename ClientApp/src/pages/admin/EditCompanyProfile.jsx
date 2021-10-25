@@ -1,7 +1,6 @@
 import React from 'react';
 import './EditCompanyProfile.css';
 import Footer from '../../components/Footer';
-import history from '../../components/history';
 import { useHistory } from "react-router";
 
 {/* COMPANY CAN EDIT THEIR DETAILS HERE */}

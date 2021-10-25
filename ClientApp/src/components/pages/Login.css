@@ -3,18 +3,21 @@
     font-size: 80px;
     padding-bottom: 15px;
     color: #4B88A2;
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Neuton', serif;
+    margin-top: -100px;
+    margin-bottom: 30px;
   }
 
 .title_container-login h3{
   color: #fff;
   text-align: center;
   font-size: 1.5em;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 10px;
 }
 
-  input[type=email], select, textarea{
-    width: 100%;
+ .title_container-login input[type=email], select, textarea{
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -22,8 +25,8 @@
     resize: vertical;
   }
 
-  input[type=password], select, textarea{
-    width: 100%;
+  .title_container-login input[type=password], select, textarea{
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -35,19 +38,19 @@
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
   }
 
   .form-container-login {
-    border-radius: 5px;
     background-color: #242526;
     padding: 100px;
-    
   }
 
   .title_container-login a{
     color: #BB0A21;
+    font-family: 'Work Sans', sans-serif;
   }
 
   .col25Login {
@@ -87,12 +90,13 @@
     cursor: pointer;
     color: #334257;
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;   
+
 }
 
 .btnLogin:hover {
