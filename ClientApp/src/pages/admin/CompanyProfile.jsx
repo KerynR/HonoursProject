@@ -110,7 +110,13 @@ function CompanyProfile() {
                     <div className="compColRight">
                         <label></label>
                     </div>
-                </div>           
+                </div>        
+                <button 
+                    className="btnLogoutComp" 
+                    onClick={() => history.push('/')}
+                    >
+                        Logout
+                </button>     
             </form>
         </aside>
         
