@@ -369,14 +369,7 @@ function GraduateProfile() {
                 View MOOCs
                 </button>          
                 
-                <button 
-                className="btnViewCV"
-                onClick={() => {
-                    history.push("/");
-                }}
-                >
-                    View CV
-                </button>          
+                     
                 
                 <button 
                 className="btnViewVacancies"
