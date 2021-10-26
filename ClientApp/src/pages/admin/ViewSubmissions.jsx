@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './ViewSubmissions.css';
 import Footer from '../../components/Footer';
-import history from '../../components/history';
 
 import axios, { Axios } from 'axios';
 import { useHistory } from "react-router";
@@ -12,6 +11,9 @@ const http = axios;
 {/** ONLY VISIBLE TO THE COMPANY AND COMPANY REP */}
 
 function ViewSubmissions() {
+
+  const history = useHistory();
+
   const [compnayId,setCompanyId]=useState(localStorage.getItem("companyId"));
   const [submissions,setSubmission] = useState(null);
   const[loading,setLoading]=useState(true);
@@ -149,10 +151,15 @@ function ViewSubmissions() {
             </main>
             
             <div className="viewSubmissionsBtns">
-              <button className="btnBackViewSub">
+              <button 
+                className="btnBackViewSub"
+                onClick={() => {
+                history.push("/CompanyProfile");
+              }}
+                >
                 Back
               </button>
-            </div>
+            </div>   
 
             </div>
           <Footer/>

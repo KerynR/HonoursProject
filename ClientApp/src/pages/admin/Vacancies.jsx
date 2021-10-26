@@ -48,16 +48,21 @@ if(loading)
     
             <div className="searchTopGrid">
               <div className="colLeftSearch">    
-                <label>Search for vancancy:</label>
+                <label>Search:</label>
               </div>
               <div className="colRightSearch">
                 <input className="txtSearchVac" type="text" placeholder=""  />
               </div>
             </div> 
     
+            <div className="searchVacBtns">
+              <button className="btnSearchVac">Search</button>
+              <button className="btnClearVacSearch">Clear</button>
+            </div>
+
             <main className="vacanciesWrapper">
             
-            <div>
+            <div className="tblVacancies">
                 <table className="vacancyTable">
                     <thead>
                         <tr>
@@ -97,19 +102,24 @@ else{
     
             <div className="searchTopGrid">
               <div className="colLeftSearch">    
-                <label>Search for vancancy:</label>
+                <label>Search:</label>
               </div>
               <div className="colRightSearch">
                 <input className="txtSearchVac" type="text" placeholder=""  />
               </div>
             </div> 
     
+            <div className="searchVacBtns">
+              <button className="btnSearchVac">Search</button>
+              <button className="btnClearVacSearch">Clear</button>
+            </div>
+
             <main className="vacanciesWrapper">
             
             <div>
                 <table className="vacancyTable">
                     <thead>
-                        <tr>
+                        <tr className="tblHeadingNames">
                             <th>Company Name</th>
                             <th>Sector</th>
                             <th>Job Title</th>
@@ -135,6 +145,17 @@ else{
                 </table>
                 </div>
             </main>
+
+            <div className="backVacBtn">
+              <button 
+                className="btnBackVac"
+                onClick={() => {
+                  history.push("/CompanyProfile");
+                }}
+                >
+                  Back
+              </button>
+            </div>
             
     
             </div>

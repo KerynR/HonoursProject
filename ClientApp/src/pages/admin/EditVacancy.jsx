@@ -203,7 +203,7 @@ if(loading){
                                 <label className="lblJobDescrVac">Job Description:</label>
                             </div>
                             <div className="col-75-editVac">
-                            <textarea name="txtAreaJobDesc" rows="5" cols="50" type="text" placeholder="..." value={jobDescription}  onChange={(event) => {setjobDescription(event.target.value)}} ></textarea>
+                            <input name="txtAreaJobDesc" rows="5" cols="50" type="text" placeholder="..." value={jobDescription}  onChange={(event) => {setjobDescription(event.target.value)}} ></input>
     
                             </div>
                         </div>
@@ -240,7 +240,7 @@ if(loading){
                                 <label className="lblRespVac">Responsibilities:</label>
                             </div>
                             <div className="col-75-editVac">
-                            <textarea name="txtAreaResp" rows="5" cols="50" type="text" placeholder="" value={responsibilities}  onChange={(event) => {setresponsibilities(event.target.value)}}></textarea>
+                            <input name="txtAreaResp" rows="5" cols="50" type="text" placeholder="" value={responsibilities}  onChange={(event) => {setresponsibilities(event.target.value)}}></input>
                             </div>
                         </div>
     
@@ -249,7 +249,7 @@ if(loading){
                                 <label className="lblSkillReqVac">Skill Requirement:</label>
                             </div>
                             <div className="col-75-editVac">
-                                <textarea name="txtAreaSR" rows="5" cols="50" type="text" placeholder="" value={skillName}  onChange={(event) => {setskillName(event.target.value)}}></textarea>
+                                <input name="txtAreaSR" rows="5" cols="50" type="text" placeholder="" value={skillName}  onChange={(event) => {setskillName(event.target.value)}}></input>
                             </div>
                         </div>
     
@@ -257,7 +257,12 @@ if(loading){
                         {/*ONLY VISIBLE TO COMPANY*/}
                         <button type="button" className="btnDeleteVac" onClick={deleteVacancy}>Delete Vacancy</button><br />
                         <button type="button" className="btnSaveVac" variant="btn btn-success" onClick={updateVacancy}>Save</button>
-                        <button className="btnCancelVac" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>Cancel</button>
+                        <button 
+                            className="btnCancelVac" 
+                            onClick={() => history.push('/CompanyProfile')}
+                            >
+                                Cancel
+                            </button>
     
                     </form>
                 </div>

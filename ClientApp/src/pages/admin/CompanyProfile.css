@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 150px auto 150px auto 150px auto;
-    grid-gap: 0.1em;
+    grid-gap: 0em;
     }
    
     .companyHeader{
@@ -46,15 +46,14 @@
     justify-content: center;
     }
 
-    .leftGridComp{
+    .leftGridComp label{ 
         color: #FFF9FB;
         padding-right: 20px;
         padding-left: 20px;
         float: left;
-        padding-right: 30px;
         font-size: 20px;
-        padding-bottom: 20px;
         font-family: 'Work Sans', sans-serif;
+        margin-top: 30px;
     }
 
     .fa-user-circle{
@@ -91,14 +90,15 @@
         font-family: 'Work Sans', sans-serif;
         font-size: 23px;
         padding: 20px;
-        margin-left: -150px;
+        text-align: left;
+        margin-bottom: 20px;
       }
 
       .CompanyForm{
         padding: 20px;
       }
 
-.btnEditCompanyProfile, .btnAddNewPos, .btnAddRecruiter, .btnViewVacanciesComp, .btnViewSubmissions{
+.btnAddNewPos, .btnAddRecruiter, .btnViewVacanciesComp, .btnViewSubmissions{
   background-color: #4B88A2;
   color: #FFF9FB;
   width: 100%;
@@ -107,7 +107,7 @@
 
 }
 
-.btnEditCompanyProfile:hover, .btnAddNewPos:hover, .btnAddRecruiter:hover, .btnViewVacanciesComp:hover, .btnViewSubmissions:hover{
+.btnAddNewPos:hover, .btnAddRecruiter:hover, .btnViewVacanciesComp:hover, .btnViewSubmissions:hover{
   background-color: #D3D4D9;
   color: #252627;
 }
@@ -151,7 +151,7 @@
 
 .tblActiveApplications th{
   color: #FFF9FB;
-  font-size: 1em;
+  font-size: 20px;
   background-color: #4B88A1;
   padding: 15px;
   font-family: 'Open Sans', sans-serif;
@@ -164,15 +164,10 @@
   border-left: #D3D4D9;
   border-right: #D3D4D9;
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
+  font-size: 18px;
   padding: 10px;
 }
 
-/* .tblActiveApplications tr td:hover{
-  background-color: #4B88A1;
-  color: #FFF9FB;
-  
-}*/
 
 /* END OF TABLE STYLES */
 
@@ -199,7 +194,7 @@
 
 .bottomSectComp th{
   color: #FFF9FB;
-  font-size: 1em;
+  font-size: 20px;
   background-color: #4B88A1;
   padding: 15px;
   font-family: 'Open Sans', sans-serif;
@@ -212,31 +207,24 @@
   border-left: #D3D4D9;
   border-right: #D3D4D9;
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
+  font-size: 18px;
   padding: 10px;
 }
 
-/* .tblActiveApplications tr td:hover{
-  background-color: #4B88A1;
-  color: #FFF9FB;
-  
-}*/
 
 /* END OF TABLE STYLES */
 
-.btnLogoutComp{
+.btnLogoutComp, .btnEditCompanyProfile{
   background: #4B88A2;
-  height: 55px;
+  height: 78px;
   line-height: 35px;
-  width: 100px;
+  width: 100%;
   border: none;
   border-radius: 8px;
   outline: none;
   cursor: pointer;
   color: #fff;
-  font-size: 1.2em;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: 30px;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -246,13 +234,24 @@
 
 }
 
-.btnLogoutComp:hover{
+.btnLogoutComp:hover, .btnEditCompanyProfile:hover{
   background-color: #D3D4D9;
   color: #334257;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
 }
 
-.dropdown{
-  color: #fff;
+.btnEditCompanyProfile{
+  margin-top: 60px;
+  
+}
+
+.btnCurrentPosTbl{
+  border: none;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.btnCurrentPosTbl:hover{
+  font-weight: bold;
 }

@@ -265,69 +265,7 @@ function CompanyProfile() {
 
                 {/* TOP LEFT GRID WITH UPLOAD PFP, EDIT PROFILE, CREATE VACANCY, ADD RECRUITER, VIEW VACANCY */}
 
-                <main className="leftGridComp"> 
-                    <ul>
-                    <li>
-                        <label for="pfpImage">Upload Profile Photo</label>
-                        <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
-                    </li>
-                    <br /><br />
-                    <li>
-                        <button 
-                            className="btnEditCompanyProfile" 
-                            onClick={() => {
-                                history.push("/EditCompanyProfile");
-                            }}
-                            >
-                                Edit Profile
-                            </button>          
-                    </li>
-                        <br /><br />  
-                    <li>
-                        <button 
-                            className="btnAddNewPos" 
-                            onClick={() => {
-                                history.push("/CreatePosition");
-                            }}
-                            >
-                                Create Vacancy
-                            </button>          
-                    </li>
-                        <br /><br /> 
-                    <li>
-                        <button 
-                            className="btnAddRecruiter" 
-                            onClick={() => {
-                                history.push("/SignUp");
-                            }}
-                            >
-                                Add Recruiter
-                            </button>          
-                    </li>     
-                    <br /><br />
-                    <li>
-                        <button 
-                            className="btnViewVacanciesComp" 
-                            onClick={() => {
-                                history.push("/Vacancies");
-                            }}
-                            >
-                                View Vacancies
-                            </button>          
-                    </li>  
-                    <br /><br />
-                    <li>
-                        <button 
-                            className="btnViewSubmissions" 
-                            onClick={() => {
-                                history.push("/ViewSubmissions");
-                            }}
-                            >
-                                View Submissions
-                            </button>          
-                    </li>               
-                    </ul>
-                </main>
+
 
                 {/* DISPLAY COMPANY DETAILS */}
 
@@ -377,6 +315,70 @@ function CompanyProfile() {
                         </button>     
                     </form>
                 </aside>
+
+                <main className="leftGridComp"> 
+                    <ul>
+                    <li>
+                        <label for="pfpImage">Upload Profile Photo</label>
+                        <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
+                    </li>
+                    <br /><br />
+                    <li>
+                        <button 
+                            className="btnEditCompanyProfile" 
+                            onClick={() => {
+                                history.push("/EditCompanyProfile");
+                            }}
+                            >
+                                Edit Profile
+                            </button>          
+                    </li>
+                        <br /><br />  
+                    <li>
+                        <button 
+                            className="btnAddNewPos" 
+                            onClick={() => {
+                                history.push("/CreatePosition");
+                            }}
+                            >
+                                Create Vacancy
+                            </button>          
+                    </li>
+                        <br /><br /> 
+                    <li>
+                        <button 
+                            className="btnAddRecruiter" 
+                            onClick={() => {
+                                history.push("/SignUp");
+                            }}
+                            >
+                                Add Recruiter
+                            </button>          
+                    </li>     
+                    <br /><br />
+                    <li>
+                        <button 
+                            className="btnViewVacanciesComp" 
+                            onClick={() => {
+                                history.push("/Vacancies");
+                            }}
+                            >
+                                View Vacancies
+                        </button>          
+                    </li>  
+                    <br /><br />
+                    <li>
+                        <button 
+                            className="btnViewSubmissions" 
+                            onClick={() => {
+                                history.push("/ViewSubmissions");
+                            }}
+                            >
+                                View Submissions
+                        </button>          
+                    </li>               
+                    </ul>
+                </main>
                 
                 {/* SHOW ALL CURRENT POSITIONS AVAILABLE */}
 
@@ -445,14 +447,50 @@ function CompanyProfile() {
 
                 {/* TOP LEFT GRID WITH UPLOAD PFP, EDIT PROFILE, CREATE VACANCY, ADD RECRUITER, VIEW VACANCY */}
 
-                <main className="leftGridComp"> 
+                
+
+                {/* DISPLAY COMPANY DETAILS */}
+
+                <aside className="RightCompProf">
+                
+                    <form className="CompanyForm">
+
+                        <div className="compRow">
+                            <div className="compColLeft">
+                                <label>Name:</label>
+                            </div>
+                            <div className="compColRight">
+                                <label>{name}</label>
+                            </div>
+                        </div>
+
+                        <div className="compRow">
+                            <div className="compColLeft">
+                                <label>Sector:</label>
+                            </div>
+                            <div className="compColRight">
+                                <label>{sector}</label>
+                            </div>
+                        </div>
+
+                        <div className="compRow">
+                            <div className="compColLeft">
+                                <label>Vision:</label>
+                            </div>
+                            <div className="compColRight">
+                                <label>{vision}</label>
+                            </div>
+                        </div>
+                        <div className="compRow">
+                            <div className="compColLeft">
+                                <label>Mission:</label>
+                            </div>
+                            <div className="compColRight">
+                                <label>{mission}</label>
+                            </div>
+                        </div>    
                     <ul>
-                    <li>
-                        <label for="pfpImage">Upload Profile Photo</label>
-                        <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
-                    </li>
-                    <br /><br />
-                    <li>
+                        <li>
                         <button 
                             className="btnEditCompanyProfile" 
                             onClick={() => {
@@ -461,8 +499,28 @@ function CompanyProfile() {
                             >
                                 Edit Profile
                             </button>          
-                    </li>
+                        </li>
                         <br /><br />  
+                        <li>    
+                            <button 
+                                className="btnLogoutComp" 
+                                onClick={() => history.push('/')}
+                                >
+                                    Logout
+                            </button> 
+                        </li>
+                    </ul>    
+                    </form>
+                </aside>
+
+                <main className="leftGridComp"> 
+                    <ul>
+                    <li>
+                        <label for="pfpImage">Upload Profile Photo</label>
+                        <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
+                    </li>
+                    <br /><br />
+                    
                     <li>
                         <button 
                             className="btnAddNewPos" 
@@ -508,55 +566,6 @@ function CompanyProfile() {
                     </li>          
                     </ul>
                 </main>
-
-                {/* DISPLAY COMPANY DETAILS */}
-
-                <aside className="RightCompProf">
-                
-                    <form className="CompanyForm">
-
-                        <div className="compRow">
-                            <div className="compColLeft">
-                                <label>Name:</label>
-                            </div>
-                            <div className="compColRight">
-                                <label>{name}</label>
-                            </div>
-                        </div>
-
-                        <div className="compRow">
-                            <div className="compColLeft">
-                                <label>Sector:</label>
-                            </div>
-                            <div className="compColRight">
-                                <label>{sector}</label>
-                            </div>
-                        </div>
-
-                        <div className="compRow">
-                            <div className="compColLeft">
-                                <label>Vision:</label>
-                            </div>
-                            <div className="compColRight">
-                                <label>{vision}</label>
-                            </div>
-                        </div>
-                        <div className="compRow">
-                            <div className="compColLeft">
-                                <label>Mission:</label>
-                            </div>
-                            <div className="compColRight">
-                                <label>{mission}</label>
-                            </div>
-                        </div>        
-                        <button 
-                            className="btnLogoutComp" 
-                            onClick={() => history.push('/')}
-                            >
-                                Logout
-                        </button>     
-                    </form>
-                </aside>
                 
                 {/* SHOW ALL CURRENT POSITIONS AVAILABLE */}
 
@@ -578,8 +587,8 @@ function CompanyProfile() {
                                 <tr >
                                 <td>{position.jobTitle}</td>
                                 <td>{position.applicationClosingDate}</td>
-                                <td><button type="button" onClick={()=>{editPosition(position.vacancyId)}}>Delete</button></td>
-                                <td><button type="button" onClick={()=>{deleteVacancy(position.vacancyId)}}>Delete</button></td>
+                                <td><button className="btnCurrentPosTbl" type="button" onClick={()=>{editPosition(position.vacancyId)}}>Edit</button></td>
+                                <td><button className="btnCurrentPosTbl" type="button" onClick={()=>{deleteVacancy(position.vacancyId)}}>Delete</button></td>
                                 </tr>
                             )
                             })
@@ -611,7 +620,7 @@ function CompanyProfile() {
                                 <td>{rep.repFirstName}</td>
                                 <td>{rep.repLastName}</td>
                                 <td>{rep.email}</td>
-                                <td><button type="button" onClick={()=>{deleteRep(rep)}}>Delete</button></td>
+                                <td><button className="btnCurrentPosTbl" type="button" onClick={()=>{deleteRep(rep)}}>Delete</button></td>
                                 </tr>
                             )
                             })

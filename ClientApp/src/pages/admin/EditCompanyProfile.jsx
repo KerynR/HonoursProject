@@ -69,7 +69,7 @@ function EditCompanyProfile() {
             <label className="lblVisionEdit">Vision:</label>
           </div>
           <div className="col-75-EditComp">
-          <textarea name="txtAreaVision" rows="3" cols="50" type="text" placeholder="" value={vision} onChange={(event)=> setVision(event.target.value)}></textarea>
+          <input type="text" placeholder="" value={vision} onChange={(event)=> setVision(event.target.value)}></input>
 
           </div>
         </div>
@@ -79,7 +79,7 @@ function EditCompanyProfile() {
             <label className="lblMissionEdit">Mission:</label>
           </div>
           <div className="col-75-EditComp">
-          <textarea name="txtAreaMission" rows="5" cols="50" type="text" placeholder="" value={mission} onChange={(event)=> setMission(event.target.value)}></textarea>
+          <input type="text" placeholder="" value={mission} onChange={(event)=> setMission(event.target.value)}></input>
 
           </div>
         </div>
