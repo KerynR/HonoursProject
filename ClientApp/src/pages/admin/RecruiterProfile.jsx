@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 import ReactDom from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
-import history from '../../components/history';
+import { useHistory } from "react-router";
 
 
 import axios, { Axios } from 'axios';
@@ -21,6 +21,8 @@ const apiUrl='https://localhost:44347/api/';
 const http = axios;
 
 function RecruiterProfile() {
+
+    const history = useHistory();
     const[firstName,setFirstName] = useState(localStorage.getItem("firstName"))
     const[lastName,setLastName] = useState(localStorage.getItem("lastName"))
     const[email,setEmail] = useState(localStorage.getItem("email"))
@@ -34,23 +36,7 @@ function RecruiterProfile() {
         <i class="fa fa-user-circle" aria-hidden="true"></i>
         Recruiter Profile
         </header>
-        <main className="leftRecruiterProf">
-        <ul>
-          <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  />
-          <br /><br />  
-          <li>
-            <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/EditRecruiterProfile')}>Edit Profile</button>          
-          </li>
-          <br />                
-          <li>
-            <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
-          </li>
-          <br />  
-          <li>
-            <button className="btnAddNewPosRec" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
-          </li>
-        </ul>
-        </main>
+       
         <aside className="rightRecruiterProf">
         
         <form className="RecruitersForm">
@@ -99,12 +85,18 @@ function RecruiterProfile() {
             </div>
             <div className="recRow">
                 <div className="colLeftRecProf">
-                    <label>Company Representing:</label>
+                    <label>Company:</label>
                 </div>
                 <div className="colRightRecProf">
                     <label>{company}<a href="/CompanyProfile"></a></label>
                 </div>
             </div>
+
+            <ul>
+            <li>
+                <button className="btnEditRecProfile" variant="btn btn-success" onClick={() => history.push('/EditRecruiterProfile')}>Edit Profile</button>          
+            </li>
+          <br />  
             <button 
                     className="btnLogoutRec" 
                     onClick={() => history.push('/')}
@@ -112,11 +104,24 @@ function RecruiterProfile() {
                         Logout
             </button>  
 
-
+            </ul>
         </form>
-        
-
         </aside>
+
+        <main className="leftRecruiterProf">
+        <ul>
+          <li><label>Upload Profile Photo:</label></li><br /><input type="file" placeholder="Upload"  />
+          <br /><br />  
+                       
+          <li>
+            <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
+          </li>
+          <br />  
+          <li>
+            <button className="btnAddNewPosRec" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
+          </li>
+        </ul>
+        </main>
         
       </div>
       <Footer/>

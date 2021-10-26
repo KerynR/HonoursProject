@@ -114,57 +114,7 @@ function GraduateProfile() {
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                     Graduate Profile
                 </header>
-                <main className="leftGradProf">
 
-                {/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
-                <ul>
-
-                <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
-                <br /><br />  
-
-                <li>Upload CV:</li><br /><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
-                <br /><br />  
-                
-                <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
-                <br /><br />
-                <li>
-                <button 
-                    className="btnEditProfile" 
-                    onClick={() => history.push('/EditGradProfile')}
-                    >
-                        Edit Profile
-                    </button>          
-                </li>
-                <br />        
-                <li>
-                <button 
-                    className="btnMoocs" 
-                    onClick={() => history.push('/Moocs')}
-                    >
-                        View MOOCs
-                    </button>          
-                </li>
-                <br />
-               {/* <li>
-                <button 
-                    className="btnViewCV" 
-                    onClick={() => history.push('/')}
-                    >
-                        View CV
-                </button>        
-                </li>
-                <br />*/}  
-                <li>
-                <button 
-                    className="btnViewVacancies" 
-                    onClick={() => history.push('/Vacancies')}
-                    >
-                        View Vacancies
-                    </button>          
-                </li>
-                
-                </ul>
-                </main>
                 <aside className="rightGradProf">
 
                     {/** VISIBLE TO EVERYONE */} 
@@ -213,15 +163,74 @@ function GraduateProfile() {
                         <label className="">{gender}</label>
                     </div>
                 </div>
+                <ul>
+
+                <li>
+                <button 
+                    className="btnEditProfile" 
+                    onClick={() => history.push('/EditGradProfile')}
+                    >
+                        Edit Profile
+                    </button>          
+                </li>
+                <li>
                 <button 
                     className="btnLogoutGrad" 
                     onClick={() => history.push('/')}
                     >
                         Logout
                 </button> 
+                </li>
+                </ul>
                  
                 </form>
                 </aside>
+
+                <main className="leftGradProf">
+
+                {/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
+                <ul>
+
+                <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
+                <br /><br />  
+
+                <li>Upload CV:</li><br /><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
+                <br /><br />  
+                
+                <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
+                <br /><br />
+               
+                <br />        
+                <li>
+                <button 
+                    className="btnMoocs" 
+                    onClick={() => history.push('/Moocs')}
+                    >
+                        View MOOCs
+                    </button>          
+                </li>
+                <br />
+               {/* <li>
+                <button 
+                    className="btnViewCV" 
+                    onClick={() => history.push('/')}
+                    >
+                        View CV
+                </button>        
+                </li>
+                <br />*/}  
+                <li>
+                <button 
+                    className="btnViewVacancies" 
+                    onClick={() => history.push('/Vacancies')}
+                    >
+                        View Vacancies
+                    </button>          
+                </li>
+                
+                </ul>
+                </main>
+
                 <div className="currentApplicationsHeader">
             <h1>Current Applications</h1>
         </div>
@@ -264,68 +273,12 @@ function GraduateProfile() {
             <i class="fa fa-user-circle" aria-hidden="true"></i>
             Graduate Profile
         </header>
-        <main className="leftGradProf">
-
-           {/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
-        <ul>
-
-          <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
-          <br /><br />  
-
-          <li>Upload CV:</li><br /><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
-          <br /><br />  
-          
-          <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
-          <br /><br />
-          <li>
-          <button 
-            className="btnEditProfile" 
-            onClick={() => {
-                history.push("/EditGradProfile");
-            }}
-            >
-                Edit Profile
-            </button>          
-          </li>
-          <br />        
-          <li>
-          <button 
-            className="btnMoocs" 
-            onClick={() => {
-                history.push("/Moocs");
-            }}
-            >
-              View MOOCs
-            </button>          
-          </li>
-          <br />
-          <li>
-          <button 
-            className="btnViewCV"
-            onClick={() => {
-                history.push("/");
-            }}
-            >
-                View CV
-            </button>          
-          </li>
-          <br />
-          <li>
-          <button 
-            className="btnViewVacancies"
-            onClick={() => {
-                history.push("/Vacancies");
-            }}
-            >View Vacancies</button>          
-          </li>
-         
-        </ul>
-        </main>
+       
         <aside className="rightGradProf">
 
             {/** VISIBLE TO EVERYONE */} 
 
-        <div className="GraduateForm">
+        <main className="GraduateForm">
 
           <div className="gradRow">
               <div className="colLeftGrad">
@@ -369,16 +322,78 @@ function GraduateProfile() {
                   <label className="">{gender}</label>
               </div>
           </div>
-          <div className="gradRow">
-              <div className="colLeftGrad">
-                  <label className="lblGradCompRep">Company Representing:</label>
-              </div>
-              <div className="colRightGrad">
-                  <label className="">{companyRep}</label>
-              </div>
-          </div>
-        </div>
+         
+          <ul>
+
+<li>
+<button 
+    className="btnEditProfile" 
+    onClick={() => history.push('/EditGradProfile')}
+    >
+        Edit Profile
+    </button>          
+</li>
+<li>
+<button 
+    className="btnLogoutGrad" 
+    onClick={() => history.push('/')}
+    >
+        Logout
+</button> 
+</li>
+</ul>
+
+        </main>
         </aside>
+
+        <main className="leftGradProf">
+
+{/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
+<ul>
+
+<li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
+<br /><br />  
+
+<li>Upload CV:</li><br /><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
+<br /><br />  
+
+<li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
+<br /><br />
+
+<li>
+<button 
+ className="btnMoocs" 
+ onClick={() => {
+     history.push("/Moocs");
+ }}
+ >
+   View MOOCs
+ </button>          
+</li>
+<br />
+<li>
+<button 
+ className="btnViewCV"
+ onClick={() => {
+     history.push("/");
+ }}
+ >
+     View CV
+ </button>          
+</li>
+<br />
+<li>
+<button 
+ className="btnViewVacancies"
+ onClick={() => {
+     history.push("/Vacancies");
+ }}
+ >View Vacancies</button>          
+</li>
+
+</ul>
+</main>
+
         <div className="currentApplicationsHeader">
             <h1>Current Applications</h1>
         </div>
@@ -395,8 +410,8 @@ function GraduateProfile() {
                         applicatons.map((applications) =>{
                             return(
                                 <tr>
-                                    <th>{applications.jobTitle}</th>
-                                    <th>{applications.applicationStatus}</th>
+                                    <td>{applications.jobTitle}</td>
+                                    <td>{applications.applicationStatus}</td>
                                 </tr>
                             )
                         })
