@@ -108,20 +108,20 @@ function RecruiterProfile() {
         </form>
         </aside>
 
-        <main className="leftRecruiterProf">
+        <div className="leftRecruiterProf">
         <ul>
           <li><label>Upload Profile Photo:</label></li><br /><input type="file" placeholder="Upload"  />
           <br /><br />  
                        
           <li>
-            <button className="btnViewVacancies" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
+            <button className="btnViewVacRec" variant="btn btn-success" onClick={() => history.push('/Vacancies')}>View Vacancies</button>          
           </li>
           <br />  
           <li>
             <button className="btnAddNewPosRec" variant="btn btn-success" onClick={() => history.push('/CreatePosition')}>Create Vacancy</button>          
           </li>
         </ul>
-        </main>
+        </div>
         
       </div>
       <Footer/>

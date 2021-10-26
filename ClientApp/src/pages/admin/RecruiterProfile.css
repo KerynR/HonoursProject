@@ -21,7 +21,7 @@
     cursor: pointer;
   }
     
-    .gradRecruiterHeader {
+    .gradRecruiterHeader, .leftRecruiterProf, .rightRecruiterProf {
     grid-column-start: 1;
     grid-column-end: 3;
     }
@@ -40,27 +40,30 @@
       color: #FFF9FB;
       padding-top: 20px;
       padding-bottom: 20px;
+      
     }
 
-    .leftRecruiterProf button{
-        font-size: 30px;
-        padding: 30px 15px;
-        background-color: #4B88A2;
-        border-radius: 8px;
-        border: 2px solid #396a80;
+   .leftRecruiterProf input[type=file], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+      margin-left: 5px;
+      margin-bottom: 20px;
     }
 
-    .leftRecruiterProf li{
-      font-size: 15px;
-      font-family: 'Work Sans', sans-serif;
-    }
+    
+
+    
 
       .RecruitersForm label{
         color: #FFF9FB;
         font-family: 'Work Sans', sans-serif;
         font-size: 20px;
-        margin-right: -90px;
-        margin-left: 100px;
+        margin-right: 20px;
+        text-align: left;
       }
 
       ul{
@@ -92,54 +95,59 @@
         font-family: 'Work Sans', sans-serif;
         font-size: 23px;
         padding: 20px;
-        margin-left: -150px;
+        margin-right: 200px;
+        margin-left: 300px;
       }
 
-      .btnEditRecProfile{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
+
       
       .btnEditRecProfile:hover{
         background-color: #D3D4D9;
         color: #252627;
       }
       
-      .btnDeleteRecrProf{
-        background-color: #4B88A2;
-        color: #FFF9FB;
+     
+    .btnViewVacRec {
+        background: #4B88A2;
+        height: 80px;
+        line-height: 35px;
         width: 100%;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
         box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;     
       }
       
-      .btnDeleteRecrProf:hover{
-        background-color: #D3D4D9;
-        color: #252627;
-      }
-
-      .btnViewVacancies{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-      
-      .btnViewVacancies:hover{
+      .btnViewVacRec:hover{
         background-color: #D3D4D9;
         color: #252627;
       }
       .btnAddNewPosRec{
-        background-color: #4B88A2;
-        color: #FFF9FB;
+        background: #4B88A2;
+        height: 80px;
+        line-height: 35px;
         width: 100%;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 30px;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
         box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;           }
       
       .btnAddNewPosRec:hover{
         background-color: #D3D4D9;
@@ -152,13 +160,14 @@
         background: #4B88A2;
         height: 78px;
         line-height: 35px;
-        width: 100%;
+        width: 60%;
         border: none;
         border-radius: 8px;
         outline: none;
         cursor: pointer;
         color: #fff;
         font-size: 30px;
+        margin-left: 200px;
         -webkit-transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
         -ms-transition: all 0.30s ease-in-out;

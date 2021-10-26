@@ -46,6 +46,7 @@
     border-radius: 10px;
     font-style: normal;
     width: 80%;
+    
   }
 
   .vacanciesWrapper table{
@@ -56,6 +57,7 @@
     border-radius: 10px;
     font-style: normal;
     width: 80%;
+    margin-left: 110px;
   }
 
   .vacanciesWrapper th{
