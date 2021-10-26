@@ -34,18 +34,29 @@
         color: #BB0A21;
       }
 
-       input[type=file], select, textarea{
+      .leftGridComp input[type=file], select, textarea{
         width: 50%;
         padding: 12px;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
         resize: vertical;
-        margin-left: -200px;
+        margin-left: -100px;
         margin-bottom: 20px;
       }
       
-     
+      .leftGridComp label{ 
+        color: #FFF9FB;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: left;
+        float: left;
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
+        margin-top: 30px;
+        margin-right: 300px;
+        margin-left: -100px;
+    }
 
     .companyHeader, .bottomSectComp, .dropdown, .tblActiveApplications, .availPosHeading, .compRepHeading {
     grid-column-start: 1;
@@ -59,16 +70,7 @@
     justify-content: center;
     }
 
-    .leftGridComp label{ 
-        color: #FFF9FB;
-        padding-right: 20px;
-        padding-left: 20px;
-        float: left;
-        font-size: 20px;
-        font-family: 'Work Sans', sans-serif;
-        margin-top: 30px;
-        margin-right: 200px;
-    }
+   
 
     .fa-user-circle{
         padding: 10px 20px 10px;

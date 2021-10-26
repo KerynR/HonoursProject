@@ -506,10 +506,14 @@ function CompanyProfile() {
                 <main className="leftGridComp"> 
                     <ul>
                     <li>
-                        <label for="pfpImage">Upload Profile Photo</label><br />
-                        <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
+                        <label for="pfpImage">Upload Profile Photo</label>
                     </li>
+
                     <br /><br />
+                    <li>
+                    <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
+
+                    </li>
                     
                     <li>
                         <button 

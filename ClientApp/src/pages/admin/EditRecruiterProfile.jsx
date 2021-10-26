@@ -1,8 +1,7 @@
 import React,{useState} from 'react';
 import './EditRecruiterProfile.css';
 import Footer from '../../components/Footer';
-import history from '../../components/history';
-
+import { useHistory } from "react-router";
 
 import axios, { Axios } from 'axios';
 import * as author from "firebase/auth";
@@ -11,6 +10,9 @@ const http = axios;
 {/** EDIT RECRUITER PROFILE */}
 
 function EditRecruiterProfile() {
+
+  const history = useHistory();
+  
   const[firstName,setFirstName] = useState(localStorage.getItem("firstName"))
     const[lastName,setLastName] = useState(localStorage.getItem("lastName"))
     const[email,setEmail] = useState(localStorage.getItem("email"))
