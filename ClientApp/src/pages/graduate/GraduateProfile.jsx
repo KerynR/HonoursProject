@@ -191,16 +191,12 @@ function GraduateProfile() {
                 {/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
                 <ul>
 
-                <li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
-                <br /><br />  
-
-                <li>Upload CV:</li><br /><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
-                <br /><br />  
-                
-                <li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
-                <br /><br />
-               
-                <br />        
+                <li><label>Upload Profile Photo:</label></li><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
+                <br />
+                <li><label>Upload CV:</label></li><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
+                <br />                
+                <li><label>Upload Certificates:</label></li><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
+                <br /> 
                 <li>
                 <button 
                     className="btnMoocs" 
@@ -346,53 +342,50 @@ function GraduateProfile() {
         </main>
         </aside>
 
-        <main className="leftGradProf">
+<main className="leftGradProf">
 
-{/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
-<ul>
+    {/** ONLY VISIBLE TO GRADUATE WHOSE PROFILE IT IS */} 
+    <ul>
 
-<li>Upload Profile Photo:</li><br /><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
-<br /><br />  
+    <li>Upload Profile Photo:</li><input type="file" placeholder="Upload"  onChange={(event) =>setProfileImg(event.target.files[0])}/><button className="uploadButton" type="button" onClick={uploadProfileImg}> Upload</button>
+    
+    <li>Upload CV:</li><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
 
-<li>Upload CV:</li><br /><input type="file" placeholder="Upload" onChange={setCV} /><button className="uploadButton" type="button" onClick={uploadCV}> Upload</button>
-<br /><br />  
+    <li>Upload Certificates:</li><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
 
-<li>Upload Certificates:</li><br /><input type="file" placeholder="Upload" onChange={setCert} /><button className="uploadButton" type="button" onClick={uploadCert}> Upload</button>
-<br /><br />
 
-<li>
-<button 
- className="btnMoocs" 
- onClick={() => {
-     history.push("/Moocs");
- }}
- >
-   View MOOCs
- </button>          
-</li>
-<br />
-<li>
-<button 
- className="btnViewCV"
- onClick={() => {
-     history.push("/");
- }}
- >
-     View CV
- </button>          
-</li>
-<br />
-<li>
-<button 
- className="btnViewVacancies"
- onClick={() => {
-     history.push("/Vacancies");
- }}
- >View Vacancies</button>          
-</li>
 
-</ul>
+    </ul>
 </main>
+
+<div className="gradOptionsBtns">
+        
+                <button 
+                className="btnMoocs" 
+                onClick={() => {
+                    history.push("/Moocs");
+                }}
+                >
+                View MOOCs
+                </button>          
+                
+                <button 
+                className="btnViewCV"
+                onClick={() => {
+                    history.push("/");
+                }}
+                >
+                    View CV
+                </button>          
+                
+                <button 
+                className="btnViewVacancies"
+                onClick={() => {
+                    history.push("/Vacancies");
+                }}
+                >View Vacancies</button>          
+                
+</div>
 
         <div className="currentApplicationsHeader">
             <h1>Current Applications</h1>

@@ -64,7 +64,13 @@
     color: #fff;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
+    
   }
+
+.col25VacInfo label{
+  color: #4B88A2;
+  font-size: 22px;
+}
 
   .form-container-vacInfo{
 

@@ -28,7 +28,7 @@
    
 
     .colRightSearch input[type=text], select, textarea{
-      width: 65%;
+      width: 50%;
       padding: 12px;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -48,7 +48,7 @@
     width: 80%;
   }
 
-  .tblVacancies table{
+  .vacanciesWrapper table{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     border-collapse: collapse;
@@ -58,49 +58,23 @@
     width: 80%;
   }
 
-  .tblVacancies th{
+  .vacanciesWrapper th{
     color: #FFF9FB;
-    font-size: 1em;
+    font-size: 20px;
     background-color: #4B88A1;
     padding: 15px;
     font-family: 'Open Sans', sans-serif;
-    }
-
-.tblVacancies td{
-  color: #242526;
-  background-color: #D3D4D9;
-  border-bottom: #252627;
-  border-left: #D3D4D9;
-  border-right: #D3D4D9;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
-  padding: 10px;
-}
-
-.tblVacancies td+td{
-  width: auto;
-}
-
-  .vacancyTable th{
-    color: #FFF9FB;
-    font-size: 1em;
-    background-color: #4B88A1;
-    padding: 5px;
-    font-family: 'Open Sans', sans-serif;
   }
-
-  .vacancyTable tr td{
-    color: #252627;
+  
+  .vacanciesWrapper td{
+    color: #242526;
     background-color: #D3D4D9;
     border-bottom: #252627;
     border-left: #D3D4D9;
     border-right: #D3D4D9;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-  }
-
-  .vacancyTable tbody{
-    margin-left: 20px;
+    padding: 10px;
   }
 
   /* END OF TABLE STYLES */

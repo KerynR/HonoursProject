@@ -1,7 +1,7 @@
 .gridGradProf {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px auto 150px auto 400px;
+    grid-template-rows: 150px auto 150px 150px auto 400px;
     grid-gap: 0em;
     }
 
@@ -27,7 +27,7 @@
       color: #BB0A21;
     }
     
-    .gradProfHeader, .currentApplications, .currentApplicationsHeader,
+    .gradProfHeader, .gradOptionsBtns, .currentApplications, .currentApplicationsHeader,
     .gradBottom {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -40,12 +40,18 @@
     justify-content: center;
     }
 
-    .leftGradProf{
+    .leftGradProf li {
         color: #FFF9FB;
         padding-top: 20px;
         padding-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
     }
 
+    .leftGradProf ul{
+      margin-left: -50%;
+    }
+    
     .leftGradProf button{
         font-size: 30px;
         padding: 30px 15px;
@@ -54,10 +60,6 @@
         border: 2px solid #396a80;
     }
 
-    .leftGradProf li{
-      font-size: 15px;
-      font-family: 'Work Sans', sans-serif;
-    }
 
     .cvTipsh2{
         color: #BB0A21;
@@ -133,37 +135,12 @@
         color: #252627;
       }
 
-      .btnViewSubmissions{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
       
-      .btnViewSubmissions:hover{
-        background-color: #D3D4D9;
-        color: #252627;
-      }
-
-      .btnViewVacancies{
-        background-color: #4B88A2;
-        color: #FFF9FB;
-        width: 100%;
-        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-
-      .btnViewVacancies:hover{
-        background-color: #D3D4D9;
-        color: #252627;
-      }
-
-      .btnLogoutGrad{
+      .btnSearchVac, .btnClearVacSearch{
         background: #4B88A2;
         height: 55px;
         line-height: 35px;
-        width: 100px;
+        width: 10%;
         border: none;
         border-radius: 8px;
         outline: none;
@@ -171,7 +148,39 @@
         color: #fff;
         font-size: 1.2em;
         margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
+        box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+  
+      .btnSearchVac:hover, .btnClearVacSearch:hover{
+        background-color: #D3D4D9;
+        color: #334257;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      
+      .btnMoocs, .btnViewCV, .btnViewVacancies{
+        background: #4B88A2;
+        height: 78px;
+        line-height: 35px;
+        width: 20%;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        margin-top: 30px;
         margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
         -webkit-transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
         -ms-transition: all 0.30s ease-in-out;
@@ -180,27 +189,24 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;     
        }
 
-      .btnLogoutGrad:hover{
+       .btnMoocs:hover, .btnViewCV:hover, .btnViewVacancies:hover{
         background-color: #D3D4D9;
         color: #334257;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }
 
       .colLeftGrad {
-        color: #FFF9FB;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 23px;
-        padding: 20px;
-        margin-left: -150px;
-        
+        float: left;
+        width: 25%;
+        margin-top: 10px;
+        padding-right: 30px;
       }
 
-    
-      
+  
       .colRightGrad {
         float: left;
         width: 75%;
-        margin-top: 6px;
+        margin-top: 10px;
         padding-left: 40px;
       }
     

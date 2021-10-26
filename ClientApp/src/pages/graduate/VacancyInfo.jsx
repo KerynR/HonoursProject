@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './VacancyInfo.css';
 import Footer from '../../components/Footer';
-import history from '../../components/history';
 import axios, { Axios } from 'axios';
 import { useHistory } from "react-router";
 
@@ -252,12 +251,30 @@ function VacancyInfo() {
     
     
                     {/*ONLY VISIBLE TO GRADUATE*/}
-                    <label>Motivation:</label>
-                    <input type="text" onChange={(event) => {setMotivation(event.target.value)}} /><br /><br />
-                    <label>Upload CV:</label>
-                    <input type="file" /><br /><br />
+                    <div class="col25VacInfo">  
+                        <label>Motivation:</label>
+                    </div>
+                    <div className="col75VacInfo">
+                        <input type="text" placeholder="Please give us your motivation for applying for this position here" onChange={(event) => {setMotivation(event.target.value)}} /><br /><br />
+                    </div>
+
+                    <div class="col25VacInfo">  
+                        <label>Upload CV:</label>
+                    </div>
+
+                    <div className="col75VacInfo">
+                        <input type="file" /><br /><br />
+                    </div>
+
                     <button type="button"  className="btnApplyVac" onClick={applyToPostion}>Apply</button>
-                    <button className="btnCancelApplyVac">Cancel</button>
+                    <button 
+                        className="btnCancelApplyVac"
+                        onClick={() => {
+                            history.push("/GraduateProfile");
+                          }}
+                        >
+                            Cancel
+                        </button>
     
     
                 </form>

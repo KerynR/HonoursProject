@@ -93,16 +93,12 @@
 
 /* TABLE STYLES*/
     
-.tblMoocs{
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+.table{
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 10px;
   font-style: normal;
-  width: 50%;
-  float: inherit;
-  margin-bottom: 30px;
+  width: 80%;
 }
 
 
@@ -114,22 +110,34 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.tblMoocs td{
+.tblMoocsSearch table{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  font-style: normal;
+  width: 80%;
+}
+
+.tblMoocsSearch th{
+  color: #FFF9FB;
+  font-size: 20px;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tblMoocsSearch td{
   color: #242526;
   background-color: #D3D4D9;
   border-bottom: #252627;
   border-left: #D3D4D9;
   border-right: #D3D4D9;
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
+  font-size: 18px;
   padding: 10px;
 }
-
-/* .tblMoocs tr td:hover{
-  background-color: #4B88A1;
-  color: #FFF9FB;
-  
-}*/
 
 /* END OF TABLE STYLES */
 

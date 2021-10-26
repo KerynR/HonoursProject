@@ -323,17 +323,7 @@ function CompanyProfile() {
                         <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
                     </li>
                     <br /><br />
-                    <li>
-                        <button 
-                            className="btnEditCompanyProfile" 
-                            onClick={() => {
-                                history.push("/EditCompanyProfile");
-                            }}
-                            >
-                                Edit Profile
-                            </button>          
-                    </li>
-                        <br /><br />  
+                    
                     <li>
                         <button 
                             className="btnAddNewPos" 
@@ -516,7 +506,7 @@ function CompanyProfile() {
                 <main className="leftGridComp"> 
                     <ul>
                     <li>
-                        <label for="pfpImage">Upload Profile Photo</label>
+                        <label for="pfpImage">Upload Profile Photo</label><br />
                         <input id="pfpImage" type="file" className="profile_photo" placeholder="Click to upload profile photo" required="" capture/>
                     </li>
                     <br /><br />

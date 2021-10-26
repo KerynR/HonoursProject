@@ -18,7 +18,7 @@ input[type=text], select, textarea{
   margin-bottom: 10px;
 }
 
-  input[type=email], select, textarea{
+  .rowEditGradProf input[type=email], select, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -26,6 +26,7 @@ input[type=text], select, textarea{
     box-sizing: border-box;
     resize: vertical;
     margin-bottom: 10px;
+    background-color: grey;
   }
    
   input[type=tel], select, textarea{
