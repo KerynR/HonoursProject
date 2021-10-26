@@ -140,8 +140,8 @@ function ViewSubmissions() {
                         <td>{sub.lastName}</td>
                         <td>{sub.motivation}</td>
                         <td>{sub.cvUrl}</td>
-                        <td><button type="button" onClick={()=>{approveApplication(sub)}}>Approve</button></td>
-                        <td><button type="button" onClick={()=>{rejectApplication(sub)}}>Decline</button></td>   
+                        <td><button className="btnSubButtons" type="button" onClick={()=>{approveApplication(sub)}}>Approve</button></td>
+                        <td><button className="btnSubButtons" type="button" onClick={()=>{rejectApplication(sub)}}>Decline</button></td>   
                       </tr>
                     )
                   })

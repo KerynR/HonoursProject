@@ -29,46 +29,39 @@
   table{
     border-collapse: collapse;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
     font-style: normal;
     width: 80%;
-    margin-bottom: 40px;
   }
 
-  .tblViewSub{
+  .submissionsTbl table{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    font-style: normal;
+    width: 80%;
   }
 
-  table.tblViewSub th{
-    color: #FFF9FB;
-    font-size: 1em;
-    background-color: #4B88A1;
-    padding: 15px;
-    font-family: 'Open Sans', sans-serif;
+  .submissionsTbl th{
+  color: #FFF9FB;
+  font-size: 20px;
+  background-color: #4B88A1;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
   }
 
-  .tblViewSub td{
+  .submissionsTbl td{
     color: #242526;
     background-color: #D3D4D9;
     border-bottom: #252627;
     border-left: #D3D4D9;
     border-right: #D3D4D9;
     font-family: 'Open Sans', sans-serif;
-    height: 50px;
-    font-size: 0.8em;
+    font-size: 18px;
+    padding: 10px;
   }
-
- /* .tblViewSub button{
-    background-color: transparent;
-    color: #242526;
-    border-color: transparent;
-  }
-
-  .tblViewSub button:hover{
-    cursor: pointer;
-    color: #FFF9FB;
-  }*/
 
   .btnBackViewSub{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -95,4 +88,15 @@
     background: #4B88A2;
     color: #fff;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .btnSubButtons{
+    border: none;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+
+  .btnSubButtons:hover{
+    font-weight: bold;
   }

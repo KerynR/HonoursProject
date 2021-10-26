@@ -91,7 +91,7 @@ function CreatePosition() {
             <label className="lblJobDescr">Job Description:</label>
           </div>
           <div className="col-75-CreatePos">
-          <textarea name="txtAreaCPJobDes" rows="5" cols="50" type="text" placeholder=""   onChange={(event)=> setJobDesc(event.target.value)}></textarea>
+          <input name="txtAreaCPJobDes" rows="5" cols="50" type="text" placeholder=""   onChange={(event)=> setJobDesc(event.target.value)}></input>
 
           </div>
         </div> 
@@ -119,7 +119,7 @@ function CreatePosition() {
             <label className="lblJobResp">Responsibilities:</label>
           </div>
           <div className="col-75-CreatePos">
-          <textarea name="txtAreaCPResp" rows="5" cols="50" type="text" placeholder=""  onChange={(event)=> setDuties(event.target.value)}></textarea>
+          <input name="txtAreaCPResp" rows="5" cols="50" type="text" placeholder=""  onChange={(event)=> setDuties(event.target.value)}></input>
 
           </div>
         </div> 
@@ -129,7 +129,7 @@ function CreatePosition() {
             <label className="lblSkillReq">Skill Requirements:</label>
           </div>
           <div className="col-75-CreatePos">
-          <textarea name="txtAreaCPSkillsReq" rows="5" cols="50" type="text" placeholder=""  onChange={(event)=> setRequirment(event.target.value)}></textarea>
+          <input name="txtAreaCPSkillsReq" rows="5" cols="50" type="text" placeholder=""  onChange={(event)=> setRequirment(event.target.value)}></input>
 
           </div>
         </div>
